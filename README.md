@@ -87,10 +87,11 @@ A few options will be available upon login.
 	4. Search
 1. Write
 	1. Endless Nest
-	2. Prompt
+	2. Daily Nest
+	3. Prompt
 		- create
 		- generate
-	3. Challenge
+	4. Challenge
 		- create
 		- join
 1. Library
