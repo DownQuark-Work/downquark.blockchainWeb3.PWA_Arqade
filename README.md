@@ -14,7 +14,7 @@ There were many variations years ago. And I'm taking many liberties while creati
 #### HOW TO PLAY
 The basic rules are simple:
 1. Provide a writing prompt to be the topic of the story
-1. Have one player start the story by writing an agreed upon amount of text 
+1. Have one player start the story by writing an agreed upon amount of text
 	- sentence
 	- paragraph
 	- word count
@@ -54,7 +54,7 @@ The following concepts are integral to the experience
     - Expended when _Creating & Entering Challenges_, _Creating & Generating Prompts_, _Voting*_, _Commenting*_, and within the _Library_
     - Can be earned through _Challenges_ and _Library_ sales
 > Voting and Commenting do not always require `INQ`
-- `InqWell` 
+- `InqWell`
    - Akin to karma
    - Gained as you vote, comment on submissions, and share on social media
    - Lost as interaction lags
@@ -92,16 +92,16 @@ A few options will be available upon login.
 		- generate
 	3. Challenge
 		- create
-		- join 
+		- join
 1. Library
 	1. Buy
 	2. Auction
- 
+
 
 ##### READ
-1.	_RECENT_: 
+1.	_RECENT_:
 	-	A list of the most recent _Challenge_ **and** _Endless Nest_ submissions will be available to choose from
-1.	_PENDING CHALLENGES_: 
+1.	_PENDING CHALLENGES_:
 	-	Challenges where the writing stage has ended, but the voting stage is still active will be shown here
 1.	_RANDOM_: A random _Challenge_ **or** _Endless Nest_ can be requested
 1. _SEARCH_: Search by criteria (TBD)
@@ -115,12 +115,16 @@ A few options will be available upon login.
 			- a submission can be added anywhere in the thread's history
 			- there are no limits to the amount of times users may submit
 			- the thread has no expiration date, nor any other termination rules
+2. _Daily Nest_:
+	- Each day a randomly generated (Markov) Prompt will be created.
+		- The same rules from **Endless Nest** apply
+		- With the exception that no submissions can _only_ be added for a 24 hour period
 
 >**PROMPT**:
 > Upon submission, an NFT is minted.
 > This NFT can then be used when creating a new _Challenge_
 
-2. _Prompt_:
+3. _Prompt_:
 	- **Create**
 		- write a prompt to be used for the beginning of a _Challenge_
 			- Can be used by the user who created it
@@ -139,7 +143,7 @@ A few options will be available upon login.
 				- authors
 					- Or leave blank for random selections
 			- Enter `any` to create the start seed
-		- Can be 
+		- Can be
 			- used by creator
 			- auctioned in the _Library_
 		- When prompt is used in a _Challenge_
@@ -156,10 +160,10 @@ A few options will be available upon login.
 >  - entries
 >  - votes
 >  - comments
->  
+>
 >  It is then awarded to the winner of the _Challenge_
 
-3. _Challenge_:
+4. _Challenge_:
 	- **Create**
 		- define the basics
 			- \# of players
