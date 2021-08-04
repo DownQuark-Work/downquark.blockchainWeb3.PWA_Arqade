@@ -8,6 +8,8 @@ Bringing the turn based, pen and paper game into the modern era by:
 - using the immutable blockchain to verify ownership
   - and adding voting as well
 
+> More technical information can be found in the [docs](_docs/0.DownQuark.md)
+
 ### A modern take on an old game.
 There were many variations years ago. And I'm taking many liberties while creating this. I am always open to constructive feedback. And am positive I have missed more than one obvious error. Please don't hesitate to reach out with thoughts, questions, suggestions, and _PR's_!
 
@@ -69,8 +71,8 @@ The following concepts are integral to the experience
   - [Quadratic voting](https://quadraticvote.co) would be a nice feature to include
   - Your `InqWell` will be affected by how often (and fair) you vote
  - Commenting
-     -  _Never_ required
-     - Your `InqWell` will be affected by how often (and troll-less) you comment
+   - _Never_ required
+   - Your `InqWell` will be affected by how often (and troll-less) you comment
 	 - Submitting _(details still a wip)_
 		 - **Writings, Challenge Entries & Prompts**
 			 - In order to reduce the amount of `gas` required to save your submission:
@@ -218,5 +220,5 @@ Most items are still TBD, but among them expect to find:
 				- etc
 		- More than likely these can be acquired via the `InqWell`
 - Stories
-	- A user can save a thread created by the _Choose Your Own Path_ through the _Endless Nest_ as an NFT
+	- A user can save a thread created by the _Choose Your Own Path_ through the _Endless Nest_ &&/|| _Daily Nest_ as an NFT
 - etc
