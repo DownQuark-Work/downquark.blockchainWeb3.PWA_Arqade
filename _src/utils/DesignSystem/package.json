@@ -1,17 +1,10 @@
 {
   "name": "dq-w3-pwa-designsystem",
   "version": "0.0.1-alpha.0.0.1",
+  "author": "mlnck",
   "description": "DownQuark Web3 PWA StyleGuide",
+  "license": "ISC",
   "main": "index.js",
-  "scripts": {
-    "test": "test",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DownQuark-Work/downquark.blockchainWeb3.PWA_FatRedBird.git"
-  },
   "keywords": [
     "downquark",
     "dq",
@@ -21,21 +14,36 @@
     "crypto",
     "blockchain"
   ],
-  "author": "mlnck",
-  "license": "ISC",
-  "dependencies": {
-    "lit": "^2.0.0-rc.2"
+  "scripts": {
+    "test": "test",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "homepage": "https://github.com/DownQuark-Work/downquark.blockchainWeb3.PWA_FatRedBird#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DownQuark-Work/downquark.blockchainWeb3.PWA_FatRedBird.git"
   },
   "bugs": {
     "url": "https://github.com/DownQuark-Work/downquark.blockchainWeb3.PWA_FatRedBird/issues"
   },
-  "homepage": "https://github.com/DownQuark-Work/downquark.blockchainWeb3.PWA_FatRedBird#readme",
+  "dependencies": {
+    "@dan-nz/storybook-documentation-primitives": "file:./n0de_modules/@dan-nz/storybook-documentation-primitives",
+    "lit": "^2.0.0-rc.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.0",
+    "@storybook/addon-a11y": "^6.3.6",
     "@storybook/addon-actions": "^6.3.6",
     "@storybook/addon-essentials": "^6.3.6",
     "@storybook/addon-links": "^6.3.6",
+    "@storybook/preset-scss": "^1.0.3",
     "@storybook/web-components": "^6.3.6",
-    "babel-loader": "^8.2.2"
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "style-dictionary": "^3.0.1",
+    "style-loader": "^3.2.1"
   }
 }
