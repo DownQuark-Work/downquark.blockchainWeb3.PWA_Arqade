@@ -1,62 +1,48 @@
 /**
  * Do not edit directly
- * Generated on Fri, 06 Aug 2021 03:49:27 GMT
+ * Generated on Fri, 06 Aug 2021 06:26:32 GMT
  */
 
 :root {
-  --dq-color-base-background-content-page: #fff9f4;
-  --dq-color-base-background-content-section: rgba(255, 255, 255, 0.5);
-  --dq-color-base-background-bak: #f5fafa;
-  --dq-color-base-primary: #e1daf6;
-  --dq-color-base-primary-dark: #cdc7e4;
-  --dq-color-base-primary-light: rgba(225, 218, 246, 0.4);
-  --dq-color-base-secondary: #934ef6;
-  --dq-color-base-secondary-dark: #9325f6;
-  --dq-color-base-secondary-light: rgba(147, 78, 246, 0.6);
-  --dq-color-base-secondary-light-solid: #c29afa;
-  --dq-color-base-tertiary: #ffa500;
-  --dq-color-base-tertiary-dark: #ff8c00;
-  --dq-color-base-tertiary-light: rgba(255, 165, 0, 0.6);
-  --dq-color-base-tertiary-light-solid: #ffca7f;
-  --dq-color-base-gray-dark: #444444;
-  --dq-color-base-gray-light: #ededed;
-  --dq-color-base-gray: #999999;
-  --dq-color-base-status-success: #58dd80;
-  --dq-color-base-status-success-light: rgba(88, 221, 128, 0.6);
-  --dq-color-base-status-warning: #ff9c52;
-  --dq-color-base-status-warning-light: rgba(255, 156, 82, 0.6);
-  --dq-color-base-status-danger: #e60d5b;
-  --dq-color-base-status-danger-light: rgba(230, 13, 91, 0.6);
-  --dq-color-base-white: #ffffff;
-  --dq-color-brand-static-orange: #ffa500;
-  --dq-color-brand-static-purple: #934ef6;
-  --dq-color-gamification-badge-received: #ff6d00;
-  --dq-color-gamification-battle-success: #ff8500;
-  --dq-color-gamification-crushing-defeat: #7b2cbf;
-  --dq-color-gamification-defeat: #5a189a;
-  --dq-color-gamification-idle-mining: #9d4edd;
-  --dq-color-gamification-level-up: #ff7900;
-  --dq-color-gamification-random-reward: #3c096c;
-  --dq-color-gamification-token-redemption: #ff9100;
-  --dq-color-text-default: #444444; /* use for text */
-  --dq-color-text-paragraph-default: #444444;
-  --dq-color-text-disabled: #ededed;
-  --dq-color-text-header: #000000;
-  --dq-color-text-primary: #cd95ff;
-  --dq-color-text-secondary: #7a25cf;
-  --dq-color-text-tertiary: #ff7100;
-  --dq-color-text-success: #588041;
-  --dq-color-text-warning: #ff621e;
-  --dq-color-text-danger: #c90d2b;
-  --dq-color-theme-glass-bg-clear: rgba(255, 255, 255, 0.01);
-  --dq-color-theme-glass-bg-mid-gray: rgba(128, 125, 128, 0.25);
-  --dq-color-theme-glass-bg-primary: rgba(255, 255, 255, 0.25);
-  --dq-color-theme-glass-bg-secondary: rgba(147, 78, 246, 0.25);
-  --dq-color-theme-glass-bg-tertiary: rgba(255, 165, 0, 0.25);
-  --dq-color-theme-glass-bg-success: rgba(88, 221, 128, 0.25);
-  --dq-color-theme-glass-bg-warning: rgba(255, 156, 82, 0.25);
-  --dq-color-theme-glass-bg-danger: rgba(230, 13, 91, 0.25);
-  --dq-color-theme-glass-bg-white: rgba(255, 255, 255, 0.25);
-  --dq-color-vendor-facebook-blue: #1877f2;
   --dq-color-vendor-twitter-blue: #1da1f2;
+  --dq-color-vendor-facebook-blue: #1877f2;
+  --dq-color-accents-rich-gold: #985708;
+  --dq-color-accents-buccaneer: #5b2636;
+  --dq-color-accents-oyster-pink: #e9d1cc;
+  --dq-color-accents-flamingo: #f45a3c;
+  --dq-color-accents-rock: #513634;
+  --dq-color-accents-flame-pea: #db5c2a;
+  --dq-color-accents-tango: #ea7521;
+  --dq-color-accents-oxford-blue: #313c4d;
+  --dq-color-accents-bittersweet: #f7755b;
+  --dq-color-accents-steel-gray: #2f2b3f;
+  --dq-color-accents-tahiti-gold: #e87e05;
+  --dq-color-accents-voodoo: #472b4d;
+  --dq-color-accents-salmon: #fe817a;
+  --dq-color-accents-pickled-bluewood: #243749;
+  --dq-color-accents-thunder: #3d2d35;
+  --dq-color-accents-monarch-red: #7d062f;
+  --dq-color-accents-white: #ffffff;
+  --dq-color-accents-black: #000000;
+  --dq-color-base-gun-powder: #3f4151;
+  --dq-color-base-bizarre: #e9dbd1;
+  --dq-color-base-mule-fawn: #8b3c2b;
+  --dq-color-base-swirl: #d4d0c9;
+  --dq-color-base-antique-brass: #c87856;
+  --dq-color-base-tawny-port: #632741;
+  --dq-color-base-pomegranate: #f44336;
+  --dq-color-base-zest: #dd851a;
+  --dq-color-base-hippie-green: #609552;
+  --dq-color-base-baltic-sea: #17151b;
+  --dq-color-base-au-chico: #8e5856;
+  --dq-color-quark-fat-red-bird-secondary: var(--dq-color-base-antique-brass);
+  --dq-color-quark-fat-red-bird-primary: var(--dq-color-base-tawny-port);
+  --dq-color-quark-bazaar-secondary: var(--dq-color-base-mule-fawn);
+  --dq-color-quark-bazaar-primary: var(--dq-color-base-swirl);
+  --dq-color-quark-app-shell-secondary: var(--dq-color-base-bizarre);
+  --dq-color-quark-app-shell-primary: var(--dq-color-base-gun-powder);
+  --dq-color-quark-library-secondary: var(--dq-color-quark-fat-red-bird-secondary);
+  --dq-color-quark-library-primary: var(--dq-color-quark-fat-red-bird-primary);
+  --dq-color-quark-hub-secondary: var(--dq-color-quark-app-shell-secondary);
+  --dq-color-quark-hub-primary: var(--dq-color-quark-app-shell-primary); /* Related Quark values are themeable */
 }

@@ -1,9 +1,9 @@
 /**
  * Do not edit directly
- * Generated on Fri, 06 Aug 2021 03:49:27 GMT
+ * Generated on Fri, 06 Aug 2021 06:26:32 GMT
  */
 
 :root {
   --dq-content-urls-base: '/assets/';
-  --dq-content-urls-cdn-default: '/assets/';
+  --dq-content-urls-cdn-default: var(--dq-content-urls-base);
 }

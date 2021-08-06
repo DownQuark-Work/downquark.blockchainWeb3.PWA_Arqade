@@ -1,12 +1,12 @@
 /**
  * Do not edit directly
- * Generated on Fri, 06 Aug 2021 03:49:27 GMT
+ * Generated on Fri, 06 Aug 2021 06:26:32 GMT
  */
 
 :root {
-  --dq-size-breakpoint-extension: ( min-width:  360px );
-  --dq-size-breakpoint-small: ( min-width:  767px );
-  --dq-size-breakpoint-medium: ( min-width:  992px );
-  --dq-size-breakpoint-large: ( min-width: 1200px );
   --dq-size-max-width: 4.609375rem;
+  --dq-size-breakpoint-large: ( min-width: 1200px );
+  --dq-size-breakpoint-medium: ( min-width:  992px );
+  --dq-size-breakpoint-small: ( min-width:  767px );
+  --dq-size-breakpoint-extension: ( min-width:  360px );
 }

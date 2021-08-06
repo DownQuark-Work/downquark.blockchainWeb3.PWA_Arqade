@@ -1,12 +1,12 @@
 /**
  * Do not edit directly
- * Generated on Fri, 06 Aug 2021 03:49:27 GMT
+ * Generated on Fri, 06 Aug 2021 06:26:32 GMT
  */
 
 :root {
-  --dq-font-stack-default: normal 20px / calc(20px + 4px) 'Neucha', sans-serif; /* use for text */
-  --dq-font-text-default: 'Neucha', sans-serif;
-  --dq-font-text-code: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace;
   --dq-font-size-base-default: 20px; /* body base font for rem */
-  --dq-font-size-line-height-default: calc(20px + 4px);
+  --dq-font-text-code: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace;
+  --dq-font-text-default: 'Neucha', sans-serif;
+  --dq-font-size-line-height-default: calc(var(--dq-font-size-base-default) + 4px);
+  --dq-font-stack-default: normal var(--dq-font-size-base-default) / var(--dq-font-size-line-height-default) var(--dq-font-text-default); /* use for text */
 }

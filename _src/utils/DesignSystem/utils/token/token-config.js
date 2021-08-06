@@ -123,14 +123,6 @@ StyleDictionary.registerFilter({
     return prop.attributes.category === "typography"
   },
 })
-// StyleDictionary.registerFilter({
-//   name: "isTypographyConstantFontFace",
-//   matcher: function (prop)
-//   {
-//     return prop.attributes.category === "typography" && prop.attributes.type === "generic-font-family"
-//   },
-// })
-
 
 // component vars
 StyleDictionary.registerFilter({
@@ -160,47 +152,47 @@ module.exports = {
           destination: "_colors.scss",
           format: "scss/variables",
           filter: "isColorToken",
+          "options": {
+            "outputReferences": true
+          },
         },
         {
           destination: "_content.scss",
           format: "scss/variables",
           filter: "isContentToken",
+          "options": {
+            "outputReferences": true
+          },
         },
         {
           destination: "_fonts.scss",
           format: "scss/variables",
           filter: "isFontToken",
+          "options": {
+            "outputReferences": true
+          },
         },
         {
           destination: "_typography.scss",
           format: "scss/variables",
           filter: "isFontToken",
+          "options": {
+            "outputReferences": true
+          },
         },
         {
           destination: "_dimensions.scss",
           format: "scss/variables",
           filter: "isDimensionConstant",
+          "options": {
+            "outputReferences": true
+          },
         },
-        // {
-        //   destination: "constants/transition-constant.scss",
-        //   format: "scss/variables",
-        //   filter: "isTransitionConstant",
-        // },
         {
           destination: "_typography.scss",
           format: "scss/variables",
           filter: "isTypographyConstant",
         },
-        // {
-        //   destination: "_typography.scss",
-        //   format: "css/fonts.css",
-        //   filter: "isTypographyConstantFontFace",
-        // },
-        // {
-        //   destination: "scss/button-vars.scss",
-        //   format: "scss/variables",
-        //   filter: "isComponentVar",
-        // },
       ],
     },
     css: {
@@ -213,27 +205,34 @@ module.exports = {
           destination: "_colors.css",
           format: "css/variables",
           filter: "isColorToken",
+          "options": {
+            "outputReferences": true
+          },
         },
         {
           destination: "_content.css",
           format: "css/variables",
           filter: "isContentToken",
+          "options": {
+            "outputReferences": true
+          },
         },
         {
           destination: "_dimensions.css",
           format: "css/variables",
           filter: "isDimensionConstant",
+          "options": {
+            "outputReferences": true
+          },
         },
         {
           destination: "_fonts.css",
           format: "css/variables",
           filter: "isFontToken",
+          "options": {
+            "outputReferences": true
+          },
         },
-        //     {
-        //       destination: "constants/_transition-constant.css",
-        //       format: "css/variables",
-        //       filter: "isTransitionConstant",
-        //     },
         {
           destination: "_typography.css",
           format: "css/variables",
@@ -241,29 +240,5 @@ module.exports = {
         },
       ],
     },
-    // unitsrem: {
-    //     transformGroup: 'css',
-    //     transforms: ['attribute/cti', 'size/pxToRem'],
-    //     buildPath: 'build/',
-    //     files: [
-    //         {
-    //             destination: 'css/dimensions-constant.css',
-    //             format: 'css/variables',
-    //             filter: 'isDimensionConstant',
-    //         },
-    //     ],
-    // },
-    // unitsem: {
-    //     transformGroup: 'css',
-    //     transforms: ['attribute/cti', 'size/pxToEm'],
-    //     buildPath: 'build/',
-    //     files: [
-    //         {
-    //             destination: 'css/dimensions-constant.css',
-    //             format: 'css/variables',
-    //             filter: 'isDimensionConstant',
-    //         },
-    //     ],
-    // },
   },
 }

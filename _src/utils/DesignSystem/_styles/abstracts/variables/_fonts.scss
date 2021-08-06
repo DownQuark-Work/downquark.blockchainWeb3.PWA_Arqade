@@ -1,9 +1,9 @@
 
 // Do not edit directly
-// Generated on Fri, 06 Aug 2021 03:49:27 GMT
+// Generated on Fri, 06 Aug 2021 06:26:32 GMT
 
-$dqFontStackDefault: normal 20px / calc(20px + 4px) 'Neucha', sans-serif; // use for text
-$dqFontTextDefault: 'Neucha', sans-serif;
-$dqFontTextCode: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace;
 $dqFontSizeBaseDefault: 20px; // body base font for rem
-$dqFontSizeLineHeightDefault: calc(20px + 4px);
+$dqFontTextCode: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace;
+$dqFontTextDefault: 'Neucha', sans-serif;
+$dqFontSizeLineHeightDefault: calc($dqFontSizeBaseDefault + 4px);
+$dqFontStackDefault: normal $dqFontSizeBaseDefault / $dqFontSizeLineHeightDefault $dqFontTextDefault; // use for text
