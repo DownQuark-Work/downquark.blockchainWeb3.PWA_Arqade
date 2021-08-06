@@ -19,6 +19,7 @@
   $index: string.index($orig, $srch);
   @if $index {
     $rootKey: $rplc + string.to-lower-case(string.slice($orig, string.length($srch)+1, string.length($orig))) + '-' + $flag;
+    // @debug $rootKey,$val;
     #{$rootKey}: $val;
   }
 }

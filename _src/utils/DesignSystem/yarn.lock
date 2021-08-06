@@ -6188,11 +6188,6 @@ kleur@^3.0.3:
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha1-p5yezIbuHOP6YgbRIWxQHxR/wH4=
 
-klona@^1.1.2:
-  version "1.1.2"
-  resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/klona/-/klona-1.1.2.tgz#a79e292518a5a5412ec8d097964bff1571a64db0"
-  integrity sha1-p54pJRilpUEuyNCXlkv/FXGmTbA=
-
 klona@^2.0.4:
   version "2.0.4"
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/klona/-/klona-2.0.4.tgz#7bb1e3affb0cb8624547ef7e8f6708ea2e39dfc0"
@@ -8272,15 +8267,15 @@ sane@^4.0.3:
     minimist "^1.1.1"
     walker "~1.0.5"
 
-sass-loader@10.0.0:
-  version "10.0.0"
-  resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/sass-loader/-/sass-loader-10.0.0.tgz#5761534acc9ffb6477ad31067e6f41a1dc35ffe6"
-  integrity sha1-V2FTSsyf+2R3rTEGfm9Bodw1/+Y=
+sass-loader@10.1.0:
+  version "10.1.0"
+  resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/sass-loader/-/sass-loader-10.1.0.tgz#1727fcc0c32ab3eb197cda61d78adf4e9174a4b3"
+  integrity sha1-Fyf8wMMqs+sZfNph14rfTpF0pLM=
   dependencies:
-    klona "^1.1.2"
+    klona "^2.0.4"
     loader-utils "^2.0.0"
     neo-async "^2.6.2"
-    schema-utils "^2.7.0"
+    schema-utils "^3.0.0"
     semver "^7.3.2"
 
 sass@^1.37.5:

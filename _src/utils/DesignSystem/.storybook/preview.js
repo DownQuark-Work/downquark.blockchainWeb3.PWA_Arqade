@@ -1,13 +1,4 @@
-// import "../assets/css/variables/colors.css";
-// import "../assets/css/variables/content.css";
-// import "../assets/css/variables/dimensions.css";
-// import "../assets/css/variables/fonts.css";
-// import "../assets/css/variables/typography.css";
-
-import "../_styles/base/tokens/_colors.css";
-
-// import '../_styles/downquarkglobals.scss';
-
+import "../_styles/downquark.globals.scss";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -18,4 +9,3 @@ export const parameters = {
     },
   },
 }
-// import "../utils/precompiled/base/tokens/_colors.css";
