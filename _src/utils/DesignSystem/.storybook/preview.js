@@ -1,4 +1,12 @@
-import '../_styles/globals.scss';
+// import "../assets/css/variables/colors.css";
+// import "../assets/css/variables/content.css";
+// import "../assets/css/variables/dimensions.css";
+// import "../assets/css/variables/fonts.css";
+// import "../assets/css/variables/typography.css";
+
+import "../_styles/base/tokens/_colors.css";
+
+// import '../_styles/downquarkglobals.scss';
 
 
 export const parameters = {
@@ -10,3 +18,4 @@ export const parameters = {
     },
   },
 }
+// import "../utils/precompiled/base/tokens/_colors.css";

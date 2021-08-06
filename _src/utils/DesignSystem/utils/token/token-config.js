@@ -153,7 +153,7 @@ module.exports = {
     scss: {
       transformGroup: "scss",
       transforms: ["attribute/cti", "color/css", "name/cti/camel", "size/pxToEm", "size/pxToRem"],
-      buildPath: "utils/precompiled/abstracts/variables/",
+      buildPath: "_styles/abstracts/variables/",
       prefix: "dq",
       files: [
         {
@@ -206,7 +206,7 @@ module.exports = {
     css: {
       transformGroup: "css",
       transforms: ["attribute/cti", "color/css", "name/cti/kebab", "size/pxToEm", "size/pxToRem"],
-      buildPath: "utils/precompiled/base/tokens/",
+      buildPath: "_styles/base/tokens/",
       prefix: "dq",
       files: [
         {
