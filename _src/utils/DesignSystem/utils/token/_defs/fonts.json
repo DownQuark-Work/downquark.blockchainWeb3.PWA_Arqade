@@ -1,0 +1,31 @@
+{
+  "font": {
+    "stack": {
+      "default": {
+        "value": "normal {font.size.base.default.value} / {font.size.lineHeight.default.value} {font.text.default.value}",
+        "comment": "use for text"
+      }
+    },
+    "text": {
+      "default": {
+        "value": "'Neucha', sans-serif"
+      },
+      "code": {
+        "value": "'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace"
+      }
+    },
+    "size": {
+      "base": {
+        "default": {
+          "value": "20px",
+          "comment": "body base font for rem"
+        }
+      },
+      "lineHeight": {
+        "default": {
+          "value": "calc({font.size.base.default.value} + 4px)"
+        }
+      }
+    }
+  }
+}

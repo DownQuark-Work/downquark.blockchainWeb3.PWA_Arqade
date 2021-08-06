@@ -1,0 +1,29 @@
+@use 'sass:math';
+
+@function scale($amt:1,$difference:false,$halved:false) {
+  // usage levelshare.$lvlshr-fnc-scale(.25) => 25%
+  // usage levelshare.$lvlshr-fnc-scale(25%) => 25%
+  // usage levelshare.$lvlshr-fnc-scale(25%,1) => 75%
+  // usage levelshare.$lvlshr-fnc-scale(.25,false,true) => 125%
+  // usage levelshare.$lvlshr-fnc-scale(.25,true,1) => 375%
+
+  $offset: 100%;
+  $mult:1; // used for negatives
+
+  @if $amt < 0 { $mult:-1; }
+  $amt: math.abs($amt);
+
+  @if math.unit($amt) == '' { // convert unitless to percentage
+    $amt: math.percentage($amt)
+  };
+
+  @if $difference {
+    $amt: math.abs($offset - $amt);
+  }
+  @if $halved {
+    $amt: math.div($amt,2);
+  }
+
+  $amt: $amt * $mult;
+  @return $amt;
+}

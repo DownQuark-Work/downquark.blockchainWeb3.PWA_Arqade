@@ -1,0 +1,9 @@
+@mixin insetText(){
+  // override background-color and text-shadow in the file that is including this one
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+}

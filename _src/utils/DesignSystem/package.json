@@ -2,7 +2,7 @@
   "name": "dq-w3-pwa-designsystem",
   "version": "0.0.1-alpha.0.0.1",
   "author": "mlnck",
-  "description": "DownQuark Web3 PWA StyleGuide",
+  "description": "DownQuark Web3 PWA Components and StyleGuide",
   "license": "ISC",
   "main": "index.js",
   "keywords": [
@@ -15,9 +15,16 @@
     "blockchain"
   ],
   "scripts": {
-    "test": "test",
+    "cln": "echo \"Re-enable below line when ready\"",
+    "cxln": "rimraf .yarn/cache/*",
+    "dev": "yarn storybook",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tkn": "style-dictionary build -c \"./utils/token/token-config.js\"",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook:debug": "yarn storybook --debug-webpack",
+    "storybook:tkn": "yarn tkn && start-storybook -p 6006",
+    "build-storybook": "yarn cln && yarn tkn && build-storybook",
+    "bld": "yarn build-storybook"
   },
   "homepage": "https://github.com/DownQuark-Work/downquark.blockchainWeb3.PWA_FatRedBird#readme",
   "repository": {
@@ -28,7 +35,7 @@
     "url": "https://github.com/DownQuark-Work/downquark.blockchainWeb3.PWA_FatRedBird/issues"
   },
   "dependencies": {
-    "@dan-nz/storybook-documentation-primitives": "file:./n0de_modules/@dan-nz/storybook-documentation-primitives",
+    "@dan-nz/storybook-documentation-primitives": "file:./utils/token/@dan-nz/storybook-documentation-primitives",
     "lit": "^2.0.0-rc.2"
   },
   "devDependencies": {

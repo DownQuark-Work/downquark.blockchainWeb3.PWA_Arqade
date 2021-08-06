@@ -1,0 +1,342 @@
+@use 'sass:color';
+@use '../abstracts/levelshare';
+
+/* Make the header bg full width, but the content inline with body */
+@mixin default {
+  section {
+    margin:5% auto;
+    position: relative;
+    width: 80%;
+    z-index: 5;
+
+a button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: .7rem .9rem;
+  margin: .5rem 0;
+  transition: .4s;
+}
+
+a button[disabled],
+button[disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"][disabled],
+select[disabled] {
+  cursor: default;
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+input:disabled,
+textarea:disabled,
+select:disabled {
+  cursor: not-allowed;
+}
+
+input[type="range"] {
+  padding: 0;
+}
+
+/* Set the cursor to '?' while hovering over an abbreviation */
+abbr {
+  cursor: help;
+}
+
+button:focus,
+button:enabled:hover,
+input[type="submit"]:focus,
+input[type="submit"]:enabled:hover,
+input[type="reset"]:focus,
+input[type="reset"]:enabled:hover,
+input[type="button"]:focus,
+input[type="button"]:enabled:hover,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:enabled:hover,
+input[type="radio"]:focus,
+input[type="radio"]:enabled:hover{
+  opacity: .8;
+}
+
+/* Format the expanding box */
+details {
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin:.5rem 0;
+  img {
+    // border-width: 2rem;
+    // border-style: solid;
+    // border-image-slice: 1;
+    box-shadow: inset 1px 1px 3px levelshare.lvlshr-var-colr('lvlshrColorBasePurple','darker');
+    background-image: linear-gradient(-45deg,
+    levelshare.lvlshr-var-colr('lvlshrColorBaseOrange','light'),
+    levelshare.lvlshr-var-colr('lvlshrColorBasePurple','lighter'),
+    levelshare.lvlshr-var-colr('lvlshrColorBaseOrange','light'),
+    levelshare.lvlshr-var-colr('lvlshrColorBasePurple','light')
+    );
+    display: block;
+    margin:0 auto;
+    padding:5%;
+    width:50%;
+  }
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: .6rem 1rem;
+}
+
+details[open] {
+  padding: .6rem 1rem .75rem 1rem;
+}
+
+details[open] summary {
+  margin-bottom: .5rem;
+  padding: 0;
+}
+
+details[open]>*:last-child {
+  margin-bottom: 0;
+}
+
+/* Format tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+td,
+th {
+  text-align: left;
+  padding: .5rem;
+}
+
+th {
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: gray;
+}
+
+table caption {
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+/* Lists */
+ol,
+ul {
+  padding-left: 2rem;
+}
+ol {list-style:decimal;
+  ol {list-style: lower-alpha;
+    ol {list-style: lower-roman;
+      ol {list-style: lower-greek;}
+    }
+  }
+}
+ul {list-style: disc;
+  ul {list-style: circle;
+    ul {list-style: square;
+      ul {list-style: disclosure-closed;}
+    }
+  }
+}
+
+/* Format forms */
+textarea,
+select,
+input {
+  font-size: inherit;
+  font-family: inherit;
+  padding: .5rem;
+  margin-bottom: .5rem;
+  border-radius: 5px;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: 60%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Add arrow to select */
+select {
+  background-position:
+    calc(100% - 20px),
+    calc(100% - 15px);
+  background-size:
+    5px 5px,
+    5px 5px;
+  background-repeat: no-repeat;
+}
+
+/* checkbox and radio button style */
+input[type="checkbox"], input[type="radio"]{
+  vertical-align: bottom;
+  position: relative;
+}
+input[type="radio"]{
+  border-radius: 100%;
+}
+
+input[type="checkbox"]:checked::after {
+  /* Creates a rectangle with colored right and bottom borders which is rotated to look like a check mark */
+  content: ' ';
+  width: 0.1em;
+  height: 0.25em;
+  border-radius: 0;
+  position: absolute;
+  top: 0.05em;
+  left: 0.18em;
+  background: transparent;
+  font-size: 1.8em;
+  transform: rotate(45deg);
+}
+input[type="radio"]:checked::after {
+  /* creates a colored circle for the checked radio button  */
+  content: ' ';
+  width: .25em;
+  height: .25em;
+  border-radius: 100%;
+  position: absolute;
+  top: 0.125em;
+  left: 0.125em;
+  font-size: 32px;
+}
+
+/* Make the textarea wider than other inputs */
+textarea {
+  width: 80%
+}
+
+/* Makes input fields wider on smaller screens */
+@media only screen and (max-width: 720px) {
+  textarea,
+  select,
+  input {
+    width: 100%;
+  }
+}
+
+/* Ensures the checkbox and radio inputs do not have a set width like other input fields */
+input[type="checkbox"], input[type="radio"]{
+  width: auto;
+}
+
+/* do not show border around file selector button */
+input[type="file"] {
+  border: 0;
+}
+
+/* Without this any HTML using <fieldset> shows ugly borders and has additional padding/margin. (Issue #3) */
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* Misc body elements */
+
+hr {
+  border-top: 1px;
+  margin: 1rem auto;
+}
+
+mark {
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+main img, main video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: .9rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+blockquote,q {
+  background-image: linear-gradient(90deg,
+    transparent 20%,
+    levelshare.lvlshr-var-colr('lvlshrColorBasePurple','light') 99%,
+    levelshare.lvlshr-var-colr('lvlshrColorBaseOrange') 95%);
+  margin: .5rem 0 1rem .5rem;
+  padding: .4rem 0;
+  opacity: .8;
+  position: relative;
+  font-style: italic;
+  &::after {
+    content: "“";
+    font-family: 'curive';
+    position: absolute;
+    top: -0.25ch;
+    left: -1ch;
+    font-size: 5rem;
+    background-image: linear-gradient(45deg,
+    levelshare.lvlshr-var-colr('lvlshrColorBaseOrange') 55%,
+    levelshare.lvlshr-var-colr('lvlshrColorBasePurple')
+    );
+    color: transparent;
+    background-clip: text;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+    opacity: 0.8;
+  }
+}
+
+cite {
+  font-size: 0.9rem;
+  font-style: normal;
+}
+
+/* Use mono font for code like elements */
+code,
+pre,
+pre span,
+kbd,
+samp {
+  font-size: 1.075rem;
+}
+
+kbd {
+  border-radius: 5px;
+  padding: .1rem;
+}
+
+pre {
+  padding: 1rem 1.4rem;
+  max-width: 100%;
+  overflow: auto;
+  overflow-x: auto;
+  border-radius: 5px;
+}
+
+/* Fix embedded code within pre */
+pre code {
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+}
+}

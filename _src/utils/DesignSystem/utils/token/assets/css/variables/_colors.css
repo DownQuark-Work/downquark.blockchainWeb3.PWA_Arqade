@@ -1,0 +1,62 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 06 Aug 2021 00:37:33 GMT
+ */
+
+:root {
+  --dq-color-base-background-content-page: #fff9f4;
+  --dq-color-base-background-content-section: rgba(255, 255, 255, 0.5);
+  --dq-color-base-background-bak: #f5fafa;
+  --dq-color-base-primary: #e1daf6;
+  --dq-color-base-primary-dark: #cdc7e4;
+  --dq-color-base-primary-light: rgba(225, 218, 246, 0.4);
+  --dq-color-base-secondary: #934ef6;
+  --dq-color-base-secondary-dark: #9325f6;
+  --dq-color-base-secondary-light: rgba(147, 78, 246, 0.6);
+  --dq-color-base-secondary-light-solid: #c29afa;
+  --dq-color-base-tertiary: #ffa500;
+  --dq-color-base-tertiary-dark: #ff8c00;
+  --dq-color-base-tertiary-light: rgba(255, 165, 0, 0.6);
+  --dq-color-base-tertiary-light-solid: #ffca7f;
+  --dq-color-base-gray-dark: #444444;
+  --dq-color-base-gray-light: #ededed;
+  --dq-color-base-gray: #999999;
+  --dq-color-base-status-success: #58dd80;
+  --dq-color-base-status-success-light: rgba(88, 221, 128, 0.6);
+  --dq-color-base-status-warning: #ff9c52;
+  --dq-color-base-status-warning-light: rgba(255, 156, 82, 0.6);
+  --dq-color-base-status-danger: #e60d5b;
+  --dq-color-base-status-danger-light: rgba(230, 13, 91, 0.6);
+  --dq-color-base-white: #ffffff;
+  --dq-color-brand-static-orange: #ffa500;
+  --dq-color-brand-static-purple: #934ef6;
+  --dq-color-gamification-badge-received: #ff6d00;
+  --dq-color-gamification-battle-success: #ff8500;
+  --dq-color-gamification-crushing-defeat: #7b2cbf;
+  --dq-color-gamification-defeat: #5a189a;
+  --dq-color-gamification-idle-mining: #9d4edd;
+  --dq-color-gamification-level-up: #ff7900;
+  --dq-color-gamification-random-reward: #3c096c;
+  --dq-color-gamification-token-redemption: #ff9100;
+  --dq-color-text-default: #444444; /* use for text */
+  --dq-color-text-paragraph-default: #444444;
+  --dq-color-text-disabled: #ededed;
+  --dq-color-text-header: #000000;
+  --dq-color-text-primary: #cd95ff;
+  --dq-color-text-secondary: #7a25cf;
+  --dq-color-text-tertiary: #ff7100;
+  --dq-color-text-success: #588041;
+  --dq-color-text-warning: #ff621e;
+  --dq-color-text-danger: #c90d2b;
+  --dq-color-theme-glass-bg-clear: rgba(255, 255, 255, 0.01);
+  --dq-color-theme-glass-bg-mid-gray: rgba(128, 125, 128, 0.25);
+  --dq-color-theme-glass-bg-primary: rgba(255, 255, 255, 0.25);
+  --dq-color-theme-glass-bg-secondary: rgba(147, 78, 246, 0.25);
+  --dq-color-theme-glass-bg-tertiary: rgba(255, 165, 0, 0.25);
+  --dq-color-theme-glass-bg-success: rgba(88, 221, 128, 0.25);
+  --dq-color-theme-glass-bg-warning: rgba(255, 156, 82, 0.25);
+  --dq-color-theme-glass-bg-danger: rgba(230, 13, 91, 0.25);
+  --dq-color-theme-glass-bg-white: rgba(255, 255, 255, 0.25);
+  --dq-color-vendor-facebook-blue: #1877f2;
+  --dq-color-vendor-twitter-blue: #1da1f2;
+}

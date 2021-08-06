@@ -1,0 +1,75 @@
+@use 'levelshare';
+/*
+  NOTE: This file is to control the internal content of the svg object.
+    - make sure to link to it from within the svg itself
+    - and be sure to embed the svg as an object on the html page
+  Use the appropriate 7-1 files to style external elements
+    - e.g. size, opacity (as a whole), transforms, etc
+*/
+@mixin debugSvg {
+  .debug:hover {
+    /* a quick check to make sure everything is working
+      - add this to the svg element:
+        `<filter id="filterBlur"><feGaussianBlur stdDeviation="5" /></filter>`
+      - give the svg element a class name of `debug`
+      - render the page and hover over the element
+    */
+    filter: url(#filterBlur);
+  }
+}
+
+// @debug scale-color(levelshare.lvlshr-var-colr('lvlshrColorBasePurple'),$alpha:-75%);
+svg {
+  @include debugSvg;
+  &[id] > * {transition: all 1s ease-out 4s;}
+
+  &#landing {
+    & > * {transition-delay: 1s;}
+    filter: url(#filterBlur);
+    .lvlshr-color { fill: scale-color(levelshare.lvlshr-var-colr('lvlshrColorBaseOrange','light'), $saturation:20%); }
+    &:hover {
+      .lvlshr-color
+      {
+        fill:  scale-color(levelshare.lvlshr-var-colr('lvlshrColorBaseOrange'),$saturation:100%);
+        filter: url(#filterBlur);
+      }
+    }
+  }
+
+  &#levelshare-logo {
+    cursor: pointer;
+    g {transition: all .5s ease-out;}
+      g#hex{
+      opacity:1;
+    }
+    &:hover {
+        g#hex{
+          opacity:.4;
+      }
+    }
+  }
+
+  &#t1-the-problem{
+    filter: url(#filterBlur);
+    [fill="#934ef6"]{
+      fill:levelshare.lvlshr-var-colr('lvlshrColorBaseOrange');
+    }
+  }
+
+  &#t1-our-solution{
+    filter: url(#filterBlur);
+    [fill="#934ef6"]{
+      fill:levelshare.lvlshr-var-colr('lvlshrColorBaseOrange');
+    }
+    #solution-circle{
+      fill:levelshare.lvlshr-var-colr('lvlshrColorBasePurple');
+    }
+    #orb{
+      transition:all 3s ease-out 4s;
+      transform-origin: top right;
+      fill:levelshare.lvlshr-var-colr('lvlshrColorBasePurple');
+      transform: rotateY(359deg);
+    }
+  }
+}
+// path

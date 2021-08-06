@@ -1,0 +1,18 @@
+@use 'sass:string';
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600;800&family=Questrial&family=Rubik+Mono+One&display=swap');
+
+@mixin lvl($cat:'sans'){
+  @if $cat == 'header' {
+    font-family: 'Newsreader', serif;
+  }
+  @else if $cat == 'rubik' {
+    font-family: 'Rubik Mono One', sans-serif;
+  }
+  @else if $cat == 'serif' {
+    font-family: serif;
+  }
+  @else {
+    font-family: 'Questrial', sans-serif;
+  }
+}

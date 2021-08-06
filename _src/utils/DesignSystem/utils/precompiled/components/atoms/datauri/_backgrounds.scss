@@ -1,0 +1,7 @@
+@use 'background-nav-main' as nm;
+@use 'background-nav-main-alt';
+@use 'background-nav-main-alt1';
+
+@mixin menu {
+  @include nm.nav-main;
+}

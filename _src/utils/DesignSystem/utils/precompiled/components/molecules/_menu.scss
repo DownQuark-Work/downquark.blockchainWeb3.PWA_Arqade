@@ -1,0 +1,82 @@
+@use 'sass:color';
+
+@use '../../abstracts/levelshare';
+
+@mixin mainmenu {
+  padding: 1rem;
+  text-align: center;
+
+  ul {
+    border-bottom:1px dashed levelshare.lvlshr-var-colr('lvlshrColorBaseOrange','lighter');
+    display:none;
+    margin-bottom:.5rem;
+    padding-bottom:.5rem;
+    li{
+      margin:.2rem auto;
+      padding:.2rem;
+      a{
+        color: scale-color(white,$lightness: -25%);
+        text-decoration: none;
+        white-space: nowrap;
+        &:hover{
+          color:levelshare.lvlshr-var-colr('lvlshrColorBaseOrange','dark')
+        }
+      }
+    }
+  }
+  > ul {
+    border-bottom:none;
+  }
+  > ul,
+  ul[active] > li + ul
+  {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  ul{
+    > [unscoped]{
+      display: none;
+    }
+    &[active]{
+      > [scoped]{
+        opacity: .5;
+        &[visited]
+        {
+          a{
+            color:levelshare.lvlshr-var-colr('lvlshrColorBasePurple');
+            opacity: 1;
+          }
+        }
+      }
+
+      &[current]{
+        > [scoped]{
+          a{
+            color: scale-color(white,$lightness: -25%);
+            opacity: 1;
+            text-decoration: none;
+            &:hover{
+              color:levelshare.lvlshr-var-colr('lvlshrColorBaseOrange','dark')
+            }
+          }
+        }
+        > [selected]{
+          opacity: 1;
+          a {
+            color:levelshare.lvlshr-var-colr('lvlshrColorBasePurple');
+            &:hover{color:levelshare.lvlshr-var-colr('lvlshrColorBasePurple');}
+          }
+        }
+        > [unscoped]{
+          display: none;
+        }
+      }
+    }
+  &.tiered-1 > [unscoped],
+  &.tiered-1[current] > [unscoped]{
+      display: inherit;
+      opacity: .5;
+    }
+  }
+}

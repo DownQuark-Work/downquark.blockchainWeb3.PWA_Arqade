@@ -1,0 +1,24 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 06 Aug 2021 00:37:33 GMT
+ */
+
+:root {
+  --dq-typography-base-line-height: calc(20px + 4px);
+  --dq-typography-primary-font-family: 'Neucha', sans-serif;
+  --dq-typography-primary-font-weight-bold: 700;
+  --dq-typography-primary-font-weight-normal: 400;
+  --dq-typography-generic-font-family: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
+  --dq-typography-h1-fluid-font-size: clamp(1.6rem, 3.5vw, 2rem);
+  --dq-typography-h1-fallback-font-size: 1.75rem;
+  --dq-typography-h2-fluid-font-size: clamp(1.3rem, 3.5vw, 1.5rem);
+  --dq-typography-h2-fallback-font-size: 1.4rem;
+  --dq-typography-h3-fluid-font-size: clamp(1.2rem, 3.5vw, 1.375rem);
+  --dq-typography-h3-fallback-font-size: 1.3rem;
+  --dq-typography-h4-fluid-font-size: clamp(1rem, 2.5vw, 1.25rem);
+  --dq-typography-h4-fallback-font-size: 1rem;
+  --dq-typography-h5-font-size: 1rem;
+  --dq-typography-h6-font-size: 1rem;
+  --dq-typography-body-font-size: 1rem;
+  --dq-typography-body-font-size-small: calc(1rem - 0.25rem);
+}

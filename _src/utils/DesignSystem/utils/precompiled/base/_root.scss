@@ -1,0 +1,38 @@
+@use 'sass:map';
+@use 'sass:meta';
+@use 'sass:selector';
+@use 'sass:string';
+
+@use 'fonts' as rootfont;
+
+@use 'tokens/colors';
+@use 'tokens/content';
+@use 'tokens/dimensions';
+@use 'tokens/fonts';
+@use 'tokens/typography';
+
+@use '../abstracts/levelshare';
+
+@mixin formatBaseColors($orig, $flag, $val) {
+  $srch:'lvlshrColorBase';
+  $rplc:'--lvlshr-color-base-';
+  $index: string.index($orig, $srch);
+  @if $index {
+    $rootKey: $rplc + string.to-lower-case(string.slice($orig, string.length($srch)+1, string.length($orig))) + '-' + $flag;
+    #{$rootKey}: $val;
+  }
+}
+
+:root {
+  // dynamically extends lvlshr-var-CoreColors base colors with lighter, darker, complementary colors
+  @each $orig, $nst in levelshare.$lvlshr-var-CoreColors {
+    @each $flag, $val in $nst {
+      @include formatBaseColors($orig, $flag, $val);
+    }
+  }
+
+  // set base font size
+  @include rootfont.lvl();
+  font-size: var(--lvlshr-font-size-base-default);
+
+}

@@ -1,0 +1,52 @@
+@use "sass:color";
+@use "sass:map";
+@use "sass:meta";
+@use "sass:string";
+
+@use 'variables/colors';
+@use 'variables/content';
+@use 'variables/dimensions';
+@use 'variables/fonts';
+@use 'variables/typography';
+
+// Below will create lighter and darker shades for each token with `Base` in its name
+$CoreColors:();
+@each $var, $val in meta.module-variables(colors) {
+  @if string.index($var, "Base") {
+    $CoreColors: map.set($CoreColors, #{$var},default, $val);
+    $CoreColors: map.set($CoreColors, #{$var},darker, color.scale($val, $lightness: -60%));
+    $CoreColors: map.set($CoreColors, #{$var},dark, color.scale($val, $lightness: -30%));
+    $CoreColors: map.set($CoreColors, #{$var},light, color.scale($val, $lightness: 30%));
+    $CoreColors: map.set($CoreColors, #{$var},lighter, color.scale($val, $lightness: 60%));
+    $CoreColors: map.set($CoreColors, #{$var},complement, color.complement($val));
+  }
+};
+
+@mixin colr($clr,$variant:'',$slctr:'') {
+  // usage levelshare.$lvlshr-var-clr('lvlshrColorBaseOrange')
+  // usage levelshare.$lvlshr-var-clr('lvlshrColorBaseOrange','light','')
+  // usage levelshare.$lvlshr-var-clr('lvlshrColorBaseOrange','','background')
+  // usage levelshare.$lvlshr-var-clr('lvlshrColorBaseOrange','dark','background-')
+
+  @if $variant == '' {
+    $variant :'default'
+  }
+  @if string.length($slctr){
+    @if string.slice($slctr, -1, -1) != '-'{
+      $slctr: #{$slctr}-;
+    }
+  }
+
+  #{$slctr}color:map.get($CoreColors,$clr,$variant);
+}
+
+@function colr($clr,$variant:'') {
+  // usage levelshare.$lvlshr-var-colr('lvlshrColorBaseOrange')
+  // usage levelshare.$lvlshr-var-colr('lvlshrColorBaseOrange','light','')
+
+  @if $variant == '' {
+    $variant :'default'
+  }
+
+  @return map.get($CoreColors,$clr,$variant);
+}

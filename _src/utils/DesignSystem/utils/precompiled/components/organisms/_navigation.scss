@@ -1,0 +1,21 @@
+@use '../molecules/menu';
+@use '../molecules/navcolumn';
+
+
+@mixin styles {
+  #levelshare-logo{
+    left:12.5%;
+    position:absolute;
+    width:75%;
+
+    object {
+      position: relative;
+      transition: all .5s ease-in;
+      width:100%;}
+      &:hover object{ transform:rotateZ(180deg)}
+    }
+
+
+  @include navcolumn.mainmenu;
+  @include menu.mainmenu;
+}

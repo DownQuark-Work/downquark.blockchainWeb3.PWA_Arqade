@@ -1,0 +1,55 @@
+{
+  "typography": {
+    "base-line-height": {
+      "value": "{font.size.lineHeight.default.value}"
+    },
+    "primary-font-family": {
+      "value": "{font.text.default.value}"
+    },
+    "primary-font-weight-bold": {
+      "value": "700"
+    },
+    "primary-font-weight-normal": {
+      "value": "400"
+    },
+    "generic-font-family": {
+      "value": "'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace"
+    },
+    "h1-fluid-font-size": {
+      "value": "clamp(1.6rem, 3.5vw, 2rem)"
+    },
+    "h1-fallback-font-size": {
+      "value": "1.75rem"
+    },
+    "h2-fluid-font-size": {
+      "value": "clamp(1.3rem, 3.5vw, 1.5rem)"
+    },
+    "h2-fallback-font-size": {
+      "value": "1.4rem"
+    },
+    "h3-fluid-font-size": {
+      "value": "clamp(1.2rem, 3.5vw, 1.375rem)"
+    },
+    "h3-fallback-font-size": {
+      "value": "1.3rem"
+    },
+    "h4-fluid-font-size": {
+      "value": "clamp(1rem, 2.5vw, 1.25rem)"
+    },
+    "h4-fallback-font-size": {
+      "value": "1rem"
+    },
+    "h5-font-size": {
+      "value": "1rem"
+    },
+    "h6-font-size": {
+      "value": "1rem"
+    },
+    "body-font-size": {
+      "value": "1rem"
+    },
+    "body-font-size-small": {
+      "value": "calc({typography.body-font-size.value} - 0.25rem)"
+    }
+  }
+}

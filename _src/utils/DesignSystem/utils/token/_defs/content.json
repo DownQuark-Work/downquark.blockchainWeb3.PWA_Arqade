@@ -1,0 +1,14 @@
+{
+  "content": {
+    "urls": {
+      "base": {
+        "value": "'/assets/'"
+      },
+      "cdn": {
+        "default": {
+          "value": "{content.urls.base.value}"
+        }
+      }
+    }
+  }
+}

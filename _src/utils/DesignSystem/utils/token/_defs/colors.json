@@ -1,0 +1,188 @@
+{
+  "color": {
+    "base": {
+      "background-content-page": {
+        "value": "rgba(255, 249, 244, 1) !default"
+      },
+      "background-content-section": {
+        "value": "rgba(255, 255, 255, .5) !default"
+      },
+      "backgroundBAK": {
+        "value": "rgba(245, 250, 250, 1) !default"
+      },
+      "primary": {
+        "value": "rgba(225, 218, 246, 1) !default"
+      },
+      "primary-dark": {
+        "value": "rgba(205, 199, 228, 1) !default"
+      },
+      "primary-light": {
+        "value": "rgba(225, 218, 246, .4) !default"
+      },
+      "secondary": {
+        "value": "rgba(147, 78, 246, 1) !default"
+      },
+      "secondary-dark": {
+        "value": "rgba(147, 37, 246, 1) !default"
+      },
+      "secondary-light": {
+        "value": "rgba(147, 78, 246, .6) !default"
+      },
+      "secondary-light-solid": {
+        "value": "rgb(194, 154, 250) !default"
+      },
+      "tertiary": {
+        "value": "rgba(255, 165, 0, 1) !default"
+      },
+      "tertiary-dark": {
+        "value": "rgba(255, 140, 0, 1) !default"
+      },
+      "tertiary-light": {
+        "value": "rgba(255, 165, 0, .6) !default"
+      },
+      "tertiary-light-solid": {
+        "value": "rgb(255, 202, 127) !default"
+      },
+      "gray-dark": {
+        "value": "rgb(68, 68, 68) !default"
+      },
+      "gray-light": {
+        "value": "rgb(237, 237, 237) !default"
+      },
+      "gray": {
+        "value": "rgb(153, 153, 153) !default"
+      },
+      "status-success": {
+        "value": "rgba(88, 221, 128, 1) !default"
+      },
+      "status-success-light": {
+        "value": "rgba(88, 221, 128, .6) !default"
+      },
+      "status-warning": {
+        "value": "rgba(255, 156, 82, 1) !default"
+      },
+      "status-warning-light": {
+        "value": "rgba(255, 156, 82, .6) !default"
+      },
+      "status-danger": {
+        "value": "rgba(230,13,91, 1) !default"
+      },
+      "status-danger-light": {
+        "value": "rgba(230,13,91, .6) !default"
+      },
+      "white": {
+        "value": "rgba(255,255,255,1) !default"
+      }
+    },
+    "brand": {
+      "static-orange": {
+        "value": "{color.base.tertiary.value}"
+      },
+      "static-purple": {
+        "value": "{color.base.secondary.value}"
+      }
+    },
+    "gamification": {
+      "badge-received": {
+        "value": "#ff6d00"
+      },
+      "battle-success": {
+        "value": "#ff8500"
+      },
+      "crushing-defeat": {
+        "value": "#7b2cbf"
+      },
+      "defeat": {
+        "value": "#5a189a"
+      },
+      "idle-mining": {
+        "value": "#9d4edd"
+      },
+      "level-up": {
+        "value": "#ff7900"
+      },
+      "random-reward": {
+        "value": "#3c096c"
+      },
+      "token-redemption": {
+        "value": "#ff9100"
+      }
+    },
+    "text": {
+      "default": {
+        "value": "{color.base.gray-dark.value}",
+        "comment": "use for text"
+      },
+      "paragraph": {
+        "default": {
+          "value": "{color.base.gray-dark.value}"
+        }
+      },
+      "disabled": {
+        "value": "{color.base.gray-light.value}"
+      },
+      "header": {
+        "value": "slate"
+      },
+      "primary": {
+        "value": "rgba(205, 149, 255, 1) !default"
+      },
+      "secondary": {
+        "value": "rgba(122, 37, 207, 1) !default"
+      },
+      "tertiary": {
+        "value": "rgba(255, 113, 0, 1) !default"
+      },
+      "success": {
+        "value": "rgba(88, 128, 65, 1) !default"
+      },
+      "warning": {
+        "value": "rgba(255, 98, 30, 1) !default"
+      },
+      "danger": {
+        "value": "rgba(201, 13, 43, 1) !default"
+      }
+    },
+    "theme": {
+      "glass": {
+        "bg": {
+          "clear": {
+            "value": "rgba(255,255,255,.01) !default"
+          },
+          "mid-gray": {
+            "value": "rgba(128,125,128,.25) !default"
+          },
+          "primary": {
+            "value": "rgba(255,255,255,.25) !default"
+          },
+          "secondary": {
+            "value": "rgba(147, 78, 246, .25) !default"
+          },
+          "tertiary": {
+            "value": "rgba(255, 165, 0, .25) !default"
+          },
+          "success": {
+            "value": "rgba(88, 221, 128, .25) !default"
+          },
+          "warning": {
+            "value": "rgba(255, 156, 82, .25) !default"
+          },
+          "danger": {
+            "value": "rgba(230,13,91, .25) !default"
+          },
+          "white": {
+            "value": "rgba(255,255,255,.25) !default"
+          }
+        }
+      }
+    },
+    "vendor": {
+      "facebook-blue": {
+        "value": "#1877F2"
+      },
+      "twitter-blue": {
+        "value": "#1da1f2"
+      }
+    }
+  }
+}

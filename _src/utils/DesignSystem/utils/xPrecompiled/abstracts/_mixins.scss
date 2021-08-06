@@ -1,0 +1,138 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+// Breakpoints
+// https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/
+// $breakpoints: (
+//   'small': $lvlShareSizeBreakpointSmall,
+//   'medium': $lvlShareSizeBreakpointMedium,
+//   'large': $lvlShareSizeBreakpointLarge,
+// ) !default;
+
+/// Mixin to manage responsive breakpoints
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+ 
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "xAvailable breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+// SCSS Breakpoint Usage linking it you
+.selector {
+  color: orange;
+  
+  @include respond-to('small') {
+    color: blue;
+  }
+}
+// CSS Result
+// .selector {
+//   color: orange;
+// }
+// @media (min-width: 767px) {
+//   .selector {
+//     color: blue;
+//   }
+// }
+
+/////////
+/////////
+
+//https://css-tricks.com/snippets/sass/
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+/* USAGE
+body {
+  @include scrollbars(10px, pink, red);
+}
+.custom-area {
+  @include scrollbars(.5em, slategray);
+}
+*/
+/**
+  Useful helper mixins
+*/
+@mixin hr-after() {
+  color: lighten($primary, 30%);
+  content: '~~~';
+  display: block;
+  font-size: 1.5rem;
+  position: relative;
+  text-align: center;
+}
+
+/*
+  Add transform: translate() with browser prefixes.
+  Same syntax for translate() and translate3d()
+  To get 3D add a $z value and set 'true'
+  @param string | boolean
+  @default 0 | false
+*/
+@mixin translate($x, $y, $z: 0, $transform3d: false) {
+  @if $transform3d {
+    transform: translate3d($x, $y, $z);
+  } @else {
+    transform: translate($x, $y);
+  }
+}
+
+/*
+  Add global transition styles to selector
+  @param string
+  @default all | 235ms | ease-in-out | 0
+*/
+@mixin transition($name:all, $duration:235ms, $animation:ease-in-out, $delay: 0s) {
+  transition: $name $duration $animation $delay;
+}

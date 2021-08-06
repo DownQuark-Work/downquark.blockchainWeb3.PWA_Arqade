@@ -1,0 +1,23 @@
+{
+  "size": {
+    "breakpoint": {
+      "extension": {
+        "value": "( min-width:  360px )"
+      },
+      "small": {
+        "value": "( min-width:  767px )"
+      },
+      "medium": {
+        "value": "( min-width:  992px )"
+      },
+      "large": {
+        "value": "( min-width: 1200px )"
+      }
+    },
+    "max": {
+      "width": {
+        "value": "1180px"
+      }
+    }
+  }
+}
