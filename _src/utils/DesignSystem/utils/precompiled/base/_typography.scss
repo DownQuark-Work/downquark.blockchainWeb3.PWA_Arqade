@@ -2,36 +2,36 @@
 @use '../abstracts/levelshare';
 
 a {
-  color:levelshare.lvlshr-var-colr('lvlshrColorBasePurple');
+  color:levelshare.dq-var-colr('dqColorBasePurple');
   text-decoration: none;
   transition: color .2s ease-in-out;
-  &:hover{ color:levelshare.lvlshr-var-colr('lvlshrColorBaseOrange');}
+  &:hover{ color:levelshare.dq-var-colr('dqColorBaseOrange');}
 }
 
 .header{
-  @include fonts.lvl('header');
+  @include fonts.dq('header');
   line-height: 1.2;
 }
 h1{
   @extend .header;
-  @include levelshare.lvlshr-mix-insetText;
+  @include levelshare.dq-mix-insetText;
   border-bottom-width: 2px;
   border-style: solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(90deg,
     rgba(0,0,0,0),
-    levelshare.lvlshr-var-colr('lvlshrColorBasePurple'),
-    levelshare.lvlshr-var-colr('lvlshrColorBaseOrange'),
+    levelshare.dq-var-colr('dqColorBasePurple'),
+    levelshare.dq-var-colr('dqColorBaseOrange'),
     rgba(0,0,0,0)
   );
   background-color: transparent;
   background-image: linear-gradient(45deg,
-    levelshare.lvlshr-var-colr('lvlshrColorBaseOrange') 55%,
-    levelshare.lvlshr-var-colr('lvlshrColorBasePurple')
+    levelshare.dq-var-colr('dqColorBaseOrange') 55%,
+    levelshare.dq-var-colr('dqColorBasePurple')
   );
   filter: saturate(1.4) brightness(.9);
-  font-size:var(--lvlshr-typography-h1-fallback-font-size);
-  font-size:var(--lvlshr-typography-h1-fluid-font-size);
+  font-size:var(--dq-typography-h1-fallback-font-size);
+  font-size:var(--dq-typography-h1-fluid-font-size);
   font-variant: small-caps;
   font-weight: 800;
   padding-right: 1rem;
@@ -40,8 +40,8 @@ h1{
 }
 #page-landing h1{
   background-image: linear-gradient(45deg,
-    levelshare.lvlshr-var-colr('lvlshrColorBaseOrange') 20%,
-    levelshare.lvlshr-var-colr('lvlshrColorBasePurple')
+    levelshare.dq-var-colr('dqColorBaseOrange') 20%,
+    levelshare.dq-var-colr('dqColorBasePurple')
   );
 }
 h2{
@@ -49,42 +49,42 @@ h2{
   background-clip: text;
   background-color: transparent;
   background-image: linear-gradient(45deg,
-  levelshare.lvlshr-var-colr('lvlshrColorBasePurple'),
-    levelshare.lvlshr-var-colr('lvlshrColorBaseOrange')
+  levelshare.dq-var-colr('dqColorBasePurple'),
+    levelshare.dq-var-colr('dqColorBaseOrange')
   );
   color:transparent;
   display: inline-block;
-  font-size:var(--lvlshr-typography-h2-fallback-font-size);
-  font-size:var(--lvlshr-typography-h2-fluid-font-size);
+  font-size:var(--dq-typography-h2-fallback-font-size);
+  font-size:var(--dq-typography-h2-fluid-font-size);
   font-weight: 600;
   font-variant: small-caps;
 }
 h3,h4,h5,h6{
-  color:levelshare.lvlshr-var-colr('lvlshrColorBasePurple');
+  color:levelshare.dq-var-colr('dqColorBasePurple');
 }
 *:nth-child(even) + {
   h3,h4,h5,h6 {
-    color:levelshare.lvlshr-var-colr('lvlshrColorBaseOrange');
+    color:levelshare.dq-var-colr('dqColorBaseOrange');
     text-align: right;
   }
 }
 h3,h4{
   @extend .header;
-  font-size:var(--lvlshr-typography-h3-fallback-font-size);
-  font-size:var(--lvlshr-typography-h3-fluid-font-size);
+  font-size:var(--dq-typography-h3-fallback-font-size);
+  font-size:var(--dq-typography-h3-fluid-font-size);
   font-weight: 500;
 }
 h4{
-  font-size:var(--lvlshr-typography-h4-fallback-font-size);
-  font-size:var(--lvlshr-typography-h4-fluid-font-size);
+  font-size:var(--dq-typography-h4-fallback-font-size);
+  font-size:var(--dq-typography-h4-fluid-font-size);
 }
 h5,h6{
   @extend .header;
-  font-size:var(--lvlshr-typography-h5-font-size);
+  font-size:var(--dq-typography-h5-font-size);
   font-weight: 400;
 }
 h6{
-  font-size:var(--lvlshr-typography-h6-font-size);
+  font-size:var(--dq-typography-h6-font-size);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -98,7 +98,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 nav a{
-  @include fonts.lvl('rubik');
+  @include fonts.dq('rubik');
 }
 
 li,p{ line-height: 1.4rem;}

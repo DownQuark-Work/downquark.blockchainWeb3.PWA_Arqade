@@ -77,12 +77,12 @@ p {
     // border-width: 2rem;
     // border-style: solid;
     // border-image-slice: 1;
-    box-shadow: inset 1px 1px 3px levelshare.lvlshr-var-colr('lvlshrColorBasePurple','darker');
+    box-shadow: inset 1px 1px 3px levelshare.dq-var-colr('dqColorBasePurple','darker');
     background-image: linear-gradient(-45deg,
-    levelshare.lvlshr-var-colr('lvlshrColorBaseOrange','light'),
-    levelshare.lvlshr-var-colr('lvlshrColorBasePurple','lighter'),
-    levelshare.lvlshr-var-colr('lvlshrColorBaseOrange','light'),
-    levelshare.lvlshr-var-colr('lvlshrColorBasePurple','light')
+    levelshare.dq-var-colr('dqColorBaseOrange','light'),
+    levelshare.dq-var-colr('dqColorBasePurple','lighter'),
+    levelshare.dq-var-colr('dqColorBaseOrange','light'),
+    levelshare.dq-var-colr('dqColorBasePurple','light')
     );
     display: block;
     margin:0 auto;
@@ -280,8 +280,8 @@ figcaption {
 blockquote,q {
   background-image: linear-gradient(90deg,
     transparent 20%,
-    levelshare.lvlshr-var-colr('lvlshrColorBasePurple','light') 99%,
-    levelshare.lvlshr-var-colr('lvlshrColorBaseOrange') 95%);
+    levelshare.dq-var-colr('dqColorBasePurple','light') 99%,
+    levelshare.dq-var-colr('dqColorBaseOrange') 95%);
   margin: .5rem 0 1rem .5rem;
   padding: .4rem 0;
   opacity: .8;
@@ -295,8 +295,8 @@ blockquote,q {
     left: -1ch;
     font-size: 5rem;
     background-image: linear-gradient(45deg,
-    levelshare.lvlshr-var-colr('lvlshrColorBaseOrange') 55%,
-    levelshare.lvlshr-var-colr('lvlshrColorBasePurple')
+    levelshare.dq-var-colr('dqColorBaseOrange') 55%,
+    levelshare.dq-var-colr('dqColorBasePurple')
     );
     color: transparent;
     background-clip: text;

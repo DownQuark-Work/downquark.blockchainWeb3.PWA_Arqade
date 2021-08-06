@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600;800&family=Questrial&family=Rubik+Mono+One&display=swap');
 
-@mixin lvl($cat:'sans'){
+@mixin dq($cat:'sans'){
   @if $cat == 'header' {
     font-family: 'Newsreader', serif;
   }

@@ -7,7 +7,7 @@
   text-align: center;
 
   ul {
-    border-bottom:1px dashed levelshare.lvlshr-var-colr('lvlshrColorBaseOrange','lighter');
+    border-bottom:1px dashed levelshare.dq-var-colr('dqColorBaseOrange','lighter');
     display:none;
     margin-bottom:.5rem;
     padding-bottom:.5rem;
@@ -19,7 +19,7 @@
         text-decoration: none;
         white-space: nowrap;
         &:hover{
-          color:levelshare.lvlshr-var-colr('lvlshrColorBaseOrange','dark')
+          color:levelshare.dq-var-colr('dqColorBaseOrange','dark')
         }
       }
     }
@@ -44,7 +44,7 @@
         &[visited]
         {
           a{
-            color:levelshare.lvlshr-var-colr('lvlshrColorBasePurple');
+            color:levelshare.dq-var-colr('dqColorBasePurple');
             opacity: 1;
           }
         }
@@ -57,15 +57,15 @@
             opacity: 1;
             text-decoration: none;
             &:hover{
-              color:levelshare.lvlshr-var-colr('lvlshrColorBaseOrange','dark')
+              color:levelshare.dq-var-colr('dqColorBaseOrange','dark')
             }
           }
         }
         > [selected]{
           opacity: 1;
           a {
-            color:levelshare.lvlshr-var-colr('lvlshrColorBasePurple');
-            &:hover{color:levelshare.lvlshr-var-colr('lvlshrColorBasePurple');}
+            color:levelshare.dq-var-colr('dqColorBasePurple');
+            &:hover{color:levelshare.dq-var-colr('dqColorBasePurple');}
           }
         }
         > [unscoped]{

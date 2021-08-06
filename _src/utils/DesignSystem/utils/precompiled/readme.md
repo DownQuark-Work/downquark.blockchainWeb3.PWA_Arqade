@@ -62,8 +62,8 @@ Misc:
     ```
 */
 // @function formatBaseColors($orig, $flag, $val) {
-//   $srch:'lvlshrColorBase';
-//   $rplc:'--lvlshr-color-base-';
+//   $srch:'dqColorBase';
+//   $rplc:'--dq-color-base-';
 //   $index: str-index($orig, $srch);
 //   @if $index {
 //     @debug $index, str-length($srch);

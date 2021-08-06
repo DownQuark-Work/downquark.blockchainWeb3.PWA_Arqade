@@ -23,10 +23,10 @@ $CoreColors:();
 };
 
 @mixin colr($clr,$variant:'',$slctr:'') {
-  // usage levelshare.$lvlshr-var-clr('lvlshrColorBaseOrange')
-  // usage levelshare.$lvlshr-var-clr('lvlshrColorBaseOrange','light','')
-  // usage levelshare.$lvlshr-var-clr('lvlshrColorBaseOrange','','background')
-  // usage levelshare.$lvlshr-var-clr('lvlshrColorBaseOrange','dark','background-')
+  // usage levelshare.$dq-var-clr('dqColorBaseOrange')
+  // usage levelshare.$dq-var-clr('dqColorBaseOrange','light','')
+  // usage levelshare.$dq-var-clr('dqColorBaseOrange','','background')
+  // usage levelshare.$dq-var-clr('dqColorBaseOrange','dark','background-')
 
   @if $variant == '' {
     $variant :'default'
@@ -41,8 +41,8 @@ $CoreColors:();
 }
 
 @function colr($clr,$variant:'') {
-  // usage levelshare.$lvlshr-var-colr('lvlshrColorBaseOrange')
-  // usage levelshare.$lvlshr-var-colr('lvlshrColorBaseOrange','light','')
+  // usage levelshare.$dq-var-colr('dqColorBaseOrange')
+  // usage levelshare.$dq-var-colr('dqColorBaseOrange','light','')
 
   @if $variant == '' {
     $variant :'default'
