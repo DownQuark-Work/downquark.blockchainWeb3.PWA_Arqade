@@ -5,14 +5,14 @@
 
 
 // 1. Configuration and helpers
-@use 'abstracts/downquark' as dq;
+@use '../utils/precompiled/abstracts/downquark';
 
 // 2. Vendors
-@use 'vendors/reset';
-@use 'vendors/normalize';
+@use '../utils/precompiled/vendors/reset';
+@use '../utils/precompiled/vendors/normalize';
 
 // 3. Base stuff
-@use 'base/root';
-@use 'base/fonts';
-@use 'base/typography';
-@use 'base/helpers';
+@use '../utils/precompiled/base/root';
+@use '../utils/precompiled/base/fonts';
+@use '../utils/precompiled/base/typography';
+@use '../utils/precompiled/base/helpers';
