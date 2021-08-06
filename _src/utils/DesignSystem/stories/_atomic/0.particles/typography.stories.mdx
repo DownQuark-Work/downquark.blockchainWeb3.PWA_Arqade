@@ -1,0 +1,240 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import {
+	Swatches,
+	Swatch,
+	Info,
+	Warning,
+	Usage,
+	Correct,
+	Incorrect,
+	Tile,
+	EditLink,
+	Var,
+} from "@dan-nz/storybook-documentation-primitives";
+
+<Meta title="Components 🎮/Particles/Typography"
+parameters={{ previewTabs: { canvas: { hidden: true } } }} />
+
+# Typography
+
+Typography tokens and utilities. The makeup of our type scale.
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th width="250">Value</th>
+      <th width="200">Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <Var>--dq-typography-base-line-height</Var>
+      </td>
+      <td>calc(16px + 4px)</td>
+      <td>
+        <span style={{font:"var(--dq-font-stack-default)"}}>
+          Base line height
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Var>--dq-typography-primary-font-family</Var>
+      </td>
+      <td>'Neucha', sans-serif</td>
+      <td>
+        <span style={{font:"var(--dq-font-stack-default)"}}>
+          This is Neucha
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Var>--dq-typography-primary-font-weight-normal</Var>
+      </td>
+      <td>400</td>
+      <td>
+        <span style={{
+            font:"var(--dq-font-stack-default)",
+            fontWeight: "var(--dq-typography-primary-font-weight-normal)",
+          }}
+        >
+          Regular
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Var>--dq-typography-primary-font-weight-bold</Var>
+      </td>
+      <td>700</td>
+      <td>
+        <span style={{
+            font:"var(--dq-font-stack-default)",
+            fontWeight: "var(--dq-typography-primary-font-weight-bold)",
+          }}
+        >
+          Bold
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Var>--dq-typography-h1-fluid-font-size</Var>
+      </td>
+      <td>clamp(1.6rem, 3.5vw, 2rem)</td>
+      <td>
+        <h1
+          style={{
+            lineHeight: "var(--dq-typography-base-line-height)",
+            fontFamily: "var(--dq-typography-primary-font-family)"
+          }}
+        >
+          h1
+        </h1>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Var>--dq-typography-h2-fluid-font-size</Var>
+      </td>
+      <td>clamp(1.3rem, 3.5vw, 1.5rem)</td>
+      <td>
+        <h2
+          style={{
+            lineHeight: "var(--dq-typography-base-line-height)",
+            fontFamily: "var(--dq-typography-primary-font-family)"
+          }}
+        >
+          h2
+        </h2>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Var>--dq-typography-h3-fluid-font-size</Var>
+      </td>
+      <td>clamp(1.2rem, 3.5vw, 1.375rem)</td>
+      <td>
+        <h3
+          style={{
+            lineHeight: "var(--dq-typography-base-line-height)",
+            fontFamily: "var(--dq-typography-primary-font-family)"
+          }}
+        >
+          h3
+        </h3>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Var>--dq-typography-h4-fluid-font-size</Var>
+      </td>
+      <td>clamp(1rem, 2.5vw, 1.25rem)</td>
+      <td>
+        <h4
+          style={{
+            lineHeight: "var(--dq-typography-base-line-height)",
+            fontFamily: "var(--dq-typography-primary-font-family)"
+          }}
+        >
+          h4
+        </h4>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Var>--dq-typography-h5-font-size</Var>
+      </td>
+      <td>1rem</td>
+      <td>
+        <h5
+          style={{
+            lineHeight: "var(--dq-typography-base-line-height)",
+            fontFamily: "var(--dq-typography-primary-font-family)"
+          }}
+        >
+          h5
+        </h5>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Var>--dq-typography-h6-font-size</Var>
+      </td>
+      <td>1rem</td>
+      <td>
+        <h6
+          style={{
+            lineHeight: "var(--dq-typography-base-line-height)",
+            fontFamily: "var(--dq-typography-primary-font-family)"
+          }}
+        >
+          h6
+        </h6>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Var>--dq-typography-body-font-size</Var>
+      </td>
+      <td>1rem</td>
+      <td>
+        <span style={{font:"var(--dq-font-stack-default)"}}>
+          Body font size
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Var>--dq-typography-body-font-size-small</Var>
+      </td>
+      <td>calc(1rem - 0.25rem)</td>
+      <td>
+        <span style={{
+            font:"var(--dq-font-stack-default)",
+            fontSize: "var(--dq-typography-body-font-size-small)"
+          }}
+        >Body font size small
+        </span>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+## Usage
+
+<Usage>
+  <Correct>
+    Use semantic tags in the correct order ie: h1 → h2. For style overrides,
+    reference a tag as a utilitity ie: class="header4"
+  </Correct>
+  <Incorrect>Skip semantic tag levels for visual style ie: h1 → h4</Incorrect>
+</Usage>
+<Usage>
+  <Correct>Rely on the base theme for Neucha which is set on the body</Correct>
+  <Incorrect>
+    Reference font-family in your CSS, it's usually unnecessary
+  </Incorrect>
+</Usage>
+<Usage>
+  <Correct>Rely on the base theme for link styles</Correct>
+  <Incorrect>
+    Override link styles change color other than for
+    navigational components
+  </Incorrect>
+</Usage>
+<Usage>
+  <Correct>
+    Use semantic tags for font-size first, then utility classes, then custom CSS
+    in the form of rems or ems
+  </Correct>
+  <Incorrect>
+    Set arbitrary font-sizes without using semantic tags, and especially don't
+    use px values
+  </Incorrect>
+</Usage>

@@ -1,0 +1,29 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import {
+	Swatches,
+	Swatch,
+	Info,
+	Warning,
+	Usage,
+	Correct,
+	Incorrect,
+	Tile,
+	EditLink,
+	Var,
+} from "@dan-nz/storybook-documentation-primitives";
+
+<Meta title="Components 🎮/Particles/about" />
+
+# Design Tokens
+
+Design Tokens have since been added <i>before</i> the atom and are referred to as <a href="https://whatjackhasmade.co.uk/storybook-atomic-design-getting-started-with-storybook#particles" target="_blank">particles</a>.
+A concept that eliminates instances of single pixel differences or hex colors that have an erroneous character. Achieved by separating the values of colors and measurements from the keys that are used both inline and within style sheets. All core CSS color and size values reside in a single location, and are never used directly in any other html/javascript/scss file.
+
+## Usage
+Themes are composed of design tokens. Design tokens are variables used to identify a value. Tokens are used in place of hard coded values to promote consistency and flexibility across themes.
+
+
+<Info>
+  Tokens are available by default in the :root of any page utilizing
+  <Var>@import (reference) '~assets/css/variables/typography.css';</Var>
+</Info>
