@@ -1,40 +1,40 @@
 /**
  * Do not edit directly
- * Generated on Fri, 06 Aug 2021 06:26:32 GMT
+ * Generated on Fri, 06 Aug 2021 07:42:30 GMT
  */
 
 :root {
   --dq-color-vendor-twitter-blue: #1da1f2;
   --dq-color-vendor-facebook-blue: #1877f2;
-  --dq-color-accents-rich-gold: #985708;
-  --dq-color-accents-buccaneer: #5b2636;
-  --dq-color-accents-oyster-pink: #e9d1cc;
-  --dq-color-accents-flamingo: #f45a3c;
-  --dq-color-accents-rock: #513634;
-  --dq-color-accents-flame-pea: #db5c2a;
-  --dq-color-accents-tango: #ea7521;
-  --dq-color-accents-oxford-blue: #313c4d;
-  --dq-color-accents-bittersweet: #f7755b;
-  --dq-color-accents-steel-gray: #2f2b3f;
-  --dq-color-accents-tahiti-gold: #e87e05;
   --dq-color-accents-voodoo: #472b4d;
-  --dq-color-accents-salmon: #fe817a;
-  --dq-color-accents-pickled-bluewood: #243749;
   --dq-color-accents-thunder: #3d2d35;
+  --dq-color-accents-tango: #ea7521;
+  --dq-color-accents-tahiti-gold: #e87e05;
+  --dq-color-accents-steel-gray: #2f2b3f;
+  --dq-color-accents-salmon: #fe817a;
+  --dq-color-accents-rock: #513634;
+  --dq-color-accents-rich-gold: #985708;
+  --dq-color-accents-pickled-bluewood: #243749;
+  --dq-color-accents-oyster-pink: #e9d1cc;
+  --dq-color-accents-oxford-blue: #313c4d;
   --dq-color-accents-monarch-red: #7d062f;
+  --dq-color-accents-flamingo: #f45a3c;
+  --dq-color-accents-flame-pea: #db5c2a;
+  --dq-color-accents-buccaneer: #5b2636;
+  --dq-color-accents-bittersweet: #f7755b;
   --dq-color-accents-white: #ffffff;
   --dq-color-accents-black: #000000;
+  --dq-color-base-zest: #dd851a;
+  --dq-color-base-tawny-port: #632741;
+  --dq-color-base-swirl: #d4d0c9;
+  --dq-color-base-pomegranate: #f44336;
+  --dq-color-base-mule-fawn: #8b3c2b;
+  --dq-color-base-hippie-green: #609552;
   --dq-color-base-gun-powder: #3f4151;
   --dq-color-base-bizarre: #e9dbd1;
-  --dq-color-base-mule-fawn: #8b3c2b;
-  --dq-color-base-swirl: #d4d0c9;
-  --dq-color-base-antique-brass: #c87856;
-  --dq-color-base-tawny-port: #632741;
-  --dq-color-base-pomegranate: #f44336;
-  --dq-color-base-zest: #dd851a;
-  --dq-color-base-hippie-green: #609552;
   --dq-color-base-baltic-sea: #17151b;
   --dq-color-base-au-chico: #8e5856;
+  --dq-color-base-antique-brass: #c87856;
   --dq-color-quark-fat-red-bird-secondary: var(--dq-color-base-antique-brass);
   --dq-color-quark-fat-red-bird-primary: var(--dq-color-base-tawny-port);
   --dq-color-quark-bazaar-secondary: var(--dq-color-base-mule-fawn);
