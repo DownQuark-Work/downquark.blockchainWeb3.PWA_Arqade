@@ -11,7 +11,7 @@
 @use 'tokens/fonts';
 @use 'tokens/typography';
 
-@use '../abstracts/levelshare';
+@use '../abstracts/downquark';
 
 @mixin formatBaseColors($orig, $flag, $val) {
   $srch:'dqColorBase';
@@ -25,7 +25,7 @@
 
 :root {
   // dynamically extends dq-var-CoreColors base colors with lighter, darker, complementary colors
-  @each $orig, $nst in levelshare.$dq-var-CoreColors {
+  @each $orig, $nst in downquark.$dq-var-CoreColors {
     @each $flag, $val in $nst {
       @include formatBaseColors($orig, $flag, $val);
     }

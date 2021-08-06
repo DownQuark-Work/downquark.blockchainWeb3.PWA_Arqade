@@ -23,10 +23,10 @@ $CoreColors:();
 };
 
 @mixin colr($clr,$variant:'',$slctr:'') {
-  // usage levelshare.$dq-var-clr('dqColorBaseOrange')
-  // usage levelshare.$dq-var-clr('dqColorBaseOrange','light','')
-  // usage levelshare.$dq-var-clr('dqColorBaseOrange','','background')
-  // usage levelshare.$dq-var-clr('dqColorBaseOrange','dark','background-')
+  // usage downquark.$dq-var-clr('dqColorBaseOrange')
+  // usage downquark.$dq-var-clr('dqColorBaseOrange','light','')
+  // usage downquark.$dq-var-clr('dqColorBaseOrange','','background')
+  // usage downquark.$dq-var-clr('dqColorBaseOrange','dark','background-')
 
   @if $variant == '' {
     $variant :'default'
@@ -41,8 +41,8 @@ $CoreColors:();
 }
 
 @function colr($clr,$variant:'') {
-  // usage levelshare.$dq-var-colr('dqColorBaseOrange')
-  // usage levelshare.$dq-var-colr('dqColorBaseOrange','light','')
+  // usage downquark.$dq-var-colr('dqColorBaseOrange')
+  // usage downquark.$dq-var-colr('dqColorBaseOrange','light','')
 
   @if $variant == '' {
     $variant :'default'

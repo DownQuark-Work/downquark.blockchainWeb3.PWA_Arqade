@@ -1,11 +1,11 @@
 @use 'sass:math';
 
 @function scale($amt:1,$difference:false,$halved:false) {
-  // usage levelshare.$dq-fnc-scale(.25) => 25%
-  // usage levelshare.$dq-fnc-scale(25%) => 25%
-  // usage levelshare.$dq-fnc-scale(25%,1) => 75%
-  // usage levelshare.$dq-fnc-scale(.25,false,true) => 125%
-  // usage levelshare.$dq-fnc-scale(.25,true,1) => 375%
+  // usage downquark.$dq-fnc-scale(.25) => 25%
+  // usage downquark.$dq-fnc-scale(25%) => 25%
+  // usage downquark.$dq-fnc-scale(25%,1) => 75%
+  // usage downquark.$dq-fnc-scale(.25,false,true) => 125%
+  // usage downquark.$dq-fnc-scale(.25,true,1) => 375%
 
   $offset: 100%;
   $mult:1; // used for negatives

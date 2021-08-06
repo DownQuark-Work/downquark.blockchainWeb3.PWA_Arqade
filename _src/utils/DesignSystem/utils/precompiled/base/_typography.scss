@@ -1,11 +1,11 @@
 @use 'fonts';
-@use '../abstracts/levelshare';
+@use '../abstracts/downquark';
 
 a {
-  color:levelshare.dq-var-colr('dqColorBasePurple');
+  color:downquark.dq-var-colr('dqColorBasePurple');
   text-decoration: none;
   transition: color .2s ease-in-out;
-  &:hover{ color:levelshare.dq-var-colr('dqColorBaseOrange');}
+  &:hover{ color:downquark.dq-var-colr('dqColorBaseOrange');}
 }
 
 .header{
@@ -14,20 +14,20 @@ a {
 }
 h1{
   @extend .header;
-  @include levelshare.dq-mix-insetText;
+  @include downquark.dq-mix-insetText;
   border-bottom-width: 2px;
   border-style: solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(90deg,
     rgba(0,0,0,0),
-    levelshare.dq-var-colr('dqColorBasePurple'),
-    levelshare.dq-var-colr('dqColorBaseOrange'),
+    downquark.dq-var-colr('dqColorBasePurple'),
+    downquark.dq-var-colr('dqColorBaseOrange'),
     rgba(0,0,0,0)
   );
   background-color: transparent;
   background-image: linear-gradient(45deg,
-    levelshare.dq-var-colr('dqColorBaseOrange') 55%,
-    levelshare.dq-var-colr('dqColorBasePurple')
+    downquark.dq-var-colr('dqColorBaseOrange') 55%,
+    downquark.dq-var-colr('dqColorBasePurple')
   );
   filter: saturate(1.4) brightness(.9);
   font-size:var(--dq-typography-h1-fallback-font-size);
@@ -40,8 +40,8 @@ h1{
 }
 #page-landing h1{
   background-image: linear-gradient(45deg,
-    levelshare.dq-var-colr('dqColorBaseOrange') 20%,
-    levelshare.dq-var-colr('dqColorBasePurple')
+    downquark.dq-var-colr('dqColorBaseOrange') 20%,
+    downquark.dq-var-colr('dqColorBasePurple')
   );
 }
 h2{
@@ -49,8 +49,8 @@ h2{
   background-clip: text;
   background-color: transparent;
   background-image: linear-gradient(45deg,
-  levelshare.dq-var-colr('dqColorBasePurple'),
-    levelshare.dq-var-colr('dqColorBaseOrange')
+  downquark.dq-var-colr('dqColorBasePurple'),
+    downquark.dq-var-colr('dqColorBaseOrange')
   );
   color:transparent;
   display: inline-block;
@@ -60,11 +60,11 @@ h2{
   font-variant: small-caps;
 }
 h3,h4,h5,h6{
-  color:levelshare.dq-var-colr('dqColorBasePurple');
+  color:downquark.dq-var-colr('dqColorBasePurple');
 }
 *:nth-child(even) + {
   h3,h4,h5,h6 {
-    color:levelshare.dq-var-colr('dqColorBaseOrange');
+    color:downquark.dq-var-colr('dqColorBaseOrange');
     text-align: right;
   }
 }

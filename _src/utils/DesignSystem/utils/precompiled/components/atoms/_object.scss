@@ -1,4 +1,4 @@
-@use '../../abstracts/levelshare';
+@use '../../abstracts/downquark';
 
 $main-content-scale:.8;
 
@@ -8,16 +8,16 @@ object{
     &[class*='tier-']{opacity: 1;} // common tier styles
     &[class*='section-']{opacity: 1;} // common section styles
     &[class*='view-']{ // common view styles
-      bottom:levelshare.dq-fnc-scale(-$main-content-scale,1,1);
+      bottom:downquark.dq-fnc-scale(-$main-content-scale,1,1);
       opacity:.5;
       pointer-events: none;
       position: fixed;
-      right:levelshare.dq-fnc-scale(-$main-content-scale,1,1);
+      right:downquark.dq-fnc-scale(-$main-content-scale,1,1);
     }
 
     &.tier{ // set tier commonalities
       &-0{
-        transform: scale(levelshare.dq-fnc-scale($main-content-scale));
+        transform: scale(downquark.dq-fnc-scale($main-content-scale));
       }
       &-1{
         bottom:-2rem;
@@ -43,7 +43,7 @@ object{
         filter: saturate(60%);
         opacity: .6;
         // flip image
-        transform:rotateY(180deg) scale(levelshare.dq-fnc-scale($main-content-scale));
+        transform:rotateY(180deg) scale(downquark.dq-fnc-scale($main-content-scale));
       }
     } // end view overrides
 
