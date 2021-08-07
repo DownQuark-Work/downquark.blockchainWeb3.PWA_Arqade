@@ -1,7 +1,60 @@
 {
   "typography": {
+    "hub": {
+      "load": {
+        "value": "\"@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Philosopher:wght@700&family=Roboto:wght@300&display=swap');\""
+      },
+      "h1": {
+        "font": {
+          "value": "calc(1rem * calc({font.scale.base.value} * {font.scale.h1.f.value}))/calc(calc(1rem * calc({font.scale.base.value} * {font.scale.h1.f.value})) * {font.scale.lineheight.value}) {font.Philosopher.family.value}"
+        },
+        "margin": {
+          "value": "calc(1rem * calc({font.scale.base.value} * {font.scale.h1.mt.value})) 0 calc(1rem * calc({font.scale.base.value} * {font.scale.h1.mb.value})) 0"
+        }
+      },
+      "h2": {
+        "font": {
+          "value": "calc(1rem * calc({font.scale.base.value} * {font.scale.h2.f.value}))/calc(calc(1rem * calc({font.scale.base.value} * {font.scale.h2.f.value})) * {font.scale.lineheight.value}) {font.Mont-Alt.family.value}"
+        },
+        "margin": {
+          "value": "calc(1rem * calc({font.scale.base.value} * {font.scale.h2.mt.value})) 0 calc(1rem * calc({font.scale.base.value} * {font.scale.h2.mb.value})) 0"
+        }
+      },
+      "h3": {
+        "font": {
+          "value": "calc(1rem * calc({font.scale.base.value} * {font.scale.h3.f.value}))/calc(calc(1rem * calc({font.scale.base.value} * {font.scale.h3.f.value})) * {font.scale.lineheight.value}) {font.Mont-Alt.family.value}"
+        },
+        "margin": {
+          "value": "calc(1rem * calc({font.scale.base.value} * {font.scale.h3.mt.value})) 0 calc(1rem * calc({font.scale.base.value} * {font.scale.h3.mb.value})) 0"
+        }
+      },
+      "h4": {
+        "font": {
+          "value": "1rem/calc(1rem * {font.scale.lineheight.value}) {font.Mont-Alt.family.value}"
+        },
+        "margin": {
+          "value": "calc(1rem * calc({font.scale.base.value} * {font.scale.h4.mt.value})) 0 calc(1rem * calc({font.scale.base.value} * {font.scale.h4.mb.value})) 0"
+        }
+      },
+      "h5": {
+        "font": {
+          "value": "1rem/calc(1rem * {font.scale.lineheight.value}) {font.Mont-Alt.family.value}"
+        },
+        "margin": {
+          "value": "calc(1rem * calc({font.scale.base.value} * {font.scale.h5.mt.value})) 0 calc(1rem * calc({font.scale.base.value} * {font.scale.h5.mb.value})) 0"
+        }
+      },
+      "text": {
+        "font": {
+          "value": "1rem/calc(1rem * {font.scale.lineheight.value}) {font.Roboto.family.value}"
+        },
+        "margin": {
+          "value": "calc(1rem * calc({font.scale.base.value} * {font.scale.h5.mt.value})) 0 calc(1rem * calc({font.scale.base.value} * {font.scale.h5.mb.value})) 0"
+        }
+      }
+    },
     "base-line-height": {
-      "value": "{font.size.lineHeight.default.value}"
+      "value": "12px"
     },
     "primary-font-family": {
       "value": "{font.text.default.value}"
@@ -47,9 +100,6 @@
     },
     "body-font-size": {
       "value": "1rem"
-    },
-    "body-font-size-small": {
-      "value": "calc({typography.body-font-size.value} - 0.25rem)"
     }
   }
 }

@@ -1,29 +1,93 @@
 {
   "font": {
-    "stack": {
-      "default": {
-        "value": "normal {font.size.base.default.value} / {font.size.lineHeight.default.value} {font.text.default.value}",
-        "comment": "use for text"
+    "Philosopher": {
+      "family": {
+        "value": "'Philosopher', sans-serif",
+        "comment": "heading text"
+      }
+    },
+    "Mont-Alt": {
+      "family": {
+        "value": "'Montserrat Alternates', sans-serif;",
+        "comment": "heading text"
+      }
+    },
+    "Roboto": {
+      "family": {
+        "value": "'Roboto', sans-serif",
+        "comment": "body text"
       }
     },
     "text": {
       "default": {
-        "value": "'Neucha', sans-serif"
+        "value": "sans-serif"
       },
       "code": {
         "value": "'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace"
       }
     },
-    "size": {
+    "scale": {
       "base": {
-        "default": {
-          "value": "20px",
-          "comment": "body base font for rem"
+        "value": "1.75"
+      },
+      "lineheight": {
+        "value": "1.5"
+      },
+      "h1": {
+        "f": {
+          "value": "3"
+        },
+        "mt": {
+          "value": "1"
+        },
+        "mb": {
+          "value": "2"
         }
       },
-      "lineHeight": {
-        "default": {
-          "value": "calc({font.size.base.default.value} + 4px)"
+      "h2": {
+        "f": {
+          "value": "2"
+        },
+        "mt": {
+          "value": "1"
+        },
+        "mb": {
+          "value": "1"
+        }
+      },
+      "h3": {
+        "f": {
+          "value": "1"
+        },
+        "mt": {
+          "value": "1"
+        },
+        "mb": {
+          "value": "0"
+        }
+      },
+      "h4": {
+        "mt": {
+          "value": "1"
+        },
+        "mb": {
+          "value": "0"
+        }
+      },
+      "h5": {
+        "mt": {
+          "value": "1"
+        },
+        "mb": {
+          "value": "0"
+        }
+      },
+      "text": {
+        "mt": {
+          "value": "0"
+        },
+        "mb": {
+          "value": ".85"
         }
       }
     }

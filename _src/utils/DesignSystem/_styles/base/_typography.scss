@@ -62,12 +62,6 @@ h2{
 h3,h4,h5,h6{
   color:downquark.dq-var-colr('dqColorBasePurple');
 }
-*:nth-child(even) + {
-  h3,h4,h5,h6 {
-    color:downquark.dq-var-colr('dqColorBaseOrange');
-    text-align: right;
-  }
-}
 h3,h4{
   @extend .header;
   font-size:var(--dq-typography-h3-fallback-font-size);

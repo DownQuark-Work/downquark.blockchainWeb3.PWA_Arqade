@@ -1,11 +1,24 @@
 /**
  * Do not edit directly
- * Generated on Fri, 06 Aug 2021 07:42:30 GMT
+ * Generated on Sat, 07 Aug 2021 06:55:31 GMT
  */
 
 :root {
-  --dq-typography-base-line-height: calc(20px + 4px);
-  --dq-typography-primary-font-family: 'Neucha', sans-serif;
+  --dq-typography-hub-load: "@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Philosopher:wght@700&family=Roboto:wght@300&display=swap');";
+  --dq-typography-hub-h1-font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Philosopher', sans-serif;
+  --dq-typography-hub-h1-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+  --dq-typography-hub-h2-font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Montserrat Alternates', sans-serif;;
+  --dq-typography-hub-h2-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+  --dq-typography-hub-h3-font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) 'Montserrat Alternates', sans-serif;;
+  --dq-typography-hub-h3-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-hub-h4-font: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;;
+  --dq-typography-hub-h4-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-hub-h5-font: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;;
+  --dq-typography-hub-h5-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-hub-text-font: 1rem/calc(1rem * 1.5) 'Roboto', sans-serif;
+  --dq-typography-hub-text-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-base-line-height: 12px;
+  --dq-typography-primary-font-family: sans-serif;
   --dq-typography-primary-font-weight-bold: 700;
   --dq-typography-primary-font-weight-normal: 400;
   --dq-typography-generic-font-family: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
@@ -20,5 +33,4 @@
   --dq-typography-h5-font-size: 1rem;
   --dq-typography-h6-font-size: 1rem;
   --dq-typography-body-font-size: 1rem;
-  --dq-typography-body-font-size-small: calc(1rem - 0.25rem);
 }

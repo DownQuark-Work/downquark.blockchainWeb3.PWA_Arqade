@@ -14,10 +14,19 @@
         "value": "( min-width: 1200px )"
       }
     },
-    "max": {
-      "width": {
-        "value": "1180px"
+    "root": {
+      "fontsize": {
+        "value": "16px"
+      },
+      "lineheight": {
+        "value": "24px"
+      },
+      "max": {
+        "width": {
+          "value": "1180px"
+        }
       }
-    }
+    },
+    "spacing": {}
   }
 }

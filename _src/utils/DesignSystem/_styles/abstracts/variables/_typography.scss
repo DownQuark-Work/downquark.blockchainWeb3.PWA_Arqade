@@ -1,9 +1,22 @@
 
 // Do not edit directly
-// Generated on Fri, 06 Aug 2021 07:42:30 GMT
+// Generated on Sat, 07 Aug 2021 06:55:31 GMT
 
-$dqTypographyBaseLineHeight: calc(20px + 4px);
-$dqTypographyPrimaryFontFamily: 'Neucha', sans-serif;
+$dqTypographyHubLoad: "@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Philosopher:wght@700&family=Roboto:wght@300&display=swap');";
+$dqTypographyHubH1Font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Philosopher', sans-serif;
+$dqTypographyHubH1Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+$dqTypographyHubH2Font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Montserrat Alternates', sans-serif;;
+$dqTypographyHubH2Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+$dqTypographyHubH3Font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) 'Montserrat Alternates', sans-serif;;
+$dqTypographyHubH3Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyHubH4Font: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;;
+$dqTypographyHubH4Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyHubH5Font: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;;
+$dqTypographyHubH5Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyHubTextFont: 1rem/calc(1rem * 1.5) 'Roboto', sans-serif;
+$dqTypographyHubTextMargin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyBaseLineHeight: 12px;
+$dqTypographyPrimaryFontFamily: sans-serif;
 $dqTypographyPrimaryFontWeightBold: 700;
 $dqTypographyPrimaryFontWeightNormal: 400;
 $dqTypographyGenericFontFamily: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
@@ -18,4 +31,3 @@ $dqTypographyH4FallbackFontSize: 1rem;
 $dqTypographyH5FontSize: 1rem;
 $dqTypographyH6FontSize: 1rem;
 $dqTypographyBodyFontSize: 1rem;
-$dqTypographyBodyFontSizeSmall: calc(1rem - 0.25rem);

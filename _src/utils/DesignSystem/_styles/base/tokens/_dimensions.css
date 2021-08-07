@@ -1,10 +1,12 @@
 /**
  * Do not edit directly
- * Generated on Fri, 06 Aug 2021 07:42:30 GMT
+ * Generated on Sat, 07 Aug 2021 06:55:31 GMT
  */
 
 :root {
-  --dq-size-max-width: 4.609375rem;
+  --dq-size-root-max-width: 4.609375rem;
+  --dq-size-root-lineheight: 0.09375rem;
+  --dq-size-root-fontsize: 0.0625rem;
   --dq-size-breakpoint-large: ( min-width: 1200px );
   --dq-size-breakpoint-medium: ( min-width:  992px );
   --dq-size-breakpoint-small: ( min-width:  767px );
