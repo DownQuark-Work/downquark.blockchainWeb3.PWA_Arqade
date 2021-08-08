@@ -17,201 +17,42 @@ parameters={{ previewTabs: { canvas: { hidden: true } } }} />
 
 # Typography
 
-Typography tokens and utilities. The makeup of our type scale.
+Typography tokens and utilities.
+
+## Families
 
 <table width="100%">
   <thead>
     <tr>
-      <th>Name</th>
-      <th width="250">Value</th>
-      <th width="200">Example</th>
+      <th>font name</th>
+      <th>font var (scss / css)</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>
-        <Var>--dq-typography-base-line-height</Var>
+    <tr><td style={{fontSize:'2rem'}}>
+      Default
       </td>
-      <td>calc(16px + 4px)</td>
-      <td>
-        <span style={{font:"var(--dq-font-stack-default)"}}>
-          Base line height
-        </span>
-      </td>
+      <td><Var>n/a</Var></td>
     </tr>
-    <tr>
-      <td>
-        <Var>--dq-typography-primary-font-family</Var>
+    <tr><td style={{fontFamily:'var(--dq-font-code)',fontSize:'2rem'}}>
+      Code
       </td>
-      <td>'Neucha', sans-serif</td>
-      <td>
-        <span style={{font:"var(--dq-font-stack-default)"}}>
-          This is Neucha
-        </span>
-      </td>
+      <td><Var>--dq-font-code</Var> / <Var>$dqFontCode</Var></td>
     </tr>
-    <tr>
-      <td>
-        <Var>--dq-typography-primary-font-weight-normal</Var>
+    <tr><td style={{fontFamily:'var(--dq-font-mont-alt-family)',fontSize:'2rem'}}>
+      Montserrat Alt
       </td>
-      <td>400</td>
-      <td>
-        <span style={{
-            font:"var(--dq-font-stack-default)",
-            fontWeight: "var(--dq-typography-primary-font-weight-normal)",
-          }}
-        >
-          Regular
-        </span>
-      </td>
+      <td><Var>--dq-font-philosopher-family</Var> / <Var>$dqFontMontAltFamily</Var></td>
     </tr>
-    <tr>
-      <td>
-        <Var>--dq-typography-primary-font-weight-bold</Var>
+    <tr><td style={{fontFamily:'var(--dq-font-philosopher-family)',fontSize:'2rem'}}>
+      Philosopher
       </td>
-      <td>700</td>
-      <td>
-        <span style={{
-            font:"var(--dq-font-stack-default)",
-            fontWeight: "var(--dq-typography-primary-font-weight-bold)",
-          }}
-        >
-          Bold
-        </span>
-      </td>
+      <td><Var>--dq-font-philosopher-family</Var> / <Var>$dqFontPhilosopherFamily</Var></td>
     </tr>
-    <tr>
-      <td>
-        <Var>--dq-typography-h1-fluid-font-size</Var>
+    <tr><td style={{fontFamily:'var(--dq-font-roboto-family)',fontSize:'2rem'}}>
+      Roboto
       </td>
-      <td>clamp(1.6rem, 3.5vw, 2rem)</td>
-      <td>
-        <h1
-          style={{
-            lineHeight: "var(--dq-typography-base-line-height)",
-            fontFamily: "var(--dq-typography-primary-font-family)"
-          }}
-        >
-          h1
-        </h1>
-      </td>
+      <td><Var>--dq-font-roboto-family</Var> / <Var>$dqFontRobotoFamily</Var></td>
     </tr>
-    <tr>
-      <td>
-        <Var>--dq-typography-h2-fluid-font-size</Var>
-      </td>
-      <td>clamp(1.3rem, 3.5vw, 1.5rem)</td>
-      <td>
-        <h2
-          style={{
-            lineHeight: "var(--dq-typography-base-line-height)",
-            fontFamily: "var(--dq-typography-primary-font-family)"
-          }}
-        >
-          h2
-        </h2>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <Var>--dq-typography-h3-fluid-font-size</Var>
-      </td>
-      <td>clamp(1.2rem, 3.5vw, 1.375rem)</td>
-      <td>
-        <h3
-          style={{
-            lineHeight: "var(--dq-typography-base-line-height)",
-            fontFamily: "var(--dq-typography-primary-font-family)"
-          }}
-        >
-          h3
-        </h3>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <Var>--dq-typography-h4-fluid-font-size</Var>
-      </td>
-      <td>clamp(1rem, 2.5vw, 1.25rem)</td>
-      <td>
-        <h4
-          style={{
-            lineHeight: "var(--dq-typography-base-line-height)",
-            fontFamily: "var(--dq-typography-primary-font-family)"
-          }}
-        >
-          h4
-        </h4>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <Var>--dq-typography-h5-font-size</Var>
-      </td>
-      <td>1rem</td>
-      <td>
-        <h5
-          style={{
-            lineHeight: "var(--dq-typography-base-line-height)",
-            fontFamily: "var(--dq-typography-primary-font-family)"
-          }}
-        >
-          h5
-        </h5>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <Var>--dq-typography-h6-font-size</Var>
-      </td>
-      <td>1rem</td>
-      <td>
-        <h6
-          style={{
-            lineHeight: "var(--dq-typography-base-line-height)",
-            fontFamily: "var(--dq-typography-primary-font-family)"
-          }}
-        >
-          h6
-        </h6>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <Var>--dq-typography-body-font-size</Var>
-      </td>
-      <td>1rem</td>
-      <td>
-        <span style={{font:"var(--dq-font-stack-default)"}}>
-          Body font size
-        </span>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <Var>--dq-typography-body-font-size-small</Var>
-      </td>
-      <td>calc(1rem - 0.25rem)</td>
-      <td>
-        <span style={{
-            font:"var(--dq-font-stack-default)",
-            fontSize: "var(--dq-typography-body-font-size-small)"
-          }}
-        >Body font size small
-        </span>
-      </td>
-    </tr>
-
   </tbody>
 </table>
-
-
-## Usage
-
-<Usage>
-  <Correct>
-    Use semantic tags in the correct order ie: h1 → h2. For style overrides,
-    reference a tag as a utilitity ie: class="header4"
-  </Correct>
-  <Incorrect>Skip semantic tag levels for visual style ie: h1 → h4</Incorrect>
-</Usage>

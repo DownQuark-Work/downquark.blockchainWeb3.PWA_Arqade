@@ -1,28 +1,11 @@
 /**
  * Do not edit directly
- * Generated on Sat, 07 Aug 2021 06:55:31 GMT
+ * Generated on Sun, 08 Aug 2021 16:24:13 GMT
  */
 
 :root {
-  --dq-font-scale-text-mb: .85;
-  --dq-font-scale-text-mt: 0;
-  --dq-font-scale-h5-mb: 0;
-  --dq-font-scale-h5-mt: 1;
-  --dq-font-scale-h4-mb: 0;
-  --dq-font-scale-h4-mt: 1;
-  --dq-font-scale-h3-mb: 0;
-  --dq-font-scale-h3-mt: 1;
-  --dq-font-scale-h3-f: 1;
-  --dq-font-scale-h2-mb: 1;
-  --dq-font-scale-h2-mt: 1;
-  --dq-font-scale-h2-f: 2;
-  --dq-font-scale-h1-mb: 2;
-  --dq-font-scale-h1-mt: 1;
-  --dq-font-scale-h1-f: 3;
-  --dq-font-scale-lineheight: 1.5;
-  --dq-font-scale-base: 1.75;
-  --dq-font-text-code: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace;
   --dq-font-text-default: sans-serif;
+  --dq-font-code: 'Courier New', 'Monaco', monospace;
   --dq-font-roboto-family: 'Roboto', sans-serif; /* body text */
   --dq-font-mont-alt-family: 'Montserrat Alternates', sans-serif;; /* heading text */
   --dq-font-philosopher-family: 'Philosopher', sans-serif; /* heading text */

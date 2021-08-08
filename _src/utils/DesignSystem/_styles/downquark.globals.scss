@@ -10,3 +10,8 @@
 @use 'base/fonts';
 @use 'base/typography';
 @use 'base/helpers';
+
+:root{
+  font-size: 16px;
+  line-height: 1.5rem;
+}

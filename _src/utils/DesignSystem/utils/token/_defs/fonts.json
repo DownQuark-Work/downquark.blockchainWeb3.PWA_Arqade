@@ -18,77 +18,77 @@
         "comment": "body text"
       }
     },
+    "code": {
+      "value": "'Courier New', 'Monaco', monospace"
+    },
     "text": {
       "default": {
         "value": "sans-serif"
+      }
+    }
+  },
+  "fontscale": {
+    "base": {
+      "value": "1.75"
+    },
+    "lineheight": {
+      "value": "1.5"
+    },
+    "h1": {
+      "f": {
+        "value": "3"
       },
-      "code": {
-        "value": "'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace"
+      "mt": {
+        "value": "1"
+      },
+      "mb": {
+        "value": "2"
       }
     },
-    "scale": {
-      "base": {
-        "value": "1.75"
+    "h2": {
+      "f": {
+        "value": "2"
       },
-      "lineheight": {
-        "value": "1.5"
+      "mt": {
+        "value": "1"
       },
-      "h1": {
-        "f": {
-          "value": "3"
-        },
-        "mt": {
-          "value": "1"
-        },
-        "mb": {
-          "value": "2"
-        }
+      "mb": {
+        "value": "1"
+      }
+    },
+    "h3": {
+      "f": {
+        "value": "1"
       },
-      "h2": {
-        "f": {
-          "value": "2"
-        },
-        "mt": {
-          "value": "1"
-        },
-        "mb": {
-          "value": "1"
-        }
+      "mt": {
+        "value": "1"
       },
-      "h3": {
-        "f": {
-          "value": "1"
-        },
-        "mt": {
-          "value": "1"
-        },
-        "mb": {
-          "value": "0"
-        }
+      "mb": {
+        "value": "0"
+      }
+    },
+    "h4": {
+      "mt": {
+        "value": "1"
       },
-      "h4": {
-        "mt": {
-          "value": "1"
-        },
-        "mb": {
-          "value": "0"
-        }
+      "mb": {
+        "value": "0"
+      }
+    },
+    "h5": {
+      "mt": {
+        "value": "1"
       },
-      "h5": {
-        "mt": {
-          "value": "1"
-        },
-        "mb": {
-          "value": "0"
-        }
+      "mb": {
+        "value": "0"
+      }
+    },
+    "text": {
+      "mt": {
+        "value": "0"
       },
-      "text": {
-        "mt": {
-          "value": "0"
-        },
-        "mb": {
-          "value": ".85"
-        }
+      "mb": {
+        "value": ".85"
       }
     }
   }

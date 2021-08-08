@@ -34,6 +34,5 @@
 
   // set base font size
   @include rootfont.dq();
-  font-size: var(--dq-font-size-base-default);
-
+  font-size: 16px;
 }

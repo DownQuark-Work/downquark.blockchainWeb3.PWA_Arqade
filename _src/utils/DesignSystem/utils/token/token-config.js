@@ -143,8 +143,9 @@ module.exports = {
     // pulls from all json files within tokens
     // filters by custom filters defined above to sort into files and folders
     scss: {
+      basePxFontSize: 16,
       transformGroup: "scss",
-      transforms: ["attribute/cti", "color/css", "name/cti/camel", "size/pxToEm", "size/pxToRem"],
+      transforms: ["attribute/cti", "color/css", "name/cti/camel", "size/pxToRem"],
       buildPath: "_styles/abstracts/variables/",
       prefix: "dq",
       files: [
@@ -196,6 +197,7 @@ module.exports = {
       ],
     },
     css: {
+      basePxFontSize: 16,
       transformGroup: "css",
       transforms: ["attribute/cti", "color/css", "name/cti/kebab", "size/pxToEm", "size/pxToRem"],
       buildPath: "_styles/base/tokens/",
