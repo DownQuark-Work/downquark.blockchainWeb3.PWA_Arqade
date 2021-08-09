@@ -3,48 +3,37 @@
     "base": {
       "comment": "All base value names should be decription of value only - dynamic creation of shades will occur",
       "Antique-Brass": {
-        "value": "rgb(200,120,86)",
-        "themeable": "true"
+        "value": "rgb(200,120,86)"
       },
       "Au-Chico": {
-        "value": "#8e5856",
-        "themeable": "true"
+        "value": "#8e5856"
       },
       "Baltic-Sea": {
-        "value": "#17151b",
-        "themeable": "true"
+        "value": "#17151b"
       },
       "Bizarre": {
-        "value": "rgb(233,219,209)",
-        "themeable": "true"
+        "value": "rgb(233,219,209)"
       },
       "Gun-Powder": {
-        "value": "rgb(63,65,81)",
-        "themeable": "true"
+        "value": "rgb(63,65,81)"
       },
       "Hippie-Green": {
-        "value": "#609552",
-        "themeable": "true"
+        "value": "#609552"
       },
       "Mule-Fawn": {
-        "value": "rgb(139,60,43)",
-        "themeable": "true"
+        "value": "rgb(139,60,43)"
       },
       "Pomegranate": {
-        "value": "#f44336",
-        "themeable": "true"
+        "value": "#f44336"
       },
       "Swirl": {
-        "value": "rgb(212,208,201)",
-        "themeable": "true"
+        "value": "rgb(212,208,201)"
       },
       "Tawny-Port": {
-        "value": "rgb(99,39,65)",
-        "themeable": "true"
+        "value": "rgb(99,39,65)"
       },
       "Zest": {
-        "value": "#dd851a",
-        "themeable": "true"
+        "value": "#dd851a"
       }
     },
     "accents": {
@@ -102,54 +91,6 @@
       },
       "Voodoo": {
         "value": "rgb(71,43,77)"
-      }
-    },
-    "quark": {
-      "comment": "Quark values are abstractions of color description",
-      "app-shell": {
-        "primary": {
-          "value": "{color.base.Gun-Powder.value}"
-        },
-        "secondary": {
-          "value": "{color.base.Bizarre.value}"
-        }
-      },
-      "hub": {
-        "primary": {
-          "comment": "Related Quark values are themeable",
-          "value": "{color.quark.app-shell.primary.value}",
-          "themeable": "true"
-        },
-        "secondary": {
-          "value": "{color.quark.app-shell.secondary.value}",
-          "themeable": "true"
-        }
-      },
-      "bazaar": {
-        "primary": {
-          "value": "{color.base.Swirl.value}"
-        },
-        "secondary": {
-          "value": "{color.base.Mule-Fawn.value}"
-        }
-      },
-      "fat-red-bird": {
-        "primary": {
-          "value": "{color.base.Tawny-Port.value}"
-        },
-        "secondary": {
-          "value": "{color.base.Antique-Brass.value}"
-        }
-      },
-      "library": {
-        "primary": {
-          "value": "{color.quark.fat-red-bird.primary.value}",
-          "themeable": "true"
-        },
-        "secondary": {
-          "value": "{color.quark.fat-red-bird.secondary.value}",
-          "themeable": "true"
-        }
       }
     },
     "vendor": {

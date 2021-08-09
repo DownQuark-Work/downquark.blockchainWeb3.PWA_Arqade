@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 08 Aug 2021 16:24:13 GMT
+ * Generated on Mon, 09 Aug 2021 20:53:06 GMT
  */
 
 :root {
@@ -35,14 +35,4 @@
   --dq-color-base-baltic-sea: #17151b;
   --dq-color-base-au-chico: #8e5856;
   --dq-color-base-antique-brass: #c87856;
-  --dq-color-quark-fat-red-bird-secondary: var(--dq-color-base-antique-brass);
-  --dq-color-quark-fat-red-bird-primary: var(--dq-color-base-tawny-port);
-  --dq-color-quark-bazaar-secondary: var(--dq-color-base-mule-fawn);
-  --dq-color-quark-bazaar-primary: var(--dq-color-base-swirl);
-  --dq-color-quark-app-shell-secondary: var(--dq-color-base-bizarre);
-  --dq-color-quark-app-shell-primary: var(--dq-color-base-gun-powder);
-  --dq-color-quark-library-secondary: var(--dq-color-quark-fat-red-bird-secondary);
-  --dq-color-quark-library-primary: var(--dq-color-quark-fat-red-bird-primary);
-  --dq-color-quark-hub-secondary: var(--dq-color-quark-app-shell-secondary);
-  --dq-color-quark-hub-primary: var(--dq-color-quark-app-shell-primary); /* Related Quark values are themeable */
 }

@@ -9,10 +9,13 @@
 @use 'tokens/content';
 @use 'tokens/dimensions';
 @use 'tokens/fonts';
+@use 'tokens/quarks';
 @use 'tokens/typography';
 
 @use '../abstracts/downquark';
 
+// "Officially" deprecating this in favor of organizing by Quarks
+      // Keeping for overview in storybook
 @mixin formatBaseColors($orig, $flag, $val) {
   $srch:'dqColorBase';
   $rplc:'--dq-color-base-';
@@ -23,12 +26,31 @@
     #{$rootKey}: $val;
   }
 }
+// @debug downquark.$dq-var-Quarks;
+@mixin formatQuarkAbstraction($orig, $flag, $val) {
+  $isQuark: string.index($orig, 'dqQuark');
+  $isColor: string.index($orig, 'Color');
+  // @debug meta.type-of($isColor);
+  @if $isQuark { // is a quark token
+  @if $isColor { // is a color token
+    $rootKey: '--dq-quark-' + string.to-lower-case(string.slice(string.slice($orig,0,$isColor - 1), string.length('dqQuark')+1, string.length($orig) - string.length('Color'))) + '-color-' + $flag;
+    #{$rootKey}: $val;
+  }
+  }
+}
 
 :root {
   // dynamically extends dq-var-CoreColors base colors with lighter, darker, complementary colors
+    // "Officially" deprecating this in favor of organizing by Quarks
+      // Keeping for overview in storybook
   @each $orig, $nst in downquark.$dq-var-CoreColors {
     @each $flag, $val in $nst {
       @include formatBaseColors($orig, $flag, $val);
+    }
+  }
+  @each $orig, $nst in downquark.$dq-var-QuarkColor {
+    @each $flag, $val in $nst {
+      @include formatQuarkAbstraction($orig, $flag, $val);
     }
   }
 

@@ -1,42 +1,91 @@
 import { Meta } from "@storybook/addon-docs";
-import { Swatches, Swatch } from "@dan-nz/storybook-documentation-primitives";
+import { Swatches, Swatch, Var } from "@dan-nz/storybook-documentation-primitives";
 
 <Meta title="Components 🧩/᠅ Particles/Quarks" parameters={{ previewTabs: { canvas: { hidden: true } } }} />
 
 # ᠅ Particles
-DownQuark&rsquo;s Integrations.
+DownQuark&rsquo;s Abstracted Integrations.
 
 ## Quarks
 > - Quark values are abstractions of all other tokens
 >   - Choosing a Quark sets the "look and feel" of that section of the d?app
 >   - Related Quark values are themeable
 
-### App Shell
-<Swatches>
-	<Swatch name='Primary' value='var(--dq-color-quark-app-shell-primary)' />
-  <Swatch name='Secondary' value='var(--dq-color-quark-app-shell-secondary)' />
-</Swatches>
-
-### Hub
-<Swatches>
-	<Swatch name='Primary' value='var(--dq-color-quark-hub-primary)' />
-  <Swatch name='Secondary' value='var(--dq-color-quark-hub-secondary)' />
-</Swatches>
-
-### Fat Red Bird
-<Swatches>
-	<Swatch name='Primary' value='var(--dq-color-quark-fat-red-bird-primary)' />
-	<Swatch name='Secondary' value='var(--dq-color-quark-fat-red-bird-secondary)' />
-</Swatches>
-
-### Bazaar
-<Swatches>
-	<Swatch name='Primary' value='var(--dq-color-quark-bazaar-primary)' />
-	<Swatch name='Secondary' value='var(--dq-color-quark-bazaar-secondary)' />
-</Swatches>
-
-### Library
-<Swatches>
-	<Swatch name='Primary' value='var(--dq-color-quark-library-primary)' />
-  <Swatch name='Secondary' value='var(--dq-color-quark-library-secondary)' />
-</Swatches>
+<details>
+  <summary style={{fontSize:'1.5rem',fontWeight:800}}>Hub</summary>
+  <details>
+    <summary style={{fontSize:'1.25rem',fontWeight:800,paddingLeft:'1rem'}}> - Colors</summary>
+    <details>
+    <summary style={{fontSize:'1rem',fontWeight:800,paddingLeft:'2rem'}}> - - Base Pallet</summary>
+    <Swatches>
+    <Swatch name='Darker' value='var(--dq-quark-hub-color-darker)' />
+    <Swatch name='Dark' value='var(--dq-quark-hub-color-dark)' />
+    <Swatch name='Default' value='var(--dq-quark-hub-color-default)' />
+    <Swatch name='Light' value='var(--dq-quark-hub-color-light)' />
+    <Swatch name='Lighter' value='var(--dq-quark-hub-color-lighter)' />
+    <Swatch name='Complement' value='var(--dq-quark-hub-color-complement)' />
+  </Swatches>
+  </details>
+  <details>
+    <summary style={{fontSize:'1rem',fontWeight:800,paddingLeft:'2rem'}}> - - Accents</summary>
+    <Swatches>
+      <Swatch name='Primary' value='var(--dq-quark-hub-accent-primary)' />
+      <Swatch name='Secondary' value='var(--dq-quark-hub-accent-secondary)' />
+    </Swatches>
+  </details></details>
+  <details>
+    <summary style={{fontSize:'1.25rem',fontWeight:800,paddingLeft:'1rem'}}> - Typography</summary>
+    <table width="100%">
+  <thead>
+    <tr>
+      <th>font element</th>
+      <th>font var (scss / css)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style={{font:'var(--dq-quark-hub-typography-h1-font)',margin:'var(--dq-quark-hub-typography-h1-margin)'}}>
+      H1
+      </td>
+      <td><Var>$dqQuarkHubTypographyH1Font</Var> / <Var>--dq-quark-hub-typography-h1-font</Var>
+      <br/><Var>$dqQuarkHubTypographyH1Margin</Var> / <Var>--dq-quark-hub-typography-h1-margin</Var>
+      </td>
+    </tr>
+    <tr><td style={{font:'var(--dq-quark-hub-typography-h2-font)',margin:'var(--dq-quark-hub-typography-h2-margin)'}}>
+      H2
+      </td>
+      <td><Var>$dqQuarkHubTypographyH2Font</Var> / <Var>--dq-quark-hub-typography-h2-font</Var>
+      <br/><Var>$dqQuarkHubTypographyH2Margin</Var> / <Var>--dq-quark-hub-typography-h2-margin</Var>
+      </td>
+    </tr>
+    <tr><td style={{font:'var(--dq-quark-hub-typography-h3-font)',margin:'var(--dq-quark-hub-typography-h3-margin)'}}>
+      H3
+      </td>
+      <td><Var>$dqQuarkHubTypographyH3Font</Var> / <Var>--dq-quark-hub-typography-h3-font</Var>
+      <br/><Var>$dqQuarkHubTypographyH3Margin</Var> / <Var>--dq-quark-hub-typography-h3-margin</Var>
+      </td>
+    </tr>
+    <tr><td style={{font:'var(--dq-quark-hub-typography-h4-font)',margin:'var(--dq-quark-hub-typography-h4-margin)'}}>
+      H4
+      </td>
+      <td><Var>$dqQuarkHubTypographyH4Font</Var> / <Var>--dq-quark-hub-typography-h4-font</Var>
+      <br/><Var>$dqQuarkHubTypographyH4Margin</Var> / <Var>--dq-quark-hub-typography-h4-margin</Var>
+      </td>
+    </tr>
+    <tr><td style={{font:'var(--dq-quark-hub-typography-h5-font)',margin:'var(--dq-quark-hub-typography-h5-margin)'}}>
+      H5
+      </td>
+      <td><Var>$dqQuarkHubTypographyH5Font</Var> / <Var>--dq-quark-hub-typography-h5-font</Var>
+      <br/><Var>$dqQuarkHubTypographyH5Margin</Var> / <Var>--dq-quark-hub-typography-h5-margin</Var>
+      </td>
+    </tr>
+    <tr><td style={{font:'var(--dq-quark-hub-typography-text-font)',margin:'var(--dq-quark-hub-typography-text-margin)'}}>
+      text
+      </td>
+      <td><Var>$dqQuarkHubTypographyTextFont</Var> / <Var>--dq-quark-hub-typography-text-font</Var>
+      <br/><Var>$dqQuarkHubTypographyTextMargin</Var> / <Var>--dq-quark-hub-typography-text-margin</Var>
+      </td>
+    </tr>
+  </tbody>
+</table>
+    </details>
+</details>

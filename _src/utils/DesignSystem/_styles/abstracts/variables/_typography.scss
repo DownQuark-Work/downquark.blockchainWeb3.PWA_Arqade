@@ -1,7 +1,31 @@
 
 // Do not edit directly
-// Generated on Sun, 08 Aug 2021 16:24:13 GMT
+// Generated on Mon, 09 Aug 2021 20:53:06 GMT
 
+$dqTypographyCodeH1Font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Courier New', 'Monaco', monospace;
+$dqTypographyCodeH1Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+$dqTypographyCodeH2Font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Courier New', 'Monaco', monospace;
+$dqTypographyCodeH2Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+$dqTypographyCodeH3Font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) 'Courier New', 'Monaco', monospace;
+$dqTypographyCodeH3Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyCodeH4Font: 1rem/calc(1rem * 1.5) 'Courier New', 'Monaco', monospace;
+$dqTypographyCodeH4Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyCodeH5Font: 1rem/calc(1rem * 1.5) 'Courier New', 'Monaco', monospace;
+$dqTypographyCodeH5Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyCodeTextFont: 1rem/calc(1rem * 1.5) 'Courier New', 'Monaco', monospace;
+$dqTypographyCodeTextMargin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyMontserratH1Font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Montserrat Alternates', sans-serif;;
+$dqTypographyMontserratH1Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+$dqTypographyMontserratH2Font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Montserrat Alternates', sans-serif;;
+$dqTypographyMontserratH2Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+$dqTypographyMontserratH3Font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) 'Montserrat Alternates', sans-serif;;
+$dqTypographyMontserratH3Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyMontserratH4Font: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;;
+$dqTypographyMontserratH4Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyMontserratH5Font: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;;
+$dqTypographyMontserratH5Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyMontserratTextFont: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;;
+$dqTypographyMontserratTextMargin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
 $dqTypographyPhilosopherH1Font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Philosopher', sans-serif;
 $dqTypographyPhilosopherH1Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
 $dqTypographyPhilosopherH2Font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Philosopher', sans-serif;
@@ -14,6 +38,18 @@ $dqTypographyPhilosopherH5Font: 1rem/calc(1rem * 1.5) 'Philosopher', sans-serif;
 $dqTypographyPhilosopherH5Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
 $dqTypographyPhilosopherTextFont: 1rem/calc(1rem * 1.5) 'Philosopher', sans-serif;
 $dqTypographyPhilosopherTextMargin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyRobotoH1Font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Roboto', sans-serif;
+$dqTypographyRobotoH1Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+$dqTypographyRobotoH2Font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Roboto', sans-serif;
+$dqTypographyRobotoH2Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+$dqTypographyRobotoH3Font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) 'Roboto', sans-serif;
+$dqTypographyRobotoH3Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyRobotoH4Font: 1rem/calc(1rem * 1.5) 'Roboto', sans-serif;
+$dqTypographyRobotoH4Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyRobotoH5Font: 1rem/calc(1rem * 1.5) 'Roboto', sans-serif;
+$dqTypographyRobotoH5Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyRobotoTextFont: 1rem/calc(1rem * 1.5) 'Roboto', sans-serif;
+$dqTypographyRobotoTextMargin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
 $dqTypographyBaseLineHeight: 12px;
 $dqTypographyPrimaryFontFamily: sans-serif;
 $dqTypographyPrimaryFontWeightBold: 700;

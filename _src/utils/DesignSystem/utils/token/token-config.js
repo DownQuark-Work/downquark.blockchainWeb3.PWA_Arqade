@@ -1,7 +1,9 @@
 /* eslint-disable func-names */
 /* eslint-disable object-shorthand */
 // eslint-disable-next-line import/no-commonjs
-const StyleDictionary = require("style-dictionary")
+const { tokens } = require("style-dictionary");
+const StyleDictionary = require("style-dictionary");
+const { fileHeader, formattedVariables } = StyleDictionary.formatHelpers;
 
 // A plain object where we map the CSS property name to the proper category and type.
 const propertiesToCTI = {
@@ -132,6 +134,35 @@ StyleDictionary.registerFilter({
   },
 })
 
+// quark abstractions
+StyleDictionary.registerFilter({
+  name: "isQuark",
+  matcher: function (prop) {
+    return prop.attributes.category === "quark"
+  },
+})
+StyleDictionary.registerFormat({
+  name: `quarkFormat`,
+  formatter: function ({ dictionary, file, options }) {
+    const { outputReferences } = options;
+    // console.log('dictionary.allTokens', dictionary.allTokens);
+    // console.log('dictionary', dictionary);
+    const cap = (strng) => strng.charAt(0).toUpperCase() + strng.slice(1);
+    const tkns = () => {
+      const val = (str) => {
+        let retVal = str.replace('{', '').replace('}', '').split('.')
+        retVal.pop()
+        retVal = '$dq' + retVal.map(itm => cap(itm)).join('').replace(/-/g, '')
+        return retVal
+      }
+      return dictionary.allTokens.map(itm => `$${itm.name}: ${val(itm.original.value)};`).join('\n')
+    }
+    return fileHeader({ file }) +
+      '@use \'./colors\' as *;\n@use \'./typography\' as *;\n\n' +
+      tkns();
+  }
+})
+
 module.exports = {
   transform: {
     // Override the attribute/cti transform
@@ -194,6 +225,14 @@ module.exports = {
           format: "scss/variables",
           filter: "isTypographyConstant",
         },
+        {
+          destination: "_quarks.scss",
+          format: "quarkFormat",
+          filter: "isQuark",
+          "options": {
+            "outputReferences": true
+          },
+        },
       ],
     },
     css: {
@@ -239,6 +278,14 @@ module.exports = {
           destination: "_typography.css",
           format: "css/variables",
           filter: "isTypographyConstant",
+        },
+        {
+          destination: "_quarks.css",
+          format: "css/variables",
+          filter: "isQuark",
+          "options": {
+            "outputReferences": true
+          },
         },
       ],
     },

@@ -19,7 +19,9 @@
       }
     },
     "code": {
-      "value": "'Courier New', 'Monaco', monospace"
+      "family": {
+        "value": "'Courier New', 'Monaco', monospace"
+      }
     },
     "text": {
       "default": {

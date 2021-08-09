@@ -1,0 +1,22 @@
+/**
+ * Do not edit directly
+ * Generated on Mon, 09 Aug 2021 20:53:06 GMT
+ */
+
+:root {
+  --dq-quark-hub-color: var(--dq-color-base-au-chico);
+  --dq-quark-hub-accent-secondary: var(--dq-color-accents-steel-gray);
+  --dq-quark-hub-accent-primary: var(--dq-color-accents-tahiti-gold);
+  --dq-quark-hub-typography-text-margin: var(--dq-typography-roboto-text-margin);
+  --dq-quark-hub-typography-text-font: var(--dq-typography-roboto-text-font);
+  --dq-quark-hub-typography-h5-margin: var(--dq-typography-philosopher-h5-margin);
+  --dq-quark-hub-typography-h5-font: var(--dq-typography-philosopher-h5-font);
+  --dq-quark-hub-typography-h4-margin: var(--dq-typography-philosopher-h4-margin);
+  --dq-quark-hub-typography-h4-font: var(--dq-typography-philosopher-h4-font);
+  --dq-quark-hub-typography-h3-margin: var(--dq-typography-philosopher-h3-margin);
+  --dq-quark-hub-typography-h3-font: var(--dq-typography-philosopher-h3-font);
+  --dq-quark-hub-typography-h2-margin: var(--dq-typography-philosopher-h2-margin);
+  --dq-quark-hub-typography-h2-font: var(--dq-typography-philosopher-h2-font);
+  --dq-quark-hub-typography-h1-margin: var(--dq-typography-philosopher-h1-margin);
+  --dq-quark-hub-typography-h1-font: var(--dq-typography-philosopher-h1-font);
+}

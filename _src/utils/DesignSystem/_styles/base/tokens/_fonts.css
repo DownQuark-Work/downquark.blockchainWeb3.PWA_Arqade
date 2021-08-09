@@ -1,11 +1,11 @@
 /**
  * Do not edit directly
- * Generated on Sun, 08 Aug 2021 16:24:13 GMT
+ * Generated on Mon, 09 Aug 2021 20:53:06 GMT
  */
 
 :root {
   --dq-font-text-default: sans-serif;
-  --dq-font-code: 'Courier New', 'Monaco', monospace;
+  --dq-font-code-family: 'Courier New', 'Monaco', monospace;
   --dq-font-roboto-family: 'Roboto', sans-serif; /* body text */
   --dq-font-mont-alt-family: 'Montserrat Alternates', sans-serif;; /* heading text */
   --dq-font-philosopher-family: 'Philosopher', sans-serif; /* heading text */
