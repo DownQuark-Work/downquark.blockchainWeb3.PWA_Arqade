@@ -3,14 +3,17 @@
     "hub": {
       "accent": {
         "primary": {
-          "value": "{color.accents.Tahiti-Gold.value}"
+          "value": "{color.accents.Monarch-Red.value}"
         },
         "secondary": {
           "value": "{color.accents.Steel-Gray.value}"
+        },
+        "tertiary": {
+          "value": "{color.accents.Rich-Gold.value}"
         }
       },
       "color": {
-        "value": "{color.base.Au-Chico.value}"
+        "value": "{color.base.Tawny-Port.value}"
       },
       "typography": {
         "h1": {

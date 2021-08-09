@@ -1,14 +1,15 @@
 /**
  * Do not edit directly
- * Generated on Mon, 09 Aug 2021 20:53:06 GMT
+ * Generated on Mon, 09 Aug 2021 21:04:55 GMT
  */
 
 @use './colors' as *;
 @use './typography' as *;
 
-$dqQuarkHubAccentPrimary: $dqColorAccentsTahitiGold;
+$dqQuarkHubAccentPrimary: $dqColorAccentsMonarchRed;
 $dqQuarkHubAccentSecondary: $dqColorAccentsSteelGray;
-$dqQuarkHubColor: $dqColorBaseAuChico;
+$dqQuarkHubAccentTertiary: $dqColorAccentsRichGold;
+$dqQuarkHubColor: $dqColorBaseTawnyPort;
 $dqQuarkHubTypographyH1Font: $dqTypographyPhilosopherH1Font;
 $dqQuarkHubTypographyH1Margin: $dqTypographyPhilosopherH1Margin;
 $dqQuarkHubTypographyH2Font: $dqTypographyPhilosopherH2Font;
