@@ -1,0 +1,86 @@
+import { Meta } from "@storybook/addon-docs";
+import { Swatches, Swatch, Var } from "@dan-nz/storybook-documentation-primitives";
+
+<Meta title="Components 🧩/᠅ Particles/Quarks/Hub" parameters={{ previewTabs: { canvas: { hidden: true } } }} />
+
+# Quarks
+DownQuark&rsquo;s Abstracted Integrations.
+
+## Hub
+> For use on the general pages.
+> - login / logout
+> - Choose Application
+> -  ... etc
+
+### Colors
+#### - - Base Pallets
+
+<Swatches>
+  <Swatch name='Darker' value='var(--dq-quark-hub-color-darker)' />
+  <Swatch name='Dark' value='var(--dq-quark-hub-color-dark)' />
+  <Swatch name='Default' value='var(--dq-quark-hub-color-default)' />
+  <Swatch name='Light' value='var(--dq-quark-hub-color-light)' />
+  <Swatch name='Lighter' value='var(--dq-quark-hub-color-lighter)' />
+  <Swatch name='Complement' value='var(--dq-quark-hub-color-complement)' />
+</Swatches>
+
+#### - - Accents
+<Swatches>
+  <Swatch name='Primary' value='var(--dq-quark-hub-accent-primary)' />
+  <Swatch name='Secondary' value='var(--dq-quark-hub-accent-secondary)' />
+  <Swatch name='Tertiary' value='var(--dq-quark-hub-accent-tertiary)' />
+</Swatches>
+
+### Typography
+<table width="100%">
+  <thead>
+    <tr>
+      <th>font element</th>
+      <th>font var (scss / css)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style={{font:'var(--dq-quark-hub-typography-h1-font)',margin:'var(--dq-quark-hub-typography-h1-margin)'}}>
+      H1
+      </td>
+      <td><Var>$dqQuarkHubTypographyH1Font</Var> / <Var>--dq-quark-hub-typography-h1-font</Var>
+      <br/><Var>$dqQuarkHubTypographyH1Margin</Var> / <Var>--dq-quark-hub-typography-h1-margin</Var>
+      </td>
+    </tr>
+    <tr><td style={{font:'var(--dq-quark-hub-typography-h2-font)',margin:'var(--dq-quark-hub-typography-h2-margin)'}}>
+      H2
+      </td>
+      <td><Var>$dqQuarkHubTypographyH2Font</Var> / <Var>--dq-quark-hub-typography-h2-font</Var>
+      <br/><Var>$dqQuarkHubTypographyH2Margin</Var> / <Var>--dq-quark-hub-typography-h2-margin</Var>
+      </td>
+    </tr>
+    <tr><td style={{font:'var(--dq-quark-hub-typography-h3-font)',margin:'var(--dq-quark-hub-typography-h3-margin)'}}>
+      H3
+      </td>
+      <td><Var>$dqQuarkHubTypographyH3Font</Var> / <Var>--dq-quark-hub-typography-h3-font</Var>
+      <br/><Var>$dqQuarkHubTypographyH3Margin</Var> / <Var>--dq-quark-hub-typography-h3-margin</Var>
+      </td>
+    </tr>
+    <tr><td style={{font:'var(--dq-quark-hub-typography-h4-font)',margin:'var(--dq-quark-hub-typography-h4-margin)'}}>
+      H4
+      </td>
+      <td><Var>$dqQuarkHubTypographyH4Font</Var> / <Var>--dq-quark-hub-typography-h4-font</Var>
+      <br/><Var>$dqQuarkHubTypographyH4Margin</Var> / <Var>--dq-quark-hub-typography-h4-margin</Var>
+      </td>
+    </tr>
+    <tr><td style={{font:'var(--dq-quark-hub-typography-h5-font)',margin:'var(--dq-quark-hub-typography-h5-margin)'}}>
+      H5
+      </td>
+      <td><Var>$dqQuarkHubTypographyH5Font</Var> / <Var>--dq-quark-hub-typography-h5-font</Var>
+      <br/><Var>$dqQuarkHubTypographyH5Margin</Var> / <Var>--dq-quark-hub-typography-h5-margin</Var>
+      </td>
+    </tr>
+    <tr><td style={{font:'var(--dq-quark-hub-typography-text-font)',margin:'var(--dq-quark-hub-typography-text-margin)'}}>
+      text
+      </td>
+      <td><Var>$dqQuarkHubTypographyTextFont</Var> / <Var>--dq-quark-hub-typography-text-font</Var>
+      <br/><Var>$dqQuarkHubTypographyTextMargin</Var> / <Var>--dq-quark-hub-typography-text-margin</Var>
+      </td>
+    </tr>
+  </tbody>
+</table>
