@@ -1,5 +1,5 @@
 import { LitElement, html } from 'lit'
-import { customElement } from 'lit/decorators.js'
+import { customElement, property } from 'lit/decorators.js'
 import { LayoutTemplateTikiCSS } from '../../_styles/layout/_grid.js'
 
 @customElement('dq-tmplt-tiki')
@@ -11,8 +11,12 @@ class DownQuarkTemplateTiki extends LitElement {
     ]
   }
 
+  @property({ type: Boolean })
+  debug = false;
+
   render() {
-    return html`<div class="wrapper-grid-tiki debug">
+    console.log('debug', this.debug);
+    return html`<div class="wrapper-grid-tiki ${this.debug && 'debug'}">
   <header>
     Header
   </header>
