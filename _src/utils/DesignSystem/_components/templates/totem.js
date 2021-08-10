@@ -4,15 +4,14 @@ import { LayoutTemplateTotemCSS } from '../../_styles/layout/_grid.js'
 
 @customElement('dq-tmplt-totem')
 class DownQuarkTemplateTotem extends LitElement {
+  @property({ type: Boolean })
+  debug = false;
 
   static get styles() {
     return [
       LayoutTemplateTotemCSS,
     ]
   }
-
-  @property({ type: Boolean })
-  debug = false;
 
   render() {
     return html`<div class="wrapper-grid-totem ${this.debug && 'debug'}">
