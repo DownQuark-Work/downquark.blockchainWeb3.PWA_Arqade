@@ -1,98 +1,20 @@
-@use 'fonts';
-@use '../abstracts/downquark';
-
-a {
-  color:downquark.dq-var-colr('dqColorBasePurple');
-  text-decoration: none;
-  transition: color .2s ease-in-out;
-  &:hover{ color:downquark.dq-var-colr('dqColorBaseOrange');}
-}
-
-.header{
-  @include fonts.dq('header');
-  line-height: 1.2;
-}
 h1{
-  @extend .header;
-  @include downquark.dq-mix-insetText;
-  border-bottom-width: 2px;
-  border-style: solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(90deg,
-    rgba(0,0,0,0),
-    downquark.dq-var-colr('dqColorBasePurple'),
-    downquark.dq-var-colr('dqColorBaseOrange'),
-    rgba(0,0,0,0)
-  );
-  background-color: transparent;
-  background-image: linear-gradient(45deg,
-    downquark.dq-var-colr('dqColorBaseOrange') 55%,
-    downquark.dq-var-colr('dqColorBasePurple')
-  );
-  filter: saturate(1.4) brightness(.9);
-  font-size:var(--dq-typography-h1-fallback-font-size);
-  font-size:var(--dq-typography-h1-fluid-font-size);
-  font-variant: small-caps;
-  font-weight: 800;
-  padding-right: 1rem;
-  text-align: right;
-  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
-}
-#page-landing h1{
-  background-image: linear-gradient(45deg,
-    downquark.dq-var-colr('dqColorBaseOrange') 20%,
-    downquark.dq-var-colr('dqColorBasePurple')
-  );
+  font:var(--dq-typography-h1-font);
+  margin:var(--dq-typography-h1-margin);
 }
 h2{
-  @extend .header;
-  background-clip: text;
-  background-color: transparent;
-  background-image: linear-gradient(45deg,
-  downquark.dq-var-colr('dqColorBasePurple'),
-    downquark.dq-var-colr('dqColorBaseOrange')
-  );
-  color:transparent;
-  display: inline-block;
-  font-size:var(--dq-typography-h2-fallback-font-size);
-  font-size:var(--dq-typography-h2-fluid-font-size);
-  font-weight: 600;
-  font-variant: small-caps;
+  font:var(--dq-typography-h2-font);
+  margin:var(--dq-typography-h2-margin);
 }
-h3,h4,h5,h6{
-  color:downquark.dq-var-colr('dqColorBasePurple');
-}
-h3,h4{
-  @extend .header;
-  font-size:var(--dq-typography-h3-fallback-font-size);
-  font-size:var(--dq-typography-h3-fluid-font-size);
-  font-weight: 500;
+h3{
+  font:var(--dq-typography-h3-font);
+  margin:var(--dq-typography-h3-margin);
 }
 h4{
-  font-size:var(--dq-typography-h4-fallback-font-size);
-  font-size:var(--dq-typography-h4-fluid-font-size);
+  font:var(--dq-typography-h4-font);
+  margin:var(--dq-typography-h4-margin);
 }
-h5,h6{
-  @extend .header;
-  font-size:var(--dq-typography-h5-font-size);
-  font-weight: 400;
+h5{
+  font:var(--dq-typography-h5-font);
+  margin:var(--dq-typography-h5-margin);
 }
-h6{
-  font-size:var(--dq-typography-h6-font-size);
-}
-
-h1,h2,h3,h4,h5,h6{
-  a{
-    &::after{
-      transition:padding-left .2s ease-out;
-      content:'☛'
-    }
-    &:hover::after{padding-left:.4rem}
-  }
-}
-
-nav a{
-  @include fonts.dq('rubik');
-}
-
-li,p{ line-height: 1.4rem;}

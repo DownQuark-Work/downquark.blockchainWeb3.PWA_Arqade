@@ -213,7 +213,7 @@
     "philosopher": {
       "h1": {
         "font": {
-          "value": "calc(1rem * calc({fontscale.base.value} * {fontscale.h1.f.value}))/calc(calc(1rem * calc({fontscale.base.value} * {fontscale.h1.f.value})) * {fontscale.lineheight.value}) {font.Philosopher.family.value}"
+          "value": "calc(1rem * {fontscale.h1.f.value})/calc(1rem * {fontscale.h1.f.value}) {font.Philosopher.family.value}"
         },
         "margin": {
           "value": "calc(1rem * calc({fontscale.base.value} * {fontscale.h1.mt.value})) 0 calc(1rem * calc({fontscale.base.value} * {fontscale.h1.mb.value})) 0"

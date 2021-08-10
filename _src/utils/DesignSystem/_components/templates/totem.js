@@ -16,7 +16,7 @@ class DownQuarkTemplateTotem extends LitElement {
   render() {
     return html`<div class="wrapper-grid-totem ${this.debug && 'debug'}">
   <section>
-    1
+    <h1 style="font:var(--dq-typography-h1-font);margin:var(--dq-typography-h1-margin)">1</h1>
   </section>
   <section>
     1x
