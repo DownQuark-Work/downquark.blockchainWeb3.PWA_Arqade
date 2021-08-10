@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 10 Aug 2021 01:01:49 GMT
+ * Generated on Tue, 10 Aug 2021 03:26:31 GMT
  */
 
 :root {
@@ -10,5 +10,5 @@
   --dq-size-breakpoint-large: ( min-width: 1200px );
   --dq-size-breakpoint-medium: ( min-width:  992px );
   --dq-size-breakpoint-small: ( min-width:  767px );
-  --dq-size-breakpoint-extension: ( min-width:  360px );
+  --dq-size-breakpoint-panel-wide: ( min-width:  400px );
 }

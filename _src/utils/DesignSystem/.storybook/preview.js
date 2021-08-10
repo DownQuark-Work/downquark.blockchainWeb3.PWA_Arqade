@@ -1,4 +1,4 @@
-import "../_styles/downquark.globals.scss";
+import "../_styles/downquark.scss";
 import { html } from 'lit-html';
 
 export const globalTypes = {

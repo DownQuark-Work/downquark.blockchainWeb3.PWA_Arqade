@@ -1,6 +1,3 @@
-@use 'sass:color';
-@use '../abstracts/downquark';
-
 /* Make the header bg full width, but the content inline with body */
 @mixin default {
   section {
@@ -73,22 +70,6 @@ details {
 
 p {
   margin:.5rem 0;
-  img {
-    // border-width: 2rem;
-    // border-style: solid;
-    // border-image-slice: 1;
-    box-shadow: inset 1px 1px 3px downquark.dq-var-colr('dqColorBasePurple','darker');
-    background-image: linear-gradient(-45deg,
-    downquark.dq-var-colr('dqColorBaseOrange','light'),
-    downquark.dq-var-colr('dqColorBasePurple','lighter'),
-    downquark.dq-var-colr('dqColorBaseOrange','light'),
-    downquark.dq-var-colr('dqColorBasePurple','light')
-    );
-    display: block;
-    margin:0 auto;
-    padding:5%;
-    width:50%;
-  }
 }
 
 summary {
@@ -278,10 +259,6 @@ figcaption {
 }
 
 blockquote,q {
-  background-image: linear-gradient(90deg,
-    transparent 20%,
-    downquark.dq-var-colr('dqColorBasePurple','light') 99%,
-    downquark.dq-var-colr('dqColorBaseOrange') 95%);
   margin: .5rem 0 1rem .5rem;
   padding: .4rem 0;
   opacity: .8;
@@ -294,10 +271,6 @@ blockquote,q {
     top: -0.25ch;
     left: -1ch;
     font-size: 5rem;
-    background-image: linear-gradient(45deg,
-    downquark.dq-var-colr('dqColorBaseOrange') 55%,
-    downquark.dq-var-colr('dqColorBasePurple')
-    );
     color: transparent;
     background-clip: text;
     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);

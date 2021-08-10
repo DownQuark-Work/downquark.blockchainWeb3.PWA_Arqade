@@ -19,7 +19,8 @@
 @use 'base/helpers';
 
 // 4. Layout-related sections
-@use 'layout/base';
+@use 'layout/flexbox';
+@use 'layout/grid';
 
 // 5. Components
 @use 'components/downquark' as dq-components;
@@ -32,5 +33,5 @@
 @use 'themes/default';
 @use 'themes/debug';
 
-// 8. Shame
+// 8. Overwrites
 @use 'overwrites/shame';

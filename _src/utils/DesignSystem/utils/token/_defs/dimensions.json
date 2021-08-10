@@ -1,8 +1,9 @@
 {
   "size": {
     "breakpoint": {
-      "extension": {
-        "value": "( min-width:  360px )"
+      "comment": "anything up to 399 px will be the default. No need to label it as `panel`",
+      "panel-wide": {
+        "value": "( min-width:  400px )"
       },
       "small": {
         "value": "( min-width:  767px )"
