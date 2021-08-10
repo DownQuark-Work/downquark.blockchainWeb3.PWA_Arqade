@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'lit'
+import { LitElement, html } from 'lit'
 import { customElement } from 'lit/decorators.js'
 import { LayoutTemplateTikiCSS } from '../../_styles/layout/_grid.js'
 
