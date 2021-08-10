@@ -13,7 +13,7 @@
     "biorhyme": {
       "h1": {
         "font": {
-          "value": "calc(1rem * calc({fontscale.base.value} * {fontscale.h1.f.value}))/calc(calc(1rem * calc({fontscale.base.value} * {fontscale.h1.f.value})) * {fontscale.lineheight.value}) {font.Biorhyme.family.value}"
+          "value": "calc(1rem * {fontscale.h1.f.value})/calc(1rem * {fontscale.h1.f.value}) {font.Biorhyme.family.value}"
         },
         "margin": {
           "value": "calc(1rem * calc({fontscale.base.value} * {fontscale.h1.mt.value})) 0 calc(1rem * calc({fontscale.base.value} * {fontscale.h1.mb.value})) 0"
@@ -63,7 +63,7 @@
     "code": {
       "h1": {
         "font": {
-          "value": "calc(1rem * calc({fontscale.base.value} * {fontscale.h1.f.value}))/calc(calc(1rem * calc({fontscale.base.value} * {fontscale.h1.f.value})) * {fontscale.lineheight.value}) {font.code.family.value}"
+          "value": "calc(1rem * {fontscale.h1.f.value})/calc(1rem * {fontscale.h1.f.value}) {font.code.family.value}"
         },
         "margin": {
           "value": "calc(1rem * calc({fontscale.base.value} * {fontscale.h1.mt.value})) 0 calc(1rem * calc({fontscale.base.value} * {fontscale.h1.mb.value})) 0"
@@ -113,7 +113,7 @@
     "creteround": {
       "h1": {
         "font": {
-          "value": "calc(1rem * calc({fontscale.base.value} * {fontscale.h1.f.value}))/calc(calc(1rem * calc({fontscale.base.value} * {fontscale.h1.f.value})) * {fontscale.lineheight.value}) {font.Crete-Round.family.value}"
+          "value": "calc(1rem * {fontscale.h1.f.value})/calc(1rem * {fontscale.h1.f.value}) {font.Crete-Round.family.value}"
         },
         "margin": {
           "value": "calc(1rem * calc({fontscale.base.value} * {fontscale.h1.mt.value})) 0 calc(1rem * calc({fontscale.base.value} * {fontscale.h1.mb.value})) 0"
@@ -163,7 +163,7 @@
     "montserrat": {
       "h1": {
         "font": {
-          "value": "calc(1rem * calc({fontscale.base.value} * {fontscale.h1.f.value}))/calc(calc(1rem * calc({fontscale.base.value} * {fontscale.h1.f.value})) * {fontscale.lineheight.value}) {font.Mont-Alt.family.value}"
+          "value": "calc(1rem * {fontscale.h1.f.value})/calc(1rem * {fontscale.h1.f.value}) {font.Mont-Alt.family.value}"
         },
         "margin": {
           "value": "calc(1rem * calc({fontscale.base.value} * {fontscale.h1.mt.value})) 0 calc(1rem * calc({fontscale.base.value} * {fontscale.h1.mb.value})) 0"
@@ -263,7 +263,7 @@
     "podkova": {
       "h1": {
         "font": {
-          "value": "calc(1rem * calc({fontscale.base.value} * {fontscale.h1.f.value}))/calc(calc(1rem * calc({fontscale.base.value} * {fontscale.h1.f.value})) * {fontscale.lineheight.value}) {font.Podkova.family.value}"
+          "value": "calc(1rem * {fontscale.h1.f.value})/calc(1rem * {fontscale.h1.f.value}) {font.Podkova.family.value}"
         },
         "margin": {
           "value": "calc(1rem * calc({fontscale.base.value} * {fontscale.h1.mt.value})) 0 calc(1rem * calc({fontscale.base.value} * {fontscale.h1.mb.value})) 0"
@@ -313,7 +313,7 @@
     "roboto": {
       "h1": {
         "font": {
-          "value": "calc(1rem * calc({fontscale.base.value} * {fontscale.h1.f.value}))/calc(calc(1rem * calc({fontscale.base.value} * {fontscale.h1.f.value})) * {fontscale.lineheight.value}) {font.Roboto.family.value}"
+          "value": "calc(1rem * {fontscale.h1.f.value})/calc(1rem * {fontscale.h1.f.value}) {font.Roboto.family.value}"
         },
         "margin": {
           "value": "calc(1rem * calc({fontscale.base.value} * {fontscale.h1.mt.value})) 0 calc(1rem * calc({fontscale.base.value} * {fontscale.h1.mb.value})) 0"
