@@ -26,11 +26,17 @@
       "Pomegranate": {
         "value": "#f44336"
       },
+      "Rich-Red": {
+        "value": "#710d06"
+      },
       "Swirl": {
         "value": "rgb(212,208,201)"
       },
       "Tawny-Port": {
         "value": "rgb(99,39,65)"
+      },
+      "Voodoo": {
+        "value": "rgb(71,43,77)"
       },
       "Zest": {
         "value": "#dd851a"
@@ -55,6 +61,12 @@
       },
       "Flamingo": {
         "value": "rgb(244,90,60)"
+      },
+      "Manatee": {
+        "value": "#898e9b"
+      },
+      "Mortar": {
+        "value": "#463948"
       },
       "Monarch-Red": {
         "value": "rgb(125,6,47)"

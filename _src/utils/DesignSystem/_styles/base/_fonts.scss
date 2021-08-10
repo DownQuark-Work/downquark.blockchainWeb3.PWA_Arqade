@@ -1,6 +1,7 @@
 @use 'sass:string';
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Philosopher:wght@700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&family=Crete+Round:ital@1&family=Podkova&display=swap');
 
 @mixin dq($cat:'sans'){
   // @if $cat == 'header' {

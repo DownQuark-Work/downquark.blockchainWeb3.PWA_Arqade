@@ -1,7 +1,19 @@
 
 // Do not edit directly
-// Generated on Mon, 09 Aug 2021 21:04:55 GMT
+// Generated on Tue, 10 Aug 2021 01:01:49 GMT
 
+$dqTypographyBiorhymeH1Font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'BioRhyme', serif;
+$dqTypographyBiorhymeH1Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+$dqTypographyBiorhymeH2Font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'BioRhyme', serif;
+$dqTypographyBiorhymeH2Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+$dqTypographyBiorhymeH3Font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) 'BioRhyme', serif;
+$dqTypographyBiorhymeH3Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyBiorhymeH4Font: 1rem/calc(1rem * 1.5) 'BioRhyme', serif;
+$dqTypographyBiorhymeH4Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyBiorhymeH5Font: 1rem/calc(1rem * 1.5) 'BioRhyme', serif;
+$dqTypographyBiorhymeH5Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyBiorhymeTextFont: 1rem/calc(1rem * 1.5) 'BioRhyme', serif;
+$dqTypographyBiorhymeTextMargin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
 $dqTypographyCodeH1Font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Courier New', 'Monaco', monospace;
 $dqTypographyCodeH1Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
 $dqTypographyCodeH2Font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Courier New', 'Monaco', monospace;
@@ -14,17 +26,29 @@ $dqTypographyCodeH5Font: 1rem/calc(1rem * 1.5) 'Courier New', 'Monaco', monospac
 $dqTypographyCodeH5Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
 $dqTypographyCodeTextFont: 1rem/calc(1rem * 1.5) 'Courier New', 'Monaco', monospace;
 $dqTypographyCodeTextMargin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
-$dqTypographyMontserratH1Font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Montserrat Alternates', sans-serif;;
+$dqTypographyCreteroundH1Font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Crete Round', serif;
+$dqTypographyCreteroundH1Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+$dqTypographyCreteroundH2Font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Crete Round', serif;
+$dqTypographyCreteroundH2Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+$dqTypographyCreteroundH3Font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) 'Crete Round', serif;
+$dqTypographyCreteroundH3Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyCreteroundH4Font: 1rem/calc(1rem * 1.5) 'Crete Round', serif;
+$dqTypographyCreteroundH4Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyCreteroundH5Font: 1rem/calc(1rem * 1.5) 'Crete Round', serif;
+$dqTypographyCreteroundH5Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyCreteroundTextFont: 1rem/calc(1rem * 1.5) 'Crete Round', serif;
+$dqTypographyCreteroundTextMargin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyMontserratH1Font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Montserrat Alternates', sans-serif;
 $dqTypographyMontserratH1Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
-$dqTypographyMontserratH2Font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Montserrat Alternates', sans-serif;;
+$dqTypographyMontserratH2Font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Montserrat Alternates', sans-serif;
 $dqTypographyMontserratH2Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
-$dqTypographyMontserratH3Font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) 'Montserrat Alternates', sans-serif;;
+$dqTypographyMontserratH3Font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) 'Montserrat Alternates', sans-serif;
 $dqTypographyMontserratH3Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
-$dqTypographyMontserratH4Font: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;;
+$dqTypographyMontserratH4Font: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;
 $dqTypographyMontserratH4Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
-$dqTypographyMontserratH5Font: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;;
+$dqTypographyMontserratH5Font: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;
 $dqTypographyMontserratH5Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
-$dqTypographyMontserratTextFont: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;;
+$dqTypographyMontserratTextFont: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;
 $dqTypographyMontserratTextMargin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
 $dqTypographyPhilosopherH1Font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Philosopher', sans-serif;
 $dqTypographyPhilosopherH1Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
@@ -38,6 +62,18 @@ $dqTypographyPhilosopherH5Font: 1rem/calc(1rem * 1.5) 'Philosopher', sans-serif;
 $dqTypographyPhilosopherH5Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
 $dqTypographyPhilosopherTextFont: 1rem/calc(1rem * 1.5) 'Philosopher', sans-serif;
 $dqTypographyPhilosopherTextMargin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyPodkovaH1Font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Podkova', serif;
+$dqTypographyPodkovaH1Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+$dqTypographyPodkovaH2Font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Podkova', serif;
+$dqTypographyPodkovaH2Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+$dqTypographyPodkovaH3Font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) 'Podkova', serif;
+$dqTypographyPodkovaH3Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyPodkovaH4Font: 1rem/calc(1rem * 1.5) 'Podkova', serif;
+$dqTypographyPodkovaH4Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyPodkovaH5Font: 1rem/calc(1rem * 1.5) 'Podkova', serif;
+$dqTypographyPodkovaH5Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+$dqTypographyPodkovaTextFont: 1rem/calc(1rem * 1.5) 'Podkova', serif;
+$dqTypographyPodkovaTextMargin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
 $dqTypographyRobotoH1Font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Roboto', sans-serif;
 $dqTypographyRobotoH1Margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
 $dqTypographyRobotoH2Font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Roboto', sans-serif;

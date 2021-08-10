@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 09 Aug 2021 21:04:55 GMT
+ * Generated on Tue, 10 Aug 2021 01:01:49 GMT
  */
 
 :root {
@@ -18,6 +18,8 @@
   --dq-color-accents-oyster-pink: #e9d1cc;
   --dq-color-accents-oxford-blue: #313c4d;
   --dq-color-accents-monarch-red: #7d062f;
+  --dq-color-accents-mortar: #463948;
+  --dq-color-accents-manatee: #898e9b;
   --dq-color-accents-flamingo: #f45a3c;
   --dq-color-accents-flame-pea: #db5c2a;
   --dq-color-accents-buccaneer: #5b2636;
@@ -25,8 +27,10 @@
   --dq-color-accents-white: #ffffff;
   --dq-color-accents-black: #000000;
   --dq-color-base-zest: #dd851a;
+  --dq-color-base-voodoo: #472b4d;
   --dq-color-base-tawny-port: #632741;
   --dq-color-base-swirl: #d4d0c9;
+  --dq-color-base-rich-red: #710d06;
   --dq-color-base-pomegranate: #f44336;
   --dq-color-base-mule-fawn: #8b3c2b;
   --dq-color-base-hippie-green: #609552;

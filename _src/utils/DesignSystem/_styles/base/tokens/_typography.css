@@ -1,9 +1,21 @@
 /**
  * Do not edit directly
- * Generated on Mon, 09 Aug 2021 21:04:55 GMT
+ * Generated on Tue, 10 Aug 2021 01:01:49 GMT
  */
 
 :root {
+  --dq-typography-biorhyme-h1-font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'BioRhyme', serif;
+  --dq-typography-biorhyme-h1-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+  --dq-typography-biorhyme-h2-font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'BioRhyme', serif;
+  --dq-typography-biorhyme-h2-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+  --dq-typography-biorhyme-h3-font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) 'BioRhyme', serif;
+  --dq-typography-biorhyme-h3-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-biorhyme-h4-font: 1rem/calc(1rem * 1.5) 'BioRhyme', serif;
+  --dq-typography-biorhyme-h4-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-biorhyme-h5-font: 1rem/calc(1rem * 1.5) 'BioRhyme', serif;
+  --dq-typography-biorhyme-h5-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-biorhyme-text-font: 1rem/calc(1rem * 1.5) 'BioRhyme', serif;
+  --dq-typography-biorhyme-text-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
   --dq-typography-code-h1-font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Courier New', 'Monaco', monospace;
   --dq-typography-code-h1-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
   --dq-typography-code-h2-font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Courier New', 'Monaco', monospace;
@@ -16,17 +28,29 @@
   --dq-typography-code-h5-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
   --dq-typography-code-text-font: 1rem/calc(1rem * 1.5) 'Courier New', 'Monaco', monospace;
   --dq-typography-code-text-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
-  --dq-typography-montserrat-h1-font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Montserrat Alternates', sans-serif;;
+  --dq-typography-creteround-h1-font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Crete Round', serif;
+  --dq-typography-creteround-h1-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+  --dq-typography-creteround-h2-font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Crete Round', serif;
+  --dq-typography-creteround-h2-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+  --dq-typography-creteround-h3-font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) 'Crete Round', serif;
+  --dq-typography-creteround-h3-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-creteround-h4-font: 1rem/calc(1rem * 1.5) 'Crete Round', serif;
+  --dq-typography-creteround-h4-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-creteround-h5-font: 1rem/calc(1rem * 1.5) 'Crete Round', serif;
+  --dq-typography-creteround-h5-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-creteround-text-font: 1rem/calc(1rem * 1.5) 'Crete Round', serif;
+  --dq-typography-creteround-text-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-montserrat-h1-font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Montserrat Alternates', sans-serif;
   --dq-typography-montserrat-h1-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
-  --dq-typography-montserrat-h2-font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Montserrat Alternates', sans-serif;;
+  --dq-typography-montserrat-h2-font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Montserrat Alternates', sans-serif;
   --dq-typography-montserrat-h2-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
-  --dq-typography-montserrat-h3-font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) 'Montserrat Alternates', sans-serif;;
+  --dq-typography-montserrat-h3-font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) 'Montserrat Alternates', sans-serif;
   --dq-typography-montserrat-h3-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
-  --dq-typography-montserrat-h4-font: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;;
+  --dq-typography-montserrat-h4-font: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;
   --dq-typography-montserrat-h4-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
-  --dq-typography-montserrat-h5-font: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;;
+  --dq-typography-montserrat-h5-font: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;
   --dq-typography-montserrat-h5-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
-  --dq-typography-montserrat-text-font: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;;
+  --dq-typography-montserrat-text-font: 1rem/calc(1rem * 1.5) 'Montserrat Alternates', sans-serif;
   --dq-typography-montserrat-text-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
   --dq-typography-philosopher-h1-font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Philosopher', sans-serif;
   --dq-typography-philosopher-h1-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
@@ -40,6 +64,18 @@
   --dq-typography-philosopher-h5-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
   --dq-typography-philosopher-text-font: 1rem/calc(1rem * 1.5) 'Philosopher', sans-serif;
   --dq-typography-philosopher-text-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-podkova-h1-font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Podkova', serif;
+  --dq-typography-podkova-h1-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+  --dq-typography-podkova-h2-font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Podkova', serif;
+  --dq-typography-podkova-h2-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+  --dq-typography-podkova-h3-font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) 'Podkova', serif;
+  --dq-typography-podkova-h3-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-podkova-h4-font: 1rem/calc(1rem * 1.5) 'Podkova', serif;
+  --dq-typography-podkova-h4-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-podkova-h5-font: 1rem/calc(1rem * 1.5) 'Podkova', serif;
+  --dq-typography-podkova-h5-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-podkova-text-font: 1rem/calc(1rem * 1.5) 'Podkova', serif;
+  --dq-typography-podkova-text-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
   --dq-typography-roboto-h1-font: calc(1rem * calc(1.75 * 3))/calc(calc(1rem * calc(1.75 * 3)) * 1.5) 'Roboto', sans-serif;
   --dq-typography-roboto-h1-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
   --dq-typography-roboto-h2-font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) 'Roboto', sans-serif;

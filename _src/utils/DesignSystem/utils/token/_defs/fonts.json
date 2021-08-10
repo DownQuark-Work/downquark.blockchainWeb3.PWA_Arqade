@@ -1,21 +1,33 @@
 {
   "font": {
-    "Philosopher": {
+    "Biorhyme": {
       "family": {
-        "value": "'Philosopher', sans-serif",
-        "comment": "heading text"
+        "value": "'BioRhyme', serif"
+      }
+    },
+    "Crete-Round": {
+      "family": {
+        "value": "'Crete Round', serif"
       }
     },
     "Mont-Alt": {
       "family": {
-        "value": "'Montserrat Alternates', sans-serif;",
-        "comment": "heading text"
+        "value": "'Montserrat Alternates', sans-serif"
+      }
+    },
+    "Philosopher": {
+      "family": {
+        "value": "'Philosopher', sans-serif"
+      }
+    },
+    "Podkova": {
+      "family": {
+        "value": "'Podkova', serif"
       }
     },
     "Roboto": {
       "family": {
-        "value": "'Roboto', sans-serif",
-        "comment": "body text"
+        "value": "'Roboto', sans-serif"
       }
     },
     "code": {

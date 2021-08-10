@@ -1,12 +1,15 @@
 /**
  * Do not edit directly
- * Generated on Mon, 09 Aug 2021 21:04:55 GMT
+ * Generated on Tue, 10 Aug 2021 01:01:49 GMT
  */
 
 :root {
   --dq-font-text-default: sans-serif;
   --dq-font-code-family: 'Courier New', 'Monaco', monospace;
-  --dq-font-roboto-family: 'Roboto', sans-serif; /* body text */
-  --dq-font-mont-alt-family: 'Montserrat Alternates', sans-serif;; /* heading text */
-  --dq-font-philosopher-family: 'Philosopher', sans-serif; /* heading text */
+  --dq-font-roboto-family: 'Roboto', sans-serif;
+  --dq-font-podkova-family: 'Podkova', serif;
+  --dq-font-philosopher-family: 'Philosopher', sans-serif;
+  --dq-font-mont-alt-family: 'Montserrat Alternates', sans-serif;
+  --dq-font-crete-round-family: 'Crete Round', serif;
+  --dq-font-biorhyme-family: 'BioRhyme', serif;
 }
