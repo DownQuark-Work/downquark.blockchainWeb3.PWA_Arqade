@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
-import { LayoutTemplateTotemCSS } from '../../_styles/layout/_grid.js'
+import { LayoutTemplateTotemCSS } from '../../_styles/layout/_templates.js'
 
 @customElement('dq-tmplt-totem')
 class DownQuarkTemplateTotem extends LitElement {
@@ -15,9 +15,6 @@ class DownQuarkTemplateTotem extends LitElement {
 
   render() {
     return html`<div class="wrapper-grid-totem ${this.debug && 'debug'}">
-  <header>
-    Header
-  </header>
   <section>
     1
   </section>
@@ -27,9 +24,6 @@ class DownQuarkTemplateTotem extends LitElement {
   <section>
     2
   </section>
-  <footer>
-    Footer
-  </footer>
 </div>`;
   }
 }
