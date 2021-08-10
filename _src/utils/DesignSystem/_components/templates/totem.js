@@ -1,13 +1,13 @@
 import { LitElement, html } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
-import { LayoutTemplateTikiCSS } from '../../_styles/layout/_grid.js'
+import { LayoutTemplateTotemCSS } from '../../_styles/layout/_grid.js'
 
-@customElement('dq-tmplt-tiki')
-class DownQuarkTemplateTiki extends LitElement {
+@customElement('dq-tmplt-totem')
+class DownQuarkTemplateTotem extends LitElement {
 
   static get styles() {
     return [
-      LayoutTemplateTikiCSS,
+      LayoutTemplateTotemCSS,
     ]
   }
 
@@ -15,8 +15,7 @@ class DownQuarkTemplateTiki extends LitElement {
   debug = false;
 
   render() {
-    console.log('debug', this.debug);
-    return html`<div class="wrapper-grid-tiki ${this.debug && 'debug'}">
+    return html`<div class="wrapper-grid-totem ${this.debug && 'debug'}">
   <header>
     Header
   </header>
