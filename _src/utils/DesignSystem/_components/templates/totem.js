@@ -24,6 +24,21 @@ class DownQuarkTemplateTotem extends LitElement {
   <section>
     2
   </section>
+  <section>
+    2x
+  </section>
+  <section class="wide">
+    3wide
+  </section>
+  <section class="narrow">
+    3narrow
+  </section>
+  <section class="reset">
+    resets even/odd behavior
+  </section>
+  <section>
+    4 (wide again after reset)
+  </section>
 </div>`;
   }
 }

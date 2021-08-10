@@ -1,11 +1,13 @@
 /**
  * Do not edit directly
- * Generated on Tue, 10 Aug 2021 03:26:31 GMT
+ * Generated on Tue, 10 Aug 2021 14:30:58 GMT
  */
 
 :root {
   --dq-color-vendor-twitter-blue: #1da1f2;
   --dq-color-vendor-facebook-blue: #1877f2;
+  --dq-color-common-white: #d1dfe9;
+  --dq-color-common-black: #1c111f;
   --dq-color-accents-voodoo: #472b4d;
   --dq-color-accents-thunder: #3d2d35;
   --dq-color-accents-tango: #ea7521;
@@ -24,8 +26,6 @@
   --dq-color-accents-flame-pea: #db5c2a;
   --dq-color-accents-buccaneer: #5b2636;
   --dq-color-accents-bittersweet: #f7755b;
-  --dq-color-accents-white: #ffffff;
-  --dq-color-accents-black: #000000;
   --dq-color-base-zest: #dd851a;
   --dq-color-base-voodoo: #472b4d;
   --dq-color-base-tawny-port: #632741;

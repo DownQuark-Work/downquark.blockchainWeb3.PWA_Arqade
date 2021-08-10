@@ -44,12 +44,6 @@
     },
     "accents": {
       "comment": "Accents are one offs that will not have shades dynamically created",
-      "black": {
-        "value": "#000000"
-      },
-      "white": {
-        "value": "#ffffff"
-      },
       "Bittersweet": {
         "value": "rgb(247,117,91)"
       },
@@ -103,6 +97,14 @@
       },
       "Voodoo": {
         "value": "rgb(71,43,77)"
+      }
+    },
+    "common": {
+      "black": {
+        "value": "#1c111f"
+      },
+      "white": {
+        "value": "#d1dfe9"
       }
     },
     "vendor": {
