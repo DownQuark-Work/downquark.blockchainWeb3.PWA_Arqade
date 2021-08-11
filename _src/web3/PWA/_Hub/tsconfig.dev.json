@@ -10,7 +10,7 @@
       "dom"
     ],
     "allowJs": true,
-    "checkJs": true,
+    "checkJs": false,
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -50,6 +50,7 @@
     ]
   },
   "exclude": [
+    "_dist",
     "node_modules",
     "**/*.spec.ts"
   ]
