@@ -1,4 +1,4 @@
-import { css } from 'lit-element';
+import { css } from 'lit';
 
 export const LayoutTemplateAppShellCSS = css`
   #app-shell{
@@ -46,10 +46,8 @@ export const LayoutTemplateTotemCSS = css`
 .wrapper-grid-totem {
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
-  grid-template-rows: 1fr;
-  margin: 0 auto;
-  padding: 1em 0;
 }
+::slotted(section),
 .wrapper-grid-totem section{
     align-items: center;
     background: var(--dq-color-main-default);
@@ -58,13 +56,19 @@ export const LayoutTemplateTotemCSS = css`
     grid-column: 2 / span 1;
     justify-content: center;
   }
+  ::slotted(section.wide),
+  ::slotted(section:nth-child(even)),
   .wrapper-grid-totem section:nth-child(even),
   .wrapper-grid-totem section.wide {
     grid-column: 1 / span 3;
   }
+
+  ::slotted(section.narrow),
   .wrapper-grid-totem section.narrow {
     grid-column: 2 / span 1;
   }
+
+  ::slotted(section.reset),
   .wrapper-grid-totem section.reset {
     /* empty div to allow even/odd behavior to work after custom override */
     height:0;
