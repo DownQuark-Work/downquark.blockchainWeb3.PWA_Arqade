@@ -15,31 +15,7 @@ class DownQuarkTemplateTotem extends LitElement {
 
   render() {
     return html`<div class="wrapper-grid-totem">
-  <slot>x</slot>
-  <section>
-    <h1 style="font:var(--dq-typography-h1-font);margin:var(--dq-typography-h1-margin)">1</h1>
-  </section>
-  <section>
-    1x
-  </section>
-  <section>
-    2
-  </section>
-  <section>
-    2x
-  </section>
-  <section class="wide">
-    3wide
-  </section>
-  <section class="narrow">
-    3narrow
-  </section>
-  <section class="reset">
-    resets even/odd behavior
-  </section>
-  <section>
-    4 (wide again after reset)
-  </section>
+  <slot></slot>
 </div>`;
   }
 }

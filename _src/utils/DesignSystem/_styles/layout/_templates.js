@@ -47,31 +47,27 @@ export const LayoutTemplateTotemCSS = css`
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
 }
-::slotted(section),
-.wrapper-grid-totem section{
+::slotted(section){
     align-items: center;
     background: var(--dq-color-main-default);
     color: var(--dq-color-main-lighter);
     display: flex;
     grid-column: 2 / span 1;
-    justify-content: center;
+    padding:0 .5rem;
   }
   ::slotted(section.wide),
-  ::slotted(section:nth-child(even)),
-  .wrapper-grid-totem section:nth-child(even),
-  .wrapper-grid-totem section.wide {
+  ::slotted(section:nth-child(even)){
     grid-column: 1 / span 3;
   }
 
-  ::slotted(section.narrow),
-  .wrapper-grid-totem section.narrow {
+  ::slotted(section.narrow) {
     grid-column: 2 / span 1;
   }
 
-  ::slotted(section.reset),
-  .wrapper-grid-totem section.reset {
+  ::slotted(section.reset) {
     /* empty div to allow even/odd behavior to work after custom override */
     height:0;
     overflow:hidden;
+    padding:0;
   }
 }`

@@ -11,6 +11,7 @@
 // 2. Vendors
 @use 'vendors/reset';
 @use 'vendors/normalize';
+@use 'vendors/dq-normalize';
 
 // 3. Base stuff
 @use 'base/root';

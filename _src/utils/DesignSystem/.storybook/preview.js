@@ -1,5 +1,5 @@
-import "../_styles/downquark.scss";
 import { html } from 'lit-html';
+import "../_styles/downquark.scss";
 
 export const globalTypes = {
   quark: {

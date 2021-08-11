@@ -5,6 +5,7 @@ import { LayoutTemplateAppShellCSS } from '../../_styles/layout/_templates.js'
 import '../../_components/organisms/header.js'
 import '../../_components/organisms/footer.js'
 
+
 @customElement('dq-tmplt-app-shell')
 class DownQuarkTemplateAppShell extends LitElement {
   @property({ type: Boolean })
