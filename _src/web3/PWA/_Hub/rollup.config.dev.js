@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import resolve from "@rollup/plugin-node-resolve";
 import html from "@open-wc/rollup-plugin-html";
 import copy from "rollup-plugin-copy";
@@ -106,10 +107,10 @@ const typeScriptOpts = {
 export default [
   {
     input: {
-      'orgnsm/header': './src/script/components/organisms/header.js',
+      'orgnsm/header': './no_modules/_components/organisms/header.js',
     },
     output: {
-      dir: 'src/script/_compiled/',
+      dir: '_src/qomponents/',
       sourcemap: true,
     },
     ...designSystemOpts
