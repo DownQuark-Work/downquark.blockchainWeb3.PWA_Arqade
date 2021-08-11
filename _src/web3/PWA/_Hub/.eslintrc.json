@@ -14,12 +14,13 @@
     "prettier/@typescript-eslint"
   ],
   "ignorePatterns": [
-    "src/script/_compiled"
+    "_src/_qomponents"
   ],
   "overrides": [
     {
       "files": [
-        "src/**/*.ts"
+        "src/**/*.ts",
+        "_src/**/*.ts"
       ],
       "rules": {
         "@typescript-eslint/explicit-module-boundary-types": [

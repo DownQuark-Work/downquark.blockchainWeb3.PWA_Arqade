@@ -3,9 +3,8 @@
 # Compiled
 .dist
 _dist
-src/assets/styles/css
-
-validators/flow/flow-typed/stubs/
+node_modules
+_src/_qomponents
 
 # token generated files
 assets/css/variables/

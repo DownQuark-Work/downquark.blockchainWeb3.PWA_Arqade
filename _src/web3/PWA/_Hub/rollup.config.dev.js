@@ -107,10 +107,12 @@ const typeScriptOpts = {
 export default [
   {
     input: {
-      'orgnsm/header': './no_modules/_components/organisms/header.js',
+      'tmplt/app-shell': './no_modules/_components/templates/app-shell.js',
+      'tmplt/default': './no_modules/_components/templates/default.js',
+      'tmplt/totem': './no_modules/_components/templates/totem.js',
     },
     output: {
-      dir: '_src/qomponents/',
+      dir: '_src/_qomponents/',
       sourcemap: true,
     },
     ...designSystemOpts
