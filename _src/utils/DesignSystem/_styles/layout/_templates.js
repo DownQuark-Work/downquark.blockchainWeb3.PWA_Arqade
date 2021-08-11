@@ -3,9 +3,8 @@ import { css } from 'lit';
 export const LayoutTemplateAppShellCSS = css`
   #app-shell{
     background-color:var(--dq-color-main-lighter);
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display:grid;
+    grid-template-rows: auto 1fr auto;
     margin:0 auto;
     min-height:100vh;
     width:385px;
@@ -13,21 +12,16 @@ export const LayoutTemplateAppShellCSS = css`
 `
 
 export const LayoutTemplateDefaultCSS = css`
-:host{
-  min-height:80vh;
-}
 .wrapper-grid-default{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-.wrapper-grid-default > div,
-.wrapper-grid-default > section{
-  grid-column:1/span 12
+
+::slotted(*) {
+  background: var(--dq-color-main-default);
+  color: var(--dq-color-main-lighter);
 }
-.wrapper-grid-default > div {
-  display:flex;
-  justify-content: space-around;
-}
+
 ::slotted(div) {
   display:flex;
   grid-column:1/span 12;
@@ -39,10 +33,6 @@ export const LayoutTemplateDefaultCSS = css`
 `
 
 export const LayoutTemplateTotemCSS = css`
-:host{
-  min-height:80vh;
-}
-
 .wrapper-grid-totem {
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;

@@ -14,5 +14,21 @@ export const TemplatePageLayoutTotem = (args) => html`<dq-tmplt-app-shell>
     <section class="narrow">098</section>
     <section class="reset"></section>
     <section>should be wide</section>
+    <section>abc</section>
+    <section>
+      <h2>123</h2>
+    </section>
+    <section class="wide">xyz</section>
+    <section class="narrow">098</section>
+    <section class="reset"></section>
+    <section>should be wide</section>
+    <section>abc</section>
+    <section>
+      <h3>123</h3>
+    </section>
+    <section class="wide">xyz</section>
+    <section class="narrow">098</section>
+    <section class="reset"></section>
+    <section>should be wide</section>
   </dq-tmplt-totem>
 </dq-tmplt-app-shell>`
