@@ -21,7 +21,7 @@
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/@babel/compat-data/-/compat-data-7.15.0.tgz#2dbaf8b85334796cafbb0f5793a90a2fc010b176"
   integrity sha1-Lbr4uFM0eWyvuw9Xk6kKL8AQsXY=
 
-"@babel/core@^7.11.1", "@babel/core@^7.8.4":
+"@babel/core@^7.11.1", "@babel/core@^7.15.0", "@babel/core@^7.8.4":
   version "7.15.0"
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/@babel/core/-/core-7.15.0.tgz#749e57c68778b73ad8082775561f67f5196aafa8"
   integrity sha1-dJ5Xxod4tzrYCCd1Vh9n9Rlqr6g=
@@ -2446,6 +2446,11 @@ core-js@^2.4.0, core-js@^2.6.5:
   version "2.6.12"
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha1-2TM9+nsGXjR8xWgiGdb2kIWcwuw=
+
+core-js@^3.16.1:
+  version "3.16.1"
+  resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/core-js/-/core-js-3.16.1.tgz#f4485ce5c9f3c6a7cb18fa80488e08d362097249"
+  integrity sha1-9Ehc5cnzxqfLGPqASI4I02IJckk=
 
 cosmiconfig@^6.0.0:
   version "6.0.0"

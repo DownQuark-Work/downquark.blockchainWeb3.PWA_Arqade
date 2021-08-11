@@ -7,15 +7,16 @@ import typescript from "@rollup/plugin-typescript";
 import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 
-
-// export default {
 const designSystemOpts = {
   preserveSymlinks: true,
   plugins: [
     resolve(),
+    resolve({ 'moduleDirectories': ["./node_modules"] }),
     babel({
       babelHelpers: 'bundled',
       babelrc: false,
+      // forgetting the '**' below will cause no end of sorrow ... rember it in future integrations
+      exclude: ['node_modules/**', '../../../utils/DesignSystem/node_modules/**'],
       "presets": [
         [
           "@babel/preset-env",
@@ -24,7 +25,6 @@ const designSystemOpts = {
             shippedProposals: true,
             useBuiltIns: 'usage',
             corejs: '3',
-            loose: true,
           }
         ]
       ],
@@ -32,14 +32,14 @@ const designSystemOpts = {
         [
           "@babel/plugin-proposal-decorators",
           {
-            "decoratorsBeforeExport": false,
+            "decoratorsBeforeExport": true,
             "legacy": false
           }
         ],
         [
           "@babel/plugin-proposal-class-properties",
           {
-            "loose": true
+            "loose": false
           }
         ],
         '@babel/plugin-transform-shorthand-properties',
@@ -47,10 +47,10 @@ const designSystemOpts = {
         [
           '@babel/plugin-proposal-private-methods',
           {
-            "loose": true
+            "loose": false
           }
         ],
-        ["@babel/plugin-proposal-private-property-in-object", { "loose": true }],
+        ["@babel/plugin-proposal-private-property-in-object", { "loose": false }],
         '@babel/plugin-proposal-export-default-from',
         '@babel/plugin-syntax-dynamic-import',
         [
@@ -75,6 +75,7 @@ const designSystemOpts = {
         '@emotion',
       ]
     }),
+
     commonjs(),
   ]
 };
@@ -84,7 +85,7 @@ const typeScriptOpts = {
     html(),
     typescript({
       tsconfig: "tsconfig.dev.json",
-      exclude: "*.js"
+      exclude: ["*.js"]
     }),
     replace({
       preventAssignment: true,
@@ -103,24 +104,16 @@ const typeScriptOpts = {
 };
 
 export default [
-  // {
-  //   input: {
-  //     'orgnsm/header': './src/script/components/organisms/header.js',
-  //     // 'modules/integration': './__unrolled/webcomponents/mjs/modules/integration.js',
-  //     // 'modules/status': './__unrolled/webcomponents/mjs/modules/status.js',
-  //     // 'modules/task': './__unrolled/webcomponents/mjs/modules/task.js',
-  //     // 'components/dashboard': './__unrolled/webcomponents/mjs/components/dashboard.js',
-  //     // 'components/task-demo': './__unrolled/webcomponents/mjs/components/task-demo.js',
-  //     // 'components/status': './__unrolled/webcomponents/mjs/components/status.js'
-  //   },
-  //   output: {
-  //     dir: 'src/script/_compiled/',
-  //     // dir: '_dist/assets/js/webcomponents/',
-  //     // dir: '_app/assets/js/webcomponents/',
-  //     sourcemap: true
-  //   },
-  //   ...designSystemOpts
-  // },
+  {
+    input: {
+      'orgnsm/header': './src/script/components/organisms/header.js',
+    },
+    output: {
+      dir: 'src/script/_compiled/',
+      sourcemap: true,
+    },
+    ...designSystemOpts
+  },
   {
     input: "index.html",
     output: {
