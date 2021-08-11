@@ -5,7 +5,7 @@ import './app-home';
 
 import { Router } from '@vaadin/router';
 
-import '../components/header.js';
+import '../defaultcomponents/header';
 
 @customElement('app-index')
 export class AppIndex extends LitElement {
@@ -70,7 +70,7 @@ export class AppIndex extends LitElement {
             path: '/about',
             component: 'app-about',
             action: async () => {
-              await import('./app-about.js');
+              await import('./app-about');
             },
           },
         ],
@@ -81,8 +81,7 @@ export class AppIndex extends LitElement {
   render() {
     return html`
       <div>
-        YO!
-        <app-header-yo></app-header-yo>
+        <default-app-header></default-app-header>
 
         <main>
           <div id="routerOutlet"></div>

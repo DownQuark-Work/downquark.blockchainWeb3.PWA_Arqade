@@ -5,7 +5,7 @@ import { defaultCardDeck } from "./card";
 
 
 
-@customElement('app-header-yo')
+@customElement('default-app-header')
 export class AppHeader extends LitElement {
   @property({ type: String }) title = 'PWA Starter';
 
