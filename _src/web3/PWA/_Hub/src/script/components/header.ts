@@ -1,7 +1,11 @@
 import { LitElement, css, html } from 'lit';
 import { property, customElement } from 'lit/decorators';
 
-@customElement('app-header')
+import { defaultCardDeck } from "./card";
+
+
+
+@customElement('app-header-yo')
 export class AppHeader extends LitElement {
   @property({ type: String }) title = 'PWA Starter';
 
@@ -48,12 +52,13 @@ export class AppHeader extends LitElement {
   }
 
   render() {
+    console.log('defaultCardDeck', defaultCardDeck);
     return html`
       <header>
         <h1>${this.title}</h1>
 
         <nav>
-          <fast-anchor href="./" appearance="button">Home</fast-anchor>
+          <fast-anchor href="./" appearance="button">Homes</fast-anchor>
           <fast-anchor href="./about" appearance="button">About</fast-anchor>
         </nav>
       </header>

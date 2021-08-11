@@ -14,7 +14,7 @@ export class AppAbout extends LitElement {
   render() {
     return html`
       <div>
-        <h2>About Page</h2>
+        <h2>About sssPage</h2>
       </div>
     `;
   }
