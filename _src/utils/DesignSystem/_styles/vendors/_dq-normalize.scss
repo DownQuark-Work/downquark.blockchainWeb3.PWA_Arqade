@@ -1,7 +1,6 @@
-/* Make the header bg full width, but the content inline with body */
-@mixin default {
   section {
     margin:5% auto;
+    padding:1em;
     position: relative;
     width: 80%;
     z-index: 5;
@@ -310,6 +309,5 @@ pre code {
   background: none;
   margin: 0;
   padding: 0;
-}
 }
 }

@@ -39,6 +39,7 @@ class DownQuarkTemplateTotem extends LitElement {
   <section>
     4 (wide again after reset)
   </section>
+  <slot>x</slot>
 </div>`;
   }
 }

@@ -12,10 +12,37 @@ export const LayoutTemplateAppShellCSS = css`
   }
 `
 
+export const LayoutTemplateDefaultCSS = css`
+:host{
+  min-height:80vh;
+}
+.wrapper-grid-default{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.wrapper-grid-default > div,
+.wrapper-grid-default > section{
+  grid-column:1/span 12
+}
+.wrapper-grid-default > div {
+  display:flex;
+  justify-content: space-around;
+}
+::slotted(div) {
+  display:flex;
+  grid-column:1/span 12;
+  justify-content: space-around;
+}
+::slotted(section){
+  grid-column:1/span 12;
+}
+`
+
 export const LayoutTemplateTotemCSS = css`
 :host{
   min-height:80vh;
 }
+
 .wrapper-grid-totem {
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
