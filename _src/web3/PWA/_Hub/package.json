@@ -10,7 +10,7 @@
     "start": "concurrently \"rollup --config rollup.config.dev.js --watch\" \"es-dev-server --app-index _build_dev/index.html --root-dir _build_dev/ --compatibility none --node-resolve --watch --open /\"",
     "dev": "concurrently \"rollup --config rollup.config.dev.js --watch\" \"web-dev-server --debug --preserve-symlinks --app-index _build_dev/index.html --root-dir _build_dev/ --compatibility none --node-resolve --watch --open /\""
   },
-  "author": "",
+  "author": "mlnck",
   "license": "ISC",
   "dependencies": {
     "@pwabuilder/pwainstall": "^1.6.6",
