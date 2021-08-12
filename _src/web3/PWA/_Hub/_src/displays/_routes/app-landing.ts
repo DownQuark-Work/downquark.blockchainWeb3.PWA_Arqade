@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// There is a bug with routes - need to use `any`until resolved
 import { LitElement, css, html } from 'lit';
 import { property, customElement } from 'lit/decorators';
 
