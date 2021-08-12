@@ -2,7 +2,7 @@
 
 # Compiled
 .dist
-_dist
+_build_dev
 no_modules
 node_modules
 _src/_qomponents

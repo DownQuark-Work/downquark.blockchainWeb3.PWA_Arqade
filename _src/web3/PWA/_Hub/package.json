@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup --config rollup.config.dev.js && rimraf dist/ && rollup --config rollup.config.js && node workbox.mjs",
-    "start": "concurrently \"rollup --config rollup.config.dev.js --watch\" \"es-dev-server --app-index _dist/index.html --root-dir _dist/ --compatibility none --node-resolve --watch --open /\"",
-    "dev": "concurrently \"rollup --config rollup.config.dev.js --watch\" \"web-dev-server --debug --preserve-symlinks --app-index _dist/index.html --root-dir _dist/ --compatibility none --node-resolve --watch --open /\""
+    "start": "concurrently \"rollup --config rollup.config.dev.js --watch\" \"es-dev-server --app-index _build_dev/index.html --root-dir _build_dev/ --compatibility none --node-resolve --watch --open /\"",
+    "dev": "concurrently \"rollup --config rollup.config.dev.js --watch\" \"web-dev-server --debug --preserve-symlinks --app-index _build_dev/index.html --root-dir _build_dev/ --compatibility none --node-resolve --watch --open /\""
   },
   "author": "",
   "license": "ISC",

@@ -92,8 +92,8 @@ const typeScriptOpts = {
     }),
     copy({
       targets: [
-        { src: "_src/content/assets/**/*", dest: "_dist/assets/" },
-        { src: "manifest.json", dest: "_dist/" },
+        { src: "_src/content/assets/**/*", dest: "_build_dev/assets/" },
+        { src: "manifest.json", dest: "_build_dev/" },
       ],
     }),
   ],
@@ -115,7 +115,7 @@ export default [
   {
     input: "index.html",
     output: {
-      dir: "_dist",
+      dir: "_build_dev",
       format: "es",
     },
     ...typeScriptOpts

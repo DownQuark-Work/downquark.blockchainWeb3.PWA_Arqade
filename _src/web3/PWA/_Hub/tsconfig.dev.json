@@ -18,7 +18,7 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
-    "outDir": "./_dist/",
+    "outDir": "./_build_dev/",
     // Only necessary because @types/uglify-js can't find types for source-map
     "skipLibCheck": true,
     "experimentalDecorators": true,
@@ -50,7 +50,7 @@
     ]
   },
   "exclude": [
-    "_dist",
+    "_build_dev",
     "node_modules",
     "**/*.spec.ts"
   ]
