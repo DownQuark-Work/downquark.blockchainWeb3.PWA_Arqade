@@ -2223,7 +2223,7 @@ chalk@^4.0.0, chalk@^4.1.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chokidar@^3.4.3:
+"chokidar@>=3.0.0 <4.0.0", chokidar@^3.4.3:
   version "3.5.2"
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/chokidar/-/chokidar-3.5.2.tgz#dba3976fcadb016f66fd365021d91600d01c1e75"
   integrity sha1-26OXb8rbAW9m/TZQIdkWANAcHnU=
@@ -5286,6 +5286,13 @@ rollup-plugin-copy@^3.3.0:
     globby "10.0.1"
     is-plain-object "^3.0.0"
 
+rollup-plugin-scss@3:
+  version "3.0.0"
+  resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/rollup-plugin-scss/-/rollup-plugin-scss-3.0.0.tgz#35ad0adc614217e0278e702d8a674820faa0929e"
+  integrity sha1-Na0K3GFCF+AnjnAtimdIIPqgkp4=
+  dependencies:
+    rollup-pluginutils "^2.3.3"
+
 rollup-plugin-terser@^5.3.1:
   version "5.3.1"
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/rollup-plugin-terser/-/rollup-plugin-terser-5.3.1.tgz#8c650062c22a8426c64268548957463bf981b413"
@@ -5339,7 +5346,7 @@ rollup-plugin-workbox@^5.2.1:
     rollup-plugin-terser "^6.1.0"
     workbox-build "^5.0.0"
 
-rollup-pluginutils@^2.8.1, rollup-pluginutils@^2.8.2:
+rollup-pluginutils@^2.3.3, rollup-pluginutils@^2.8.1, rollup-pluginutils@^2.8.2:
   version "2.8.2"
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/rollup-pluginutils/-/rollup-pluginutils-2.8.2.tgz#72f2af0748b592364dbd3389e600e5a9444a351e"
   integrity sha1-cvKvB0i1kjZNvTOJ5gDlqURKNR4=
@@ -5392,6 +5399,13 @@ safe-regex@^1.1.0:
   integrity sha1-QKNmnzsHfR6UPURinhV91IAjvy4=
   dependencies:
     ret "~0.1.10"
+
+sass@^1.37.5:
+  version "1.37.5"
+  resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/sass/-/sass-1.37.5.tgz#f6838351f7cc814c4fcfe1d9a20e0cabbd1e7b3c"
+  integrity sha1-9oODUffMgUxPz+HZog4Mq70eezw=
+  dependencies:
+    chokidar ">=3.0.0 <4.0.0"
 
 "semver@2 || 3 || 4 || 5", semver@^5.5.0, semver@^5.6.0:
   version "5.7.1"

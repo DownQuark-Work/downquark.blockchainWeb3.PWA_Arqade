@@ -1,0 +1,1230 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Philosopher:wght@700&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme&family=Crete+Round:ital@1&family=Podkova&display=swap");
+/**
+ * Do not edit directly
+ * Generated on Tue, 10 Aug 2021 16:08:44 GMT
+ */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: sans-serif;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+section {
+  /* Set the cursor to '?' while hovering over an abbreviation */
+  /* Format the expanding box */
+  /* Format tables */
+  /* Lists */
+  /* Format forms */
+  /* Add arrow to select */
+  /* checkbox and radio button style */
+  /* Make the textarea wider than other inputs */
+  /* Makes input fields wider on smaller screens */
+  /* Ensures the checkbox and radio inputs do not have a set width like other input fields */
+  /* do not show border around file selector button */
+  /* Without this any HTML using <fieldset> shows ugly borders and has additional padding/margin. (Issue #3) */
+  /* Misc body elements */
+  /* Use mono font for code like elements */
+  /* Fix embedded code within pre */
+}
+section a button,
+section button,
+section input[type=submit],
+section input[type=reset],
+section input[type=button] {
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.7rem 0.9rem;
+  margin: 0.5rem 0;
+  transition: 0.4s;
+}
+section a button[disabled],
+section button[disabled],
+section input[type=submit][disabled],
+section input[type=reset][disabled],
+section input[type=button][disabled],
+section input[type=checkbox][disabled],
+section input[type=radio][disabled],
+section select[disabled] {
+  cursor: default;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+section input:disabled,
+section textarea:disabled,
+section select:disabled {
+  cursor: not-allowed;
+}
+section input[type=range] {
+  padding: 0;
+}
+section abbr {
+  cursor: help;
+}
+section button:focus,
+section button:enabled:hover,
+section input[type=submit]:focus,
+section input[type=submit]:enabled:hover,
+section input[type=reset]:focus,
+section input[type=reset]:enabled:hover,
+section input[type=button]:focus,
+section input[type=button]:enabled:hover,
+section input[type=checkbox]:focus,
+section input[type=checkbox]:enabled:hover,
+section input[type=radio]:focus,
+section input[type=radio]:enabled:hover {
+  opacity: 0.8;
+}
+section details {
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+section p {
+  margin: 0.5rem 0;
+}
+section summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.6rem 1rem;
+}
+section details[open] {
+  padding: 0.6rem 1rem 0.75rem 1rem;
+}
+section details[open] summary {
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+section details[open] > *:last-child {
+  margin-bottom: 0;
+}
+section table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+section td,
+section th {
+  text-align: left;
+  padding: 0.5rem;
+}
+section th {
+  font-weight: bold;
+}
+section tr:nth-child(even) {
+  background-color: gray;
+}
+section table caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+section ol,
+section ul {
+  padding-left: 2rem;
+}
+section ol {
+  list-style: decimal;
+}
+section ol ol {
+  list-style: lower-alpha;
+}
+section ol ol ol {
+  list-style: lower-roman;
+}
+section ol ol ol ol {
+  list-style: lower-greek;
+}
+section ul {
+  list-style: disc;
+}
+section ul ul {
+  list-style: circle;
+}
+section ul ul ul {
+  list-style: square;
+}
+section ul ul ul ul {
+  list-style: disclosure-closed;
+}
+section textarea,
+section select,
+section input {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: 60%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+section select {
+  background-position: calc(100% - 20px), calc(100% - 15px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+section input[type=checkbox], section input[type=radio] {
+  vertical-align: bottom;
+  position: relative;
+}
+section input[type=radio] {
+  border-radius: 100%;
+}
+section input[type=checkbox]:checked::after {
+  /* Creates a rectangle with colored right and bottom borders which is rotated to look like a check mark */
+  content: " ";
+  width: 0.1em;
+  height: 0.25em;
+  border-radius: 0;
+  position: absolute;
+  top: 0.05em;
+  left: 0.18em;
+  background: transparent;
+  font-size: 1.8em;
+  transform: rotate(45deg);
+}
+section input[type=radio]:checked::after {
+  /* creates a colored circle for the checked radio button  */
+  content: " ";
+  width: 0.25em;
+  height: 0.25em;
+  border-radius: 100%;
+  position: absolute;
+  top: 0.125em;
+  left: 0.125em;
+  font-size: 32px;
+}
+section textarea {
+  width: 80%;
+}
+@media only screen and (max-width: 720px) {
+  section textarea,
+section select,
+section input {
+    width: 100%;
+  }
+}
+section input[type=checkbox], section input[type=radio] {
+  width: auto;
+}
+section input[type=file] {
+  border: 0;
+}
+section fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+section hr {
+  border-top: 1px;
+  margin: 1rem auto;
+}
+section mark {
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+section main img, section main video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+section figure {
+  margin: 0;
+}
+section figcaption {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+section blockquote, section q {
+  margin: 0.5rem 0 1rem 0.5rem;
+  padding: 0.4rem 0;
+  opacity: 0.8;
+  position: relative;
+  font-style: italic;
+}
+section blockquote::after, section q::after {
+  content: "“";
+  font-family: "curive";
+  position: absolute;
+  top: -0.25ch;
+  left: -1ch;
+  font-size: 5rem;
+  color: transparent;
+  background-clip: text;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  opacity: 0.8;
+}
+section cite {
+  font-size: 0.9rem;
+  font-style: normal;
+}
+section code,
+section pre,
+section pre span,
+section kbd,
+section samp {
+  font-size: 1.075rem;
+}
+section kbd {
+  border-radius: 5px;
+  padding: 0.1rem;
+}
+section pre {
+  padding: 1rem 1.4rem;
+  max-width: 100%;
+  overflow: auto;
+  overflow-x: auto;
+  border-radius: 5px;
+}
+section pre code {
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Do not edit directly
+ * Generated on Tue, 10 Aug 2021 16:08:44 GMT
+ */
+:root {
+  --dq-color-vendor-twitter-blue: #1da1f2;
+  --dq-color-vendor-facebook-blue: #1877f2;
+  --dq-color-common-white: #d1dfe9;
+  --dq-color-common-black: #1c111f;
+  --dq-color-accents-voodoo: #472b4d;
+  --dq-color-accents-thunder: #3d2d35;
+  --dq-color-accents-tango: #ea7521;
+  --dq-color-accents-tahiti-gold: #e87e05;
+  --dq-color-accents-steel-gray: #2f2b3f;
+  --dq-color-accents-salmon: #fe817a;
+  --dq-color-accents-rock: #513634;
+  --dq-color-accents-rich-gold: #985708;
+  --dq-color-accents-pickled-bluewood: #243749;
+  --dq-color-accents-oyster-pink: #e9d1cc;
+  --dq-color-accents-oxford-blue: #313c4d;
+  --dq-color-accents-monarch-red: #7d062f;
+  --dq-color-accents-mortar: #463948;
+  --dq-color-accents-manatee: #898e9b;
+  --dq-color-accents-flamingo: #f45a3c;
+  --dq-color-accents-flame-pea: #db5c2a;
+  --dq-color-accents-buccaneer: #5b2636;
+  --dq-color-accents-bittersweet: #f7755b;
+  --dq-color-base-zest: #dd851a;
+  --dq-color-base-voodoo: #472b4d;
+  --dq-color-base-tawny-port: #632741;
+  --dq-color-base-swirl: #d4d0c9;
+  --dq-color-base-rich-red: #710d06;
+  --dq-color-base-pomegranate: #f44336;
+  --dq-color-base-mule-fawn: #8b3c2b;
+  --dq-color-base-hippie-green: #609552;
+  --dq-color-base-gun-powder: #3f4151;
+  --dq-color-base-bizarre: #e9dbd1;
+  --dq-color-base-baltic-sea: #17151b;
+  --dq-color-base-au-chico: #8e5856;
+  --dq-color-base-antique-brass: #c87856;
+}
+
+/**
+ * Do not edit directly
+ * Generated on Tue, 10 Aug 2021 16:08:44 GMT
+ */
+:root {
+  --dq-content-urls-base: "/assets/";
+  --dq-content-urls-cdn-default: var(--dq-content-urls-base);
+}
+
+/**
+ * Do not edit directly
+ * Generated on Tue, 10 Aug 2021 16:08:44 GMT
+ */
+:root {
+  --dq-size-root-max-width: 4.609375rem;
+  --dq-size-root-lineheight: 0.09375rem;
+  --dq-size-root-fontsize: 0.0625rem;
+  --dq-size-breakpoint-large: ( min-width: 1200px );
+  --dq-size-breakpoint-medium: ( min-width: 992px );
+  --dq-size-breakpoint-small: ( min-width: 767px );
+  --dq-size-breakpoint-panel-wide: ( min-width: 400px );
+}
+
+/**
+ * Do not edit directly
+ * Generated on Tue, 10 Aug 2021 16:08:44 GMT
+ */
+:root {
+  --dq-font-text-default: sans-serif;
+  --dq-font-code-family: "Courier New", "Monaco", monospace;
+  --dq-font-roboto-family: "Roboto", sans-serif;
+  --dq-font-podkova-family: "Podkova", serif;
+  --dq-font-philosopher-family: "Philosopher", sans-serif;
+  --dq-font-mont-alt-family: "Montserrat Alternates", sans-serif;
+  --dq-font-crete-round-family: "Crete Round", serif;
+  --dq-font-biorhyme-family: "BioRhyme", serif;
+}
+
+/**
+ * Do not edit directly
+ * Generated on Tue, 10 Aug 2021 16:08:44 GMT
+ */
+:root {
+  --dq-quark-hub-color-secondary: var(--dq-color-base-rich-red);
+  --dq-quark-hub-color-primary: var(--dq-color-base-voodoo);
+  --dq-quark-hub-accent-tertiary: var(--dq-color-accents-rich-gold);
+  --dq-quark-hub-accent-secondary: var(--dq-color-accents-mortar);
+  --dq-quark-hub-accent-primary: var(--dq-color-accents-manatee);
+  --dq-quark-fatredbird-color-secondary: var(--dq-color-base-swirl);
+  --dq-quark-fatredbird-color-primary: var(--dq-color-base-zest);
+  --dq-quark-fatredbird-accent-tertiary: var(--dq-color-accents-tahiti-gold);
+  --dq-quark-fatredbird-accent-secondary: var(--dq-color-accents-oxford-blue);
+  --dq-quark-fatredbird-accent-primary: var(--dq-color-accents-steel-gray);
+  --dq-quark-hub-typography-text-margin: var(--dq-typography-roboto-text-margin);
+  --dq-quark-hub-typography-text-font: var(--dq-typography-roboto-text-font);
+  --dq-quark-hub-typography-h5-margin: var(--dq-typography-philosopher-h5-margin);
+  --dq-quark-hub-typography-h5-font: var(--dq-typography-philosopher-h5-font);
+  --dq-quark-hub-typography-h4-margin: var(--dq-typography-philosopher-h4-margin);
+  --dq-quark-hub-typography-h4-font: var(--dq-typography-philosopher-h4-font);
+  --dq-quark-hub-typography-h3-margin: var(--dq-typography-philosopher-h3-margin);
+  --dq-quark-hub-typography-h3-font: var(--dq-typography-philosopher-h3-font);
+  --dq-quark-hub-typography-h2-margin: var(--dq-typography-philosopher-h2-margin);
+  --dq-quark-hub-typography-h2-font: var(--dq-typography-philosopher-h2-font);
+  --dq-quark-hub-typography-h1-margin: var(--dq-typography-philosopher-h1-margin);
+  --dq-quark-hub-typography-h1-font: var(--dq-typography-philosopher-h1-font);
+  --dq-quark-fatredbird-typography-text-margin: var(--dq-typography-podkova-text-margin);
+  --dq-quark-fatredbird-typography-text-font: var(--dq-typography-podkova-text-font);
+  --dq-quark-fatredbird-typography-h5-margin: var(--dq-typography-creteround-h5-margin);
+  --dq-quark-fatredbird-typography-h5-font: var(--dq-typography-creteround-h5-font);
+  --dq-quark-fatredbird-typography-h4-margin: var(--dq-typography-creteround-h4-margin);
+  --dq-quark-fatredbird-typography-h4-font: var(--dq-typography-creteround-h4-font);
+  --dq-quark-fatredbird-typography-h3-margin: var(--dq-typography-creteround-h3-margin);
+  --dq-quark-fatredbird-typography-h3-font: var(--dq-typography-creteround-h3-font);
+  --dq-quark-fatredbird-typography-h2-margin: var(--dq-typography-biorhyme-h2-margin);
+  --dq-quark-fatredbird-typography-h2-font: var(--dq-typography-biorhyme-h2-font);
+  --dq-quark-fatredbird-typography-h1-margin: var(--dq-typography-biorhyme-h1-margin);
+  --dq-quark-fatredbird-typography-h1-font: var(--dq-typography-biorhyme-h1-font);
+}
+
+/**
+ * Do not edit directly
+ * Generated on Tue, 10 Aug 2021 16:08:44 GMT
+ */
+:root {
+  --dq-typography-biorhyme-h1-font: calc(1rem * 3)/calc(1rem * 3) "BioRhyme", serif;
+  --dq-typography-biorhyme-h1-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+  --dq-typography-biorhyme-h2-font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) "BioRhyme", serif;
+  --dq-typography-biorhyme-h2-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+  --dq-typography-biorhyme-h3-font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) "BioRhyme", serif;
+  --dq-typography-biorhyme-h3-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-biorhyme-h4-font: 1rem/calc(1rem * 1.5) "BioRhyme", serif;
+  --dq-typography-biorhyme-h4-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-biorhyme-h5-font: 1rem/calc(1rem * 1.5) "BioRhyme", serif;
+  --dq-typography-biorhyme-h5-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-biorhyme-text-font: 1rem/calc(1rem * 1.5) "BioRhyme", serif;
+  --dq-typography-biorhyme-text-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-code-h1-font: calc(1rem * 3)/calc(1rem * 3) "Courier New", "Monaco", monospace;
+  --dq-typography-code-h1-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+  --dq-typography-code-h2-font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) "Courier New", "Monaco", monospace;
+  --dq-typography-code-h2-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+  --dq-typography-code-h3-font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) "Courier New", "Monaco", monospace;
+  --dq-typography-code-h3-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-code-h4-font: 1rem/calc(1rem * 1.5) "Courier New", "Monaco", monospace;
+  --dq-typography-code-h4-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-code-h5-font: 1rem/calc(1rem * 1.5) "Courier New", "Monaco", monospace;
+  --dq-typography-code-h5-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-code-text-font: 1rem/calc(1rem * 1.5) "Courier New", "Monaco", monospace;
+  --dq-typography-code-text-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-creteround-h1-font: calc(1rem * 3)/calc(1rem * 3) "Crete Round", serif;
+  --dq-typography-creteround-h1-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+  --dq-typography-creteround-h2-font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) "Crete Round", serif;
+  --dq-typography-creteround-h2-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+  --dq-typography-creteround-h3-font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) "Crete Round", serif;
+  --dq-typography-creteround-h3-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-creteround-h4-font: 1rem/calc(1rem * 1.5) "Crete Round", serif;
+  --dq-typography-creteround-h4-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-creteround-h5-font: 1rem/calc(1rem * 1.5) "Crete Round", serif;
+  --dq-typography-creteround-h5-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-creteround-text-font: 1rem/calc(1rem * 1.5) "Crete Round", serif;
+  --dq-typography-creteround-text-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-montserrat-h1-font: calc(1rem * 3)/calc(1rem * 3) "Montserrat Alternates", sans-serif;
+  --dq-typography-montserrat-h1-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+  --dq-typography-montserrat-h2-font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) "Montserrat Alternates", sans-serif;
+  --dq-typography-montserrat-h2-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+  --dq-typography-montserrat-h3-font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) "Montserrat Alternates", sans-serif;
+  --dq-typography-montserrat-h3-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-montserrat-h4-font: 1rem/calc(1rem * 1.5) "Montserrat Alternates", sans-serif;
+  --dq-typography-montserrat-h4-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-montserrat-h5-font: 1rem/calc(1rem * 1.5) "Montserrat Alternates", sans-serif;
+  --dq-typography-montserrat-h5-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-montserrat-text-font: 1rem/calc(1rem * 1.5) "Montserrat Alternates", sans-serif;
+  --dq-typography-montserrat-text-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-philosopher-h1-font: calc(1rem * 3)/calc(1rem * 3) "Philosopher", sans-serif;
+  --dq-typography-philosopher-h1-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+  --dq-typography-philosopher-h2-font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) "Philosopher", sans-serif;
+  --dq-typography-philosopher-h2-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+  --dq-typography-philosopher-h3-font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) "Philosopher", sans-serif;
+  --dq-typography-philosopher-h3-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-philosopher-h4-font: 1rem/calc(1rem * 1.5) "Philosopher", sans-serif;
+  --dq-typography-philosopher-h4-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-philosopher-h5-font: 1rem/calc(1rem * 1.5) "Philosopher", sans-serif;
+  --dq-typography-philosopher-h5-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-philosopher-text-font: 1rem/calc(1rem * 1.5) "Philosopher", sans-serif;
+  --dq-typography-philosopher-text-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-podkova-h1-font: calc(1rem * 3)/calc(1rem * 3) "Podkova", serif;
+  --dq-typography-podkova-h1-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+  --dq-typography-podkova-h2-font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) "Podkova", serif;
+  --dq-typography-podkova-h2-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+  --dq-typography-podkova-h3-font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) "Podkova", serif;
+  --dq-typography-podkova-h3-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-podkova-h4-font: 1rem/calc(1rem * 1.5) "Podkova", serif;
+  --dq-typography-podkova-h4-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-podkova-h5-font: 1rem/calc(1rem * 1.5) "Podkova", serif;
+  --dq-typography-podkova-h5-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-podkova-text-font: 1rem/calc(1rem * 1.5) "Podkova", serif;
+  --dq-typography-podkova-text-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-roboto-h1-font: calc(1rem * 3)/calc(1rem * 3) "Roboto", sans-serif;
+  --dq-typography-roboto-h1-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 2)) 0;
+  --dq-typography-roboto-h2-font: calc(1rem * calc(1.75 * 2))/calc(calc(1rem * calc(1.75 * 2)) * 1.5) "Roboto", sans-serif;
+  --dq-typography-roboto-h2-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 1)) 0;
+  --dq-typography-roboto-h3-font: calc(1rem * calc(1.75 * 1))/calc(calc(1rem * calc(1.75 * 1)) * 1.5) "Roboto", sans-serif;
+  --dq-typography-roboto-h3-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-roboto-h4-font: 1rem/calc(1rem * 1.5) "Roboto", sans-serif;
+  --dq-typography-roboto-h4-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-roboto-h5-font: 1rem/calc(1rem * 1.5) "Roboto", sans-serif;
+  --dq-typography-roboto-h5-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-roboto-text-font: 1rem/calc(1rem * 1.5) "Roboto", sans-serif;
+  --dq-typography-roboto-text-margin: calc(1rem * calc(1.75 * 1)) 0 calc(1rem * calc(1.75 * 0)) 0;
+  --dq-typography-base-line-height: 12px;
+  --dq-typography-primary-font-family: sans-serif;
+  --dq-typography-primary-font-weight-bold: 700;
+  --dq-typography-primary-font-weight-normal: 400;
+  --dq-typography-generic-font-family: "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+  --dq-typography-h1-fluid-font-size: clamp(1.6rem, 3.5vw, 2rem);
+  --dq-typography-h1-fallback-font-size: 1.75rem;
+  --dq-typography-h2-fluid-font-size: clamp(1.3rem, 3.5vw, 1.5rem);
+  --dq-typography-h2-fallback-font-size: 1.4rem;
+  --dq-typography-h3-fluid-font-size: clamp(1.2rem, 3.5vw, 1.375rem);
+  --dq-typography-h3-fallback-font-size: 1.3rem;
+  --dq-typography-h4-fluid-font-size: clamp(1rem, 2.5vw, 1.25rem);
+  --dq-typography-h4-fallback-font-size: 1rem;
+  --dq-typography-h5-font-size: 1rem;
+  --dq-typography-h6-font-size: 1rem;
+  --dq-typography-body-font-size: 1rem;
+}
+
+:root {
+  --dq-color-base-zest-default: #dd851a;
+  --dq-color-base-zest-darker: #58350a;
+  --dq-color-base-zest-dark: #9b5d12;
+  --dq-color-base-zest-light: #ecaa5a;
+  --dq-color-base-zest-lighter: #f4cea1;
+  --dq-color-base-zest-complement: #1a72dd;
+  --dq-color-base-voodoo-default: #472b4d;
+  --dq-color-base-voodoo-darker: #1c111f;
+  --dq-color-base-voodoo-dark: #321e36;
+  --dq-color-base-voodoo-light: #8c5598;
+  --dq-color-base-voodoo-lighter: #bf9bc7;
+  --dq-color-base-voodoo-complement: #314d2b;
+  --dq-color-base-tawnyport-default: #632741;
+  --dq-color-base-tawnyport-darker: #28101a;
+  --dq-color-base-tawnyport-dark: #451b2e;
+  --dq-color-base-tawnyport-light: #b34776;
+  --dq-color-base-tawnyport-lighter: #d594b0;
+  --dq-color-base-tawnyport-complement: #276349;
+  --dq-color-base-swirl-default: #d4d0c9;
+  --dq-color-base-swirl-darker: #5c5549;
+  --dq-color-base-swirl-dark: #9d9484;
+  --dq-color-base-swirl-light: #e1ded9;
+  --dq-color-base-swirl-lighter: #eeece9;
+  --dq-color-base-swirl-complement: #c9cdd4;
+  --dq-color-base-richred-default: #710d06;
+  --dq-color-base-richred-darker: #2d0502;
+  --dq-color-base-richred-dark: #4f0904;
+  --dq-color-base-richred-light: #e01a0c;
+  --dq-color-base-richred-lighter: #f7746a;
+  --dq-color-base-richred-complement: #066a71;
+  --dq-color-base-pomegranate-default: #f44336;
+  --dq-color-base-pomegranate-darker: #710d06;
+  --dq-color-base-pomegranate-dark: #c6180b;
+  --dq-color-base-pomegranate-light: #f77b72;
+  --dq-color-base-pomegranate-lighter: #fbb4af;
+  --dq-color-base-pomegranate-complement: #36e7f4;
+  --dq-color-base-mulefawn-default: #8b3c2b;
+  --dq-color-base-mulefawn-darker: #381811;
+  --dq-color-base-mulefawn-dark: #612a1e;
+  --dq-color-base-mulefawn-light: #c96550;
+  --dq-color-base-mulefawn-lighter: #e0a79b;
+  --dq-color-base-mulefawn-complement: #2b7a8b;
+  --dq-color-base-hippiegreen-default: #609552;
+  --dq-color-base-hippiegreen-darker: #263c21;
+  --dq-color-base-hippiegreen-dark: #436839;
+  --dq-color-base-hippiegreen-light: #8dba81;
+  --dq-color-base-hippiegreen-lighter: #bed7b7;
+  --dq-color-base-hippiegreen-complement: #875295;
+  --dq-color-base-gunpowder-default: #3f4151;
+  --dq-color-base-gunpowder-darker: #191a20;
+  --dq-color-base-gunpowder-dark: #2c2e39;
+  --dq-color-base-gunpowder-light: #6f738f;
+  --dq-color-base-gunpowder-lighter: #adafbf;
+  --dq-color-base-gunpowder-complement: #514f3f;
+  --dq-color-base-bizarre-default: #e9dbd1;
+  --dq-color-base-bizarre-darker: #785339;
+  --dq-color-base-bizarre-dark: #be9577;
+  --dq-color-base-bizarre-light: #f0e6df;
+  --dq-color-base-bizarre-lighter: #f6f1ed;
+  --dq-color-base-bizarre-complement: #d1dfe9;
+  --dq-color-base-balticsea-default: #17151b;
+  --dq-color-base-balticsea-darker: #09080b;
+  --dq-color-base-balticsea-dark: #100f13;
+  --dq-color-base-balticsea-light: #595269;
+  --dq-color-base-balticsea-lighter: #9f97ae;
+  --dq-color-base-balticsea-complement: #191b15;
+  --dq-color-base-auchico-default: #8e5856;
+  --dq-color-base-auchico-darker: #392322;
+  --dq-color-base-auchico-dark: #633e3c;
+  --dq-color-base-auchico-light: #b58684;
+  --dq-color-base-auchico-lighter: #d4bab9;
+  --dq-color-base-auchico-complement: #568c8e;
+  --dq-color-base-antiquebrass-default: #c87856;
+  --dq-color-base-antiquebrass-darker: #562d1c;
+  --dq-color-base-antiquebrass-dark: #975031;
+  --dq-color-base-antiquebrass-light: #d9a189;
+  --dq-color-base-antiquebrass-lighter: #e9c9bb;
+  --dq-color-base-antiquebrass-complement: #56a6c8;
+  --dq-quark-fatredbird-color-main-default: #dd851a;
+  --dq-quark-fatredbird-color-main-darker: #58350a;
+  --dq-quark-fatredbird-color-main-dark: #9b5d12;
+  --dq-quark-fatredbird-color-main-light: #ecaa5a;
+  --dq-quark-fatredbird-color-main-lighter: #f4cea1;
+  --dq-quark-fatredbird-color-main-complement: #1a72dd;
+  --dq-quark-fatredbird-color-alt-default: #d4d0c9;
+  --dq-quark-fatredbird-color-alt-darker: #5c5549;
+  --dq-quark-fatredbird-color-alt-dark: #9d9484;
+  --dq-quark-fatredbird-color-alt-light: #e1ded9;
+  --dq-quark-fatredbird-color-alt-lighter: #eeece9;
+  --dq-quark-fatredbird-color-alt-complement: #c9cdd4;
+  --dq-quark-hub-color-main-default: #472b4d;
+  --dq-quark-hub-color-main-darker: #1c111f;
+  --dq-quark-hub-color-main-dark: #321e36;
+  --dq-quark-hub-color-main-light: #8c5598;
+  --dq-quark-hub-color-main-lighter: #bf9bc7;
+  --dq-quark-hub-color-main-complement: #314d2b;
+  --dq-quark-hub-color-alt-default: #710d06;
+  --dq-quark-hub-color-alt-darker: #2d0502;
+  --dq-quark-hub-color-alt-dark: #4f0904;
+  --dq-quark-hub-color-alt-light: #e01a0c;
+  --dq-quark-hub-color-alt-lighter: #f7746a;
+  --dq-quark-hub-color-alt-complement: #066a71;
+  --dq-accent-primary: var(--dq-quark-hub-accent-primary);
+  --dq-accent-secondary: var(--dq-quark-hub-accent-secondary);
+  --dq-accent-tertiary: var(--dq-quark-hub-accent-tertiary);
+  --dq-color-main-darker: var(--dq-quark-hub-color-main-darker);
+  --dq-color-main-dark: var(--dq-quark-hub-color-main-dark);
+  --dq-color-main-default: var(--dq-quark-hub-color-main-default);
+  --dq-color-main-light: var(--dq-quark-hub-color-main-light);
+  --dq-color-main-lighter: var(--dq-quark-hub-color-main-lighter);
+  --dq-color-main-complement: var(--dq-quark-hub-color-main-complement);
+  --dq-color-alt-darker: var(--dq-quark-hub-color-alt-darker);
+  --dq-color-alt-dark: var(--dq-quark-hub-color-alt-dark);
+  --dq-color-alt-default: var(--dq-quark-hub-color-alt-default);
+  --dq-color-alt-light: var(--dq-quark-hub-color-alt-light);
+  --dq-color-alt-lighter: var(--dq-quark-hub-color-alt-lighter);
+  --dq-color-alt-complement: var(--dq-quark-hub-color-alt-complement);
+  --dq-typography-h1-font: var(--dq-quark-hub-typography-h1-font);
+  --dq-typography-h1-margin: var(--dq-quark-hub-typography-h1-margin);
+  --dq-typography-h2-font: var(--dq-quark-hub-typography-h2-font);
+  --dq-typography-h2-margin: var(--dq-quark-hub-typography-h2-margin);
+  --dq-typography-h3-font: var(--dq-quark-hub-typography-h3-font);
+  --dq-typography-h3-margin: var(--dq-quark-hub-typography-h3-margin);
+  --dq-typography-h4-font: var(--dq-quark-hub-typography-h4-font);
+  --dq-typography-h4-margin: var(--dq-quark-hub-typography-h4-margin);
+  --dq-typography-h5-font: var(--dq-quark-hub-typography-h5-font);
+  --dq-typography-h5-margin: var(--dq-quark-hub-typography-h5-margin);
+  --dq-typography-text-font: var(--dq-quark-hub-typography-text-font);
+  --dq-typography-text-margin: var(--dq-quark-hub-typography-text-margin);
+}
+
+h1 {
+  font: var(--dq-typography-h1-font);
+  margin: var(--dq-typography-h1-margin);
+}
+
+h2 {
+  font: var(--dq-typography-h2-font);
+  margin: var(--dq-typography-h2-margin);
+}
+
+h3 {
+  font: var(--dq-typography-h3-font);
+  margin: var(--dq-typography-h3-margin);
+}
+
+h4 {
+  font: var(--dq-typography-h4-font);
+  margin: var(--dq-typography-h4-margin);
+}
+
+h5 {
+  font: var(--dq-typography-h5-font);
+  margin: var(--dq-typography-h5-margin);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font: var(--dq-typography-text-font);
+}
+
+body {
+  font: var(--dq-typography-text-font);
+}
+
+h1 {
+  font: var(--dq-typography-h1-font);
+  margin: var(--dq-typography-h1-margin);
+}
+
+h2 {
+  font: var(--dq-typography-h2-font);
+  margin: var(--dq-typography-h2-margin);
+}
+
+h3 {
+  font: var(--dq-typography-h3-font);
+  margin: var(--dq-typography-h3-margin);
+}
+
+h4 {
+  font: var(--dq-typography-h4-font);
+  margin: var(--dq-typography-h4-margin);
+}
+
+h5 {
+  font: var(--dq-typography-h5-font);
+  margin: var(--dq-typography-h5-margin);
+}
+
+#base > .container > nav,
+#base > .container > div > div {
+  transition: all 1s ease-out;
+}
+
+.wrapper-grid-totem {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+  /* Demo Specific Styles */
+}
+.wrapper-grid-totem section,
+.wrapper-grid-totem aside {
+  grid-column: 2/span 1;
+}
+.wrapper-grid-totem section:nth-child(odd),
+.wrapper-grid-totem header,
+.wrapper-grid-totem footer {
+  grid-column: 1/span 3;
+}
+.wrapper-grid-totem.debug {
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+}
+.wrapper-grid-totem header,
+.wrapper-grid-totem main,
+.wrapper-grid-totem section,
+.wrapper-grid-totem aside,
+.wrapper-grid-totem footer {
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+object.gfx-svg[class*=tier-] {
+  opacity: 1;
+}
+object.gfx-svg[class*=section-] {
+  opacity: 1;
+}
+object.gfx-svg[class*=view-] {
+  bottom: -10%;
+  opacity: 0.5;
+  pointer-events: none;
+  position: fixed;
+  right: -10%;
+}
+object.gfx-svg.tier-0 {
+  transform: scale(80%);
+}
+object.gfx-svg.tier-1 {
+  bottom: -2rem;
+  right: -3rem;
+}
+object.gfx-svg.tier-2 {
+  bottom: 10%;
+  right: -18%;
+  transform: scale(150%);
+}
+object.gfx-svg.section-the-problem {
+  bottom: 6rem;
+  transform: scale(150%);
+  right: -13rem;
+}
+object.gfx-svg.view-landing {
+  filter: saturate(60%);
+  opacity: 0.6;
+  transform: rotateY(180deg) scale(80%);
+}
+
+/*
+  NOTE: This file is to control the internal content of the svg object.
+    - make sure to link to it from within the svg itself
+    - and be sure to embed the svg as an object on the html page
+  Use the appropriate 7-1 files to style external elements
+    - e.g. size, opacity (as a whole), transforms, etc
+*/
+svg .debug:hover {
+  /* a quick check to make sure everything is working
+    - add this to the svg element:
+      `<filter id="filterBlur"><feGaussianBlur stdDeviation="5" /></filter>`
+    - give the svg element a class name of `debug`
+    - render the page and hover over the element
+  */
+  filter: url(#filterBlur);
+}
+svg[id] > * {
+  transition: all 1s ease-out 4s;
+}
+svg#landing {
+  filter: url(#filterBlur);
+}
+svg#landing > * {
+  transition-delay: 1s;
+}
+svg#landing:hover .dq-color {
+  filter: url(#filterBlur);
+}
+svg#downquark-logo {
+  cursor: pointer;
+}
+svg#downquark-logo g {
+  transition: all 0.5s ease-out;
+}
+svg#downquark-logo g#hex {
+  opacity: 1;
+}
+svg#downquark-logo:hover g#hex {
+  opacity: 0.4;
+}
+svg#t1-the-problem {
+  filter: url(#filterBlur);
+}
+svg#t1-our-solution {
+  filter: url(#filterBlur);
+}
+svg#t1-our-solution #orb {
+  transition: all 3s ease-out 4s;
+  transform-origin: top right;
+  transform: rotateY(359deg);
+}

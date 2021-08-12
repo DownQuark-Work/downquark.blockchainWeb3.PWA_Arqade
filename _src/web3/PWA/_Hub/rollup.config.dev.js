@@ -1,12 +1,12 @@
 /* eslint-disable no-undef */
-import resolve from "@rollup/plugin-node-resolve";
-import html from "@open-wc/rollup-plugin-html";
-import copy from "rollup-plugin-copy";
-import replace from "@rollup/plugin-replace";
-import typescript from "@rollup/plugin-typescript";
-
 import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
+import copy from "rollup-plugin-copy";
+import html from "@open-wc/rollup-plugin-html";
+import replace from "@rollup/plugin-replace";
+import resolve from "@rollup/plugin-node-resolve";
+import scss from 'rollup-plugin-scss';
+import typescript from "@rollup/plugin-typescript";
 
 const designSystemOpts = {
   preserveSymlinks: true,
@@ -67,16 +67,9 @@ const designSystemOpts = {
         '@babel/plugin-proposal-optional-chaining',
         '@babel/plugin-proposal-nullish-coalescing-operator',
         '@babel/plugin-transform-react-jsx',
-        // [
-        // 	"@babel/plugin-transform-runtime",
-        // 	{
-        // 		"absoluteRuntime": "/Users/jmelnick/Documents/_dev/_levelshare/frontend/core/ApplicationBrowser/.yarn/cache/node_modules/@babel/runtime-corejs3",
-        // 	}
-        // ],
         '@emotion',
       ]
     }),
-
     commonjs(),
   ]
 };
@@ -84,6 +77,9 @@ const typeScriptOpts = {
   plugins: [
     resolve(),
     html(),
+    scss({
+      output: '_src/content/assets/styles/dq.css',
+    }),
     typescript({
       tsconfig: "tsconfig.dev.json",
       exclude: ["*.js"]
@@ -96,8 +92,7 @@ const typeScriptOpts = {
     }),
     copy({
       targets: [
-        { src: "assets/**/*", dest: "_dist/assets/" },
-        { src: "styles/global.css", dest: "_dist/styles/" },
+        { src: "_src/content/assets/**/*", dest: "_dist/assets/" },
         { src: "manifest.json", dest: "_dist/" },
       ],
     }),
@@ -115,7 +110,7 @@ export default [
       dir: '_src/_qomponents/',
       sourcemap: true,
     },
-    ...designSystemOpts
+    ...designSystemOpts,
   },
   {
     input: "index.html",

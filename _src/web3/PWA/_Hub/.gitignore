@@ -3,6 +3,7 @@
 # Compiled
 .dist
 _dist
+no_modules
 node_modules
 _src/_qomponents
 
