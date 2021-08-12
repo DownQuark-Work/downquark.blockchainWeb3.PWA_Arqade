@@ -14,7 +14,7 @@ html, body {
   background: #181818;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   html,
   body {
     background: #edebe9;
@@ -33,4 +33,4 @@ html, body {
     --neutral-fill-input-active: #e5e5e5;
   }
 
-}
+} */

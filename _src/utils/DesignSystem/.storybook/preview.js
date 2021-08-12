@@ -59,6 +59,6 @@ export const decorators = [(story, _static) => html`
   --dq-typography-text-margin: var(--dq-quark-${_static.globals.quark}-typography-text-margin);
 }
   </style>
-  <fast-design-system-provider fill-color="#472b4d" accent-base-color="#710d06" density="0" design-unit="4">
+  <fast-design-system-provider fill-color="#fff" accent-base-color="#fff" density="0" design-unit="4">
   ${story()}
   </fast-design-system-provider>`]

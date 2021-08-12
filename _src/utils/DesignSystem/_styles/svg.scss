@@ -22,54 +22,5 @@
 svg {
   @include debugSvg;
   &[id] > * {transition: all 1s ease-out 4s;}
-
-  &#landing {
-    & > * {transition-delay: 1s;}
-    filter: url(#filterBlur);
-    // .dq-color { fill: scale-color(downquark.dq-var-colr('dqColorBaseOrange','light'), $saturation:20%); }
-    &:hover {
-      .dq-color
-      {
-        // fill:  scale-color(downquark.dq-var-colr('dqColorBaseOrange'),$saturation:100%);
-        filter: url(#filterBlur);
-      }
-    }
-  }
-
-  &#downquark-logo {
-    cursor: pointer;
-    g {transition: all .5s ease-out;}
-      g#hex{
-      opacity:1;
-    }
-    &:hover {
-        g#hex{
-          opacity:.4;
-      }
-    }
-  }
-
-  &#t1-the-problem{
-    filter: url(#filterBlur);
-    [fill="#934ef6"]{
-      // fill:downquark.dq-var-colr('dqColorBaseOrange');
-    }
-  }
-
-  &#t1-our-solution{
-    filter: url(#filterBlur);
-    [fill="#934ef6"]{
-      // fill:downquark.dq-var-colr('dqColorBaseOrange');
-    }
-    #solution-circle{
-      // fill:downquark.dq-var-colr('dqColorBasePurple');
-    }
-    #orb{
-      transition:all 3s ease-out 4s;
-      transform-origin: top right;
-      // fill:downquark.dq-var-colr('dqColorBasePurple');
-      transform: rotateY(359deg);
-    }
-  }
 }
 // path

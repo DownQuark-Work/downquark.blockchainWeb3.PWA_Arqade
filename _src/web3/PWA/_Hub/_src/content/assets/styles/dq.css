@@ -1167,35 +1167,3 @@ svg .debug:hover {
 svg[id] > * {
   transition: all 1s ease-out 4s;
 }
-svg#landing {
-  filter: url(#filterBlur);
-}
-svg#landing > * {
-  transition-delay: 1s;
-}
-svg#landing:hover .dq-color {
-  filter: url(#filterBlur);
-}
-svg#downquark-logo {
-  cursor: pointer;
-}
-svg#downquark-logo g {
-  transition: all 0.5s ease-out;
-}
-svg#downquark-logo g#hex {
-  opacity: 1;
-}
-svg#downquark-logo:hover g#hex {
-  opacity: 0.4;
-}
-svg#t1-the-problem {
-  filter: url(#filterBlur);
-}
-svg#t1-our-solution {
-  filter: url(#filterBlur);
-}
-svg#t1-our-solution #orb {
-  transition: all 3s ease-out 4s;
-  transform-origin: top right;
-  transform: rotateY(359deg);
-}
