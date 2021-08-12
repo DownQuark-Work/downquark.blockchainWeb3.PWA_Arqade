@@ -76,10 +76,12 @@ const designSystemOpts = {
 const typeScriptOpts = {
   plugins: [
     resolve(),
-    html(),
+    // depending on amount of content/cached/etc
+    // - it may take 2 - 3 `yarn dev`s for the stylesheet to be copied correctly
     scss({
       output: '_src/content/assets/styles/dq.css',
     }),
+    html(),
     typescript({
       tsconfig: "tsconfig.dev.json",
       exclude: ["*.js"]
@@ -91,6 +93,9 @@ const typeScriptOpts = {
       )
     }),
     copy({
+      // if build styles are incorrect make sure newest sheet is here:
+      // _src/web3/PWA/_Hub/_build_dev/assets/styles/dq.css
+      // if not - rerun `yarn dev`
       targets: [
         { src: "_src/content/assets/**/*", dest: "_build_dev/assets/" },
         { src: "manifest.json", dest: "_build_dev/" },
