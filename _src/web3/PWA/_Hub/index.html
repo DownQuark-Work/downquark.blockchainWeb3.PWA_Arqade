@@ -21,6 +21,7 @@
 
     <!-- Imports an icon to represent the document. -->
     <link rel="icon" href="assets/icons/icon_24.png" type="image/x-icon" />
+    <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;💭&lt;/text&gt;&lt;/svg&gt;"/>
 
     <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
     <link rel="manifest" href="manifest.json" />
@@ -34,11 +35,10 @@
     ></script>
 
     <link href="assets/styles/dq.css" rel="stylesheet" />
-    <script type="module" src="src/script/pages/app-index.ts"></script>
     <script type="module" src="_src/displays/_app.ts"></script>
   </head>
 
-  <body>
+  <body style="background-color:#472b4d">
       <fast-design-system-provider fill-color="#472b4d" accent-base-color="#710d06" density="0" design-unit="4">
       <dq-display-app-main></dq-display-app-main>
     </fast-design-system-provider>

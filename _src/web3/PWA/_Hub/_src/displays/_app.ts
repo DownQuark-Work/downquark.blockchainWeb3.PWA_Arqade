@@ -1,15 +1,13 @@
 import { LitElement, css, html } from 'lit';
 import { customElement, property } from 'lit/decorators';
 
-// import './app-home';
 import '../../no_modules/_styles/downquark.scss'
 import '../../no_modules/_styles/svg.scss'
 import '../_qomponents/tmplt/app-shell.js'
 
-import { Router } from '@vaadin/router';
+import './_routes/app-landing';
 
-// import '../defaultcomponents/header';
-// import '../_compiled/orgnsm/header.js'
+import { Router } from '@vaadin/router';
 
 @customElement('dq-display-app-main')
 export class AppIndex extends LitElement {
@@ -83,7 +81,6 @@ export class AppIndex extends LitElement {
 
   constructor() {
     super();
-
   }
 
   firstUpdated() {
@@ -94,13 +91,12 @@ export class AppIndex extends LitElement {
         path: '',
         animate: true,
         children: [
-          { path: '/', component: 'app-home' },
+          { path: '/', component: 'dq-display-app-landing' },
           {
             path: '/about',
-            component: 'app-about',
+            component: 'dq-display-app-about',
             action: async () => {
-              console.log('a')
-              // await import('./app-about');
+              await import('./_routes/app-about');
             },
           },
         ],

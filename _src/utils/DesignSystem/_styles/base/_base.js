@@ -1,6 +1,7 @@
 import { css } from 'lit';
 
-export const TypographyStyles = css`
+export const CommonStyles = css`
+*{transition: all .25s ease-out;}
 h1{font:var(--dq-typography-h1-font);margin:var(--dq-typography-h1-margin);}
 h2{font:var(--dq-typography-h2-font);margin:var(--dq-typography-h2-margin);}
 h3{font:var(--dq-typography-h3-font);margin:var(--dq-typography-h3-margin);}
