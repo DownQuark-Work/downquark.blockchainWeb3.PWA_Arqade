@@ -1,0 +1,9 @@
+node_modules
+
+# Hardhat files
+cache
+artifacts
+
+# symlinks
+_contracts/*
+!_contracts/ReadMe.md

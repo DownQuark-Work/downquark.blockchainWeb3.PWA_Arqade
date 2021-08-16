@@ -1,0 +1,3 @@
+__deploy
+!__deploy/Greeter.sol # debug purposes only
+!__deploy/ReadMe.md
