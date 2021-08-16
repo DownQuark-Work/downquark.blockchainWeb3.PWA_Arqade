@@ -27,7 +27,8 @@ export const parameters = {
   },
 }
 
-export const decorators = [(story, _static) => html`<style>
+export const decorators = [(story, _static) => html`
+<style>
 :root {
   --dq-accent-primary: var(--dq-quark-${_static.globals.quark}-accent-primary);
   --dq-accent-secondary: var(--dq-quark-${_static.globals.quark}-accent-secondary);
@@ -58,4 +59,6 @@ export const decorators = [(story, _static) => html`<style>
   --dq-typography-text-margin: var(--dq-quark-${_static.globals.quark}-typography-text-margin);
 }
   </style>
-  ${story()}`]
+  <fast-design-system-provider fill-color="#fff" accent-base-color="#fff" density="0" design-unit="4">
+  ${story()}
+  </fast-design-system-provider>`]

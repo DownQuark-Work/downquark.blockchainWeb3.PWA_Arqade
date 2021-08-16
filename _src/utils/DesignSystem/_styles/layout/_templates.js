@@ -6,7 +6,8 @@ export const LayoutTemplateAppShellCSS = css`
     display:grid;
     grid-template-rows: auto 1fr auto;
     margin:0 auto;
-    min-height:100vh;
+    max-height:650px;
+    height:100vh;
     width:385px;
   }
 `

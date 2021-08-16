@@ -9,6 +9,8 @@
       "es2017",
       "dom"
     ],
+    "allowJs": true,
+    "checkJs": false,
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -16,7 +18,7 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
-    "outDir": "./_dist/",
+    "outDir": "./_build_dev/",
     // Only necessary because @types/uglify-js can't find types for source-map
     "skipLibCheck": true,
     "experimentalDecorators": true,
@@ -48,6 +50,7 @@
     ]
   },
   "exclude": [
+    "_build_dev",
     "node_modules",
     "**/*.spec.ts"
   ]

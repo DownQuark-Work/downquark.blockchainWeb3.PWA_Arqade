@@ -1,7 +1,10 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "eslint-plugin-import"],
+  "plugins": [
+    "@typescript-eslint",
+    "eslint-plugin-import"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -10,11 +13,19 @@
     "prettier",
     "prettier/@typescript-eslint"
   ],
+  "ignorePatterns": [
+    "_src/_qomponents"
+  ],
   "overrides": [
     {
-      "files": ["src/**/*.ts"],
+      "files": [
+        "src/**/*.ts",
+        "_src/**/*.ts"
+      ],
       "rules": {
-        "@typescript-eslint/explicit-module-boundary-types": ["off"]
+        "@typescript-eslint/explicit-module-boundary-types": [
+          "off"
+        ]
       }
     }
   ]

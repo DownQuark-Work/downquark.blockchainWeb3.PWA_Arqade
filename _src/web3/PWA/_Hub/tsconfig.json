@@ -9,6 +9,8 @@
       "es2017",
       "dom"
     ],
+    "allowJs": true,
+    "checkJs": false,
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -17,7 +19,7 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
-    "outDir": "./dist/",
+    "outDir": "./_build_deploy/",
     // Only necessary because @types/uglify-js can't find types for source-map
     "skipLibCheck": true,
     "experimentalDecorators": true,
@@ -48,7 +50,9 @@
       }
     ]
   },
-  "include": ["pwabuilder-sw.ts"],
+  "include": [
+    "pwabuilder-sw.ts"
+  ],
   "exclude": [
     "node_modules",
     "**/*.spec.ts",

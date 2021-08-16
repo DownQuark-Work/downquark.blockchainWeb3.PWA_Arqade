@@ -1,69 +1,21 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// There is a bug with routes - need to use `any`until resolved
 import { LitElement, css, html } from 'lit';
 import { property, customElement } from 'lit/decorators';
+
+import '../../_qomponents/tmplt/default.js'
 
 // For more info on the @pwabuilder/pwainstall component click here https://github.com/pwa-builder/pwa-install
 import '@pwabuilder/pwainstall';
 
-@customElement('app-home')
+@customElement('dq-display-app-landing')
 export class AppHome extends LitElement {
   // For more information on using properties and state in lit
   // check out this link https://lit.dev/docs/components/properties/
   @property() message = 'Welcome!';
 
   static get styles() {
-    return css`
-      #welcomeBar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-
-      #welcomeBar fast-card {
-        margin-bottom: 12px;
-      }
-
-      #welcomeCard,
-      #infoCard {
-        padding: 18px;
-        padding-top: 0px;
-      }
-
-      pwa-install {
-        position: absolute;
-        bottom: 16px;
-        right: 16px;
-      }
-
-      button {
-        cursor: pointer;
-      }
-
-      @media (min-width: 1200px) {
-        #welcomeCard,
-        #infoCard {
-          width: 40%;
-        }
-      }
-
-      @media (screen-spanning: single-fold-vertical) {
-        #welcomeBar {
-          flex-direction: row;
-          align-items: flex-start;
-          justify-content: space-between;
-        }
-
-        #welcomeCard {
-          margin-right: 64px;
-        }
-      }
-
-      @media(prefers-color-scheme: light) {
-        fast-card {
-          --background-color: white;
-        }
-      }
-    `;
+    return css``
   }
 
   constructor() {
@@ -76,6 +28,15 @@ export class AppHome extends LitElement {
     console.log('This is your home page');
   }
 
+  browserChange() {
+    if ((navigator as any).share) {
+      (navigator as any).share({
+        title: 'Chrome',
+        text: 'Please try a browser that supports forward thinking web applications',
+        url: 'https://google.com',
+      });
+    }
+  }
   share() {
     if ((navigator as any).share) {
       (navigator as any).share({
@@ -87,6 +48,16 @@ export class AppHome extends LitElement {
   }
 
   render() {
+    return html`<dq-tmplt-default>
+      <div><section>${'share' in navigator
+              ? html`<fast-button appearance="primary" @click="${this.share}"
+                  >Share this Starter!</fast-button
+                >`
+              : html`Don't miss out on the fun!<br/><fast-button appearance="primary" @click="${this.share}"
+              >Upgrade to a high flying<br/> forward thinking browser now!</fast-button
+            >`}</section></div>
+    </dq-tmplt-default>`
+
     return html`
       <div>
         <div id="welcomeBar">
