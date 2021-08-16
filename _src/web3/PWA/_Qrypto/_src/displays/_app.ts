@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { LitElement, css, html } from 'lit';
 import { customElement, property } from 'lit/decorators';
 
