@@ -79,6 +79,7 @@ const typeScriptOpts = {
     // depending on amount of content/cached/etc
     // - it may take 2 - 3 `yarn dev`s for the stylesheet to be copied correctly
     scss({
+      includePaths: ['no_modules/_styles/downquark.scss'],
       output: '_src/content/assets/styles/dq.css',
     }),
     html(),
@@ -94,7 +95,7 @@ const typeScriptOpts = {
     }),
     copy({
       // if build styles are incorrect make sure newest sheet is here:
-      // _src/web3/PWA/_Hub/_build_dev/assets/styles/dq.css
+      // _src/web3/PWA/_Qrypto/_build_dev/assets/styles/dq.css
       // if not - rerun `yarn dev`
       targets: [
         { src: "_src/content/assets/**/*", dest: "_build_dev/assets/" },
