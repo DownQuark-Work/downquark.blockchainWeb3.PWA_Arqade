@@ -5,5 +5,5 @@ cache
 artifacts
 
 # symlinks
-_contracts/*
+_contracts
 !_contracts/ReadMe.md
