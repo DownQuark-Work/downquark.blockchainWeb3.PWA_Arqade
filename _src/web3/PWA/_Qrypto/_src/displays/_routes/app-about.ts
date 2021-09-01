@@ -36,7 +36,10 @@ export class AppAbout extends LitElement {
         <fast-avatar alt="Annie's profile image" link="#" name="Annie Lennox" shape="circle" fill="accent-primary">
             xXx<fast-badge fill="transparent" color="white" slot="badge" style="right:-1ch;">🥑</fast-badge></fast-avatar>
     </div>
-
+    <div>The Flash (or simply Flash) is the name of several superheroes appearing inAmerican comic books published by DC Comics.<fast-disclosure title="More about Flash" appearance="lightweight"><span slot="end">⚡️</span>
+        <div>Created by writer Gardner Fox and artist Harry Lampert, the original Flashfirst appeared in Flash Comics #1 (cover date January 1940/release monthNovember 1939). Nicknamed the "Scarlet Speedster", all incarnations of theFlash possess "super speed", which includes the ability to run, move, andthink extremely fast, use superhuman reflexes, and seemingly violatecertain laws of physics.</div>
+    </fast-disclosure>
+</div>
 </div>
         <h2>About Page</h2>
         Make sure to look at all the options (dropdown menu in the top left) here: https://explore.fast.design/components/fast-data-grid
