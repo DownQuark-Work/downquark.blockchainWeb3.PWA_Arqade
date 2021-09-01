@@ -53,9 +53,10 @@ export class AppHome extends LitElement {
               ? html`<fast-button appearance="primary" @click="${this.share}"
                   >Share this Starter!</fast-button
                 >`
-              : html`Don't miss out on the fun!<br/><fast-button appearance="primary" @click="${this.share}"
-              >Upgrade to a high flying<br/> forward thinking browser now!</fast-button
+              : html`Don't miss out on the fun!<br/><fast-anchor href="https://www.fast.design/docs/components/getting-started" appearance="hypertext"
+              >FAST!</fast-anchor
             >`}</section></div>
+
     </dq-tmplt-default>`
 
     return html`
