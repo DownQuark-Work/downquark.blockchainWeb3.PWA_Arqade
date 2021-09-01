@@ -1,6 +1,3 @@
-# GLOBAL IGNORES
-.DS*
-
 # Modules
 node_modules/
 **/lib/
@@ -8,6 +5,3 @@ node_modules/
 # Optional cache directories
 .eslintcache
 .npm
-
-# Optional private notes directory
-_notes/.ignored/
