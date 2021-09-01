@@ -1,5 +1,3 @@
-.DS*
-
 # Compiled
 .dist
 _build_dev
@@ -18,9 +16,6 @@ assets/scss/abstracts/variables/
 # Optional cache directories
 .eslintcache
 .npm
-
-# Optional private notes directory
-_notes/.ignored/
 
 # Yarn
 .yarn/*
