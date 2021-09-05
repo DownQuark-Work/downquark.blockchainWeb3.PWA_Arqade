@@ -1,3 +1,7 @@
+# Arqade
+This is the central "Hub" that will contain multiple game-based dApps.
+The first of which will be _**FatRedBird**_ (detailed below)
+
 # Fat Red Bird
 > An ultra-casual, non-fungible, Interplanetary game of Round Robin taking place on the blockchain
 
