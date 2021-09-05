@@ -1,49 +1,50 @@
 {
-  "name": "PWA Hub",
+  "name": "DownQuark Arqade",
   "display": "standalone",
   "start_url": "/",
-  "short_name": "pwa-hub",
-  "theme_color": "#f44336",
-  "description": "PWA Extension Core Functionality",
+  "short_name": "dq-arqade",
+  "theme_color": "#472b4d",
+  "description": "DownQuark Arqade App Shell",
   "orientation": "any",
-  "background_color": "#f44336",
+  "background_color": "#472b4d",
   "related_applications": [],
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "assets/icons/icon_512.png",
+      "src": "assets/gfx/icons/icon_512.png",
       "sizes": "512x512"
     },
     {
-      "src": "assets/icons/icon_192.png",
+      "src": "assets/gfx/icons/icon_192.png",
       "sizes": "192x192"
     },
     {
-      "src": "assets/icons/icon_48.png",
+      "src": "assets/gfx/icons/icon_48.png",
       "sizes": "48x48"
     },
     {
-      "src": "assets/icons/icon_24.png",
+      "src": "assets/gfx/icons/icon_24.png",
       "sizes": "24x24"
     }
   ],
   "screenshots": [
     {
-      "src": "assets/screenshots/screen.png"
+      "src": "assets/gfx/screenshots/screen.png"
     },
     {
-      "src": "assets/screenshots/screen.png"
+      "src": "assets/gfx/screenshots/screen.png"
     },
     {
-      "src": "assets/screenshots/screen.png"
+      "src": "assets/gfx/screenshots/screen.png"
     }
   ],
   "features": [
-    "Cross Platform",
-    "fast",
+    "Casual",
+    "blockchain",
+    "extension",
     "simple"
   ],
   "categories": [
-    "utility"
+    "gaming"
   ]
 }
