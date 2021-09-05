@@ -10,8 +10,8 @@ All test files will be contained within this directory then symlinked and run fr
 - `$ npx playwright open --device="iPhone 11" wikipedia.org`
 - `$ npx playwright open --viewport-size=800,600 --color-scheme=dark twitter.com`
 - `$ npx playwright open --timezone="Europe/Rome" --geolocation="41.890221,12.492348" --lang="it-IT" maps.google.com`
-> - # Emulate timezone, language & location
-> - # Once page opens, click the "my location" button to see geolocation in action
+> - Emulate timezone, language & location
+> - Once page opens, click the "my location" button to see geolocation in action
 
 ### [CI](https://playwright.dev/docs/ci)
 > \[TBD - but an option]
@@ -28,7 +28,6 @@ steps:
   - name: Run your tests
     run: npm test
 ```
-
 
 ### Testing
 - _reference_
