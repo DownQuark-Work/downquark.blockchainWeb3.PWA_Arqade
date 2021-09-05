@@ -1047,6 +1047,61 @@
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/@lit/reactive-element/-/reactive-element-1.0.0-rc.2.tgz#f24dba16ea571a08dca70f1783bd2ca5ec8de3ee"
   integrity sha1-8k26FupXGgjcpw8Xg70speyN4+4=
 
+"@microsoft/fast-colors@^5.1.3":
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/@microsoft/fast-colors/-/fast-colors-5.1.3.tgz#5c46147401a823835a3833e3e18dae7f06016966"
+  integrity sha512-XDEnRYxPO5P3Jsizm4TCxLu1osS/uV3Lym6SfRhq2PxfXPTgEcdvOYDUXyV2drqebs3U5VQnOcYcJiSp73xhng==
+
+"@microsoft/fast-components@^2.8.2":
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@microsoft/fast-components/-/fast-components-2.8.2.tgz#532fe4d5a1f824a500e23d709df968ca6cc59676"
+  integrity sha512-IwahRsjf3HYQbNK6Nxo7P0ZDCkj+JBQQko/qF77K0ldHeyGdO7+EsooRUkkyAeeek/plANf6sd6T4ve7zJPgAA==
+  dependencies:
+    "@microsoft/fast-colors" "^5.1.3"
+    "@microsoft/fast-element" "^1.5.0"
+    "@microsoft/fast-foundation" "^2.10.0"
+    "@microsoft/fast-web-utilities" "^4.8.0"
+    tslib "^1.13.0"
+    vscode-html-languageservice "^4.0.3"
+
+"@microsoft/fast-element@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@microsoft/fast-element/-/fast-element-1.5.0.tgz#fcef9058cb007561f9fa85dcf537cbb618aec8b3"
+  integrity sha512-usrPwHFdV4w4nZ3vlBbTYy9lXwfu0QJWfjHItgIqBIGkUIoWotW91BQaszt3xlQXx8e3v8294WEMtfc/MCukRA==
+
+"@microsoft/fast-foundation@^2.10.0":
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/@microsoft/fast-foundation/-/fast-foundation-2.10.0.tgz#fc3356b5955eb080bfe4ea3be912502eb71400ea"
+  integrity sha512-E0Q9IogdLQReJCC9jIGM6tGf8631reBhrapZbYiZwrOM/sX7TS2waYy54zsLuI5mOgDdOYFH8LtiHCKwgFVoDw==
+  dependencies:
+    "@microsoft/fast-element" "^1.5.0"
+    "@microsoft/fast-web-utilities" "^4.8.0"
+    "@microsoft/tsdoc-config" "^0.13.4"
+    tabbable "^5.2.0"
+    tslib "^1.13.0"
+
+"@microsoft/fast-web-utilities@^4.8.0":
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/@microsoft/fast-web-utilities/-/fast-web-utilities-4.8.0.tgz#a27f755669027071d8886fbe89ceaae4e69e203a"
+  integrity sha512-+MroMIP5yGD8mqbegqSZoIbQVjvmsQRQtn87Gc8TJk00KIfRu2x9sFAq8q5m8H61sjCRHreJ0Bq5telz09h55g==
+  dependencies:
+    exenv-es6 "^1.0.0"
+
+"@microsoft/tsdoc-config@^0.13.4":
+  version "0.13.9"
+  resolved "https://registry.yarnpkg.com/@microsoft/tsdoc-config/-/tsdoc-config-0.13.9.tgz#d8c8e8ab79ca11dc14838090c463905ae4c1a22d"
+  integrity sha512-VqqZn+rT9f6XujFPFR2aN9XKF/fuir/IzKVzoxI0vXIzxysp4ee6S2jCakmlGFHEasibifFTsJr7IYmRPxfzYw==
+  dependencies:
+    "@microsoft/tsdoc" "0.12.24"
+    ajv "~6.12.6"
+    jju "~1.4.0"
+    resolve "~1.19.0"
+
+"@microsoft/tsdoc@0.12.24":
+  version "0.12.24"
+  resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.12.24.tgz#30728e34ebc90351dd3aff4e18d038eed2c3e098"
+  integrity sha512-Mfmij13RUTmHEMi9vRUhMXD7rnGR2VvxeNYtaGtaJ4redwwjT4UXYJ+nzmVJF7hhd4pn/Fx5sncDKxMVFJSWPg==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -1798,7 +1853,7 @@ agent-base@4, agent-base@^4.3.0:
   dependencies:
     es6-promisify "^5.0.0"
 
-ajv@^6.10.0, ajv@^6.12.4:
+ajv@^6.10.0, ajv@^6.12.4, ajv@~6.12.6:
   version "6.12.6"
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/ajv/-/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
   integrity sha1-uvWmLoArB9l3A0WG+MO69a3ybfQ=
@@ -3073,6 +3128,11 @@ execa@^1.0.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
+exenv-es6@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/exenv-es6/-/exenv-es6-1.0.0.tgz#bd459136369af17cf33f959b5af58803d4068c80"
+  integrity sha512-fcG/TX8Ruv9Ma6PBaiNsUrHRJzVzuFMP6LtPn/9iqR+nr9mcLeEOGzXQGLC5CVQSXGE98HtzW2mTZkrCA3XrDg==
+
 expand-brackets@^2.1.4:
   version "2.1.4"
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/expand-brackets/-/expand-brackets-2.1.4.tgz#b77735e315ce30f6b6eff0f83b04151a22449622"
@@ -3723,6 +3783,13 @@ is-callable@^1.1.4, is-callable@^1.2.3:
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/is-callable/-/is-callable-1.2.3.tgz#8b1e0500b73a1d76c70487636f368e519de8db8e"
   integrity sha1-ix4FALc6HXbHBIdjbzaOUZ3o244=
 
+is-core-module@^2.1.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.6.0.tgz#d7553b2526fe59b92ba3e40c8df757ec8a709e19"
+  integrity sha512-wShG8vs60jKfPWpF2KZRaAtvt3a20OAn7+IJ6hLPECpSABLcKtFKTTI4ZtH5QcBruBHlq+WsdHWyz0BCZW7svQ==
+  dependencies:
+    has "^1.0.3"
+
 is-core-module@^2.2.0, is-core-module@^2.4.0:
   version "2.5.0"
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/is-core-module/-/is-core-module-2.5.0.tgz#f754843617c70bfd29b7bd87327400cda5c18491"
@@ -3964,6 +4031,11 @@ jest-worker@^26.0.0, jest-worker@^26.2.1:
     "@types/node" "*"
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
+
+jju@~1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/jju/-/jju-1.4.0.tgz#a3abe2718af241a2b2904f84a625970f389ae32a"
+  integrity sha1-o6vicYryQaKykE+EpiWXDzia4yo=
 
 js-tokens@^4.0.0:
   version "4.0.0"
@@ -5238,6 +5310,14 @@ resolve@^1.10.0, resolve@^1.10.1, resolve@^1.12.0, resolve@^1.13.1, resolve@^1.1
     is-core-module "^2.2.0"
     path-parse "^1.0.6"
 
+resolve@~1.19.0:
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.19.0.tgz#1af5bf630409734a067cae29318aac7fa29a267c"
+  integrity sha512-rArEXAgsBG4UgRGcynxWIWKFvh/XZCcS8UJdHhwy91zwAvCZIbcs+vAbflgBnNjYMs/i/i+/Ux6IZhML1yPvxg==
+  dependencies:
+    is-core-module "^2.1.0"
+    path-parse "^1.0.6"
+
 resumer@~0.0.0:
   version "0.0.0"
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/resumer/-/resumer-0.0.0.tgz#f1e8f461e4064ba39e82af3cdc2a8c893d076759"
@@ -5789,6 +5869,11 @@ systemjs@^6.8.3:
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/systemjs/-/systemjs-6.10.2.tgz#c9870217bddf9cfd25d12d4fcd1989541ef1207c"
   integrity sha1-yYcCF73fnP0l0S1PzRmJVB7xIHw=
 
+tabbable@^5.2.0:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/tabbable/-/tabbable-5.2.1.tgz#e3fda7367ddbb172dcda9f871c0fdb36d1c4cd9c"
+  integrity sha512-40pEZ2mhjaZzK0BnI+QGNjJO8UYx9pP5v7BGe17SORTO0OEuuaAwQTkAp8whcZvqon44wKFOikD+Al11K3JICQ==
+
 table-layout@^1.0.1:
   version "1.0.2"
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/table-layout/-/table-layout-1.0.2.tgz#c4038a1853b0136d63365a734b6931cf4fad4a04"
@@ -5940,7 +6025,7 @@ tsconfig-paths@^3.9.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.13.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.14.1"
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=
@@ -6155,6 +6240,16 @@ vscode-html-languageservice@3.1.0:
     vscode-nls "^4.1.2"
     vscode-uri "^2.1.2"
 
+vscode-html-languageservice@^4.0.3:
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/vscode-html-languageservice/-/vscode-html-languageservice-4.0.7.tgz#94f2ed22c821965f828222d13b5aa541b358d992"
+  integrity sha512-P5TQMYpgxAdLs+PwpC7Lm+0lXCyQAC6kZ41YuPYNHVooC4XO7Y2+ncHBcQJVK4C9LU2cTOAl0lzq4WAxuwRHYw==
+  dependencies:
+    vscode-languageserver-textdocument "^1.0.1"
+    vscode-languageserver-types "^3.16.0"
+    vscode-nls "^5.0.0"
+    vscode-uri "^3.0.2"
+
 vscode-languageserver-textdocument@^1.0.1:
   version "1.0.1"
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/vscode-languageserver-textdocument/-/vscode-languageserver-textdocument-1.0.1.tgz#178168e87efad6171b372add1dea34f53e5d330f"
@@ -6165,15 +6260,30 @@ vscode-languageserver-types@3.16.0-next.2:
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/vscode-languageserver-types/-/vscode-languageserver-types-3.16.0-next.2.tgz#940bd15c992295a65eae8ab6b8568a1e8daa3083"
   integrity sha1-lAvRXJkilaZeroq2uFaKHo2qMIM=
 
+vscode-languageserver-types@^3.16.0:
+  version "3.16.0"
+  resolved "https://registry.yarnpkg.com/vscode-languageserver-types/-/vscode-languageserver-types-3.16.0.tgz#ecf393fc121ec6974b2da3efb3155644c514e247"
+  integrity sha512-k8luDIWJWyenLc5ToFQQMaSrqCHiLwyKPHKPQZ5zz21vM+vIVUSvsRpcbiECH4WR88K2XZqc4ScRcZ7nk/jbeA==
+
 vscode-nls@^4.1.2:
   version "4.1.2"
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/vscode-nls/-/vscode-nls-4.1.2.tgz#ca8bf8bb82a0987b32801f9fddfdd2fb9fd3c167"
   integrity sha1-yov4u4KgmHsygB+f3f3S+5/TwWc=
 
+vscode-nls@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/vscode-nls/-/vscode-nls-5.0.0.tgz#99f0da0bd9ea7cda44e565a74c54b1f2bc257840"
+  integrity sha512-u0Lw+IYlgbEJFF6/qAqG2d1jQmJl0eyAGJHoAJqr2HT4M2BNuQYSEiSE75f52pXHSJm8AlTjnLLbBFPrdz2hpA==
+
 vscode-uri@^2.1.2:
   version "2.1.2"
   resolved "https://dev-artifacts.dc.c-gurus.com:443/artifactory/api/npm/npm-registry/vscode-uri/-/vscode-uri-2.1.2.tgz#c8d40de93eb57af31f3c715dd650e2ca2c096f1c"
   integrity sha1-yNQN6T61evMfPHFd1lDiyiwJbxw=
+
+vscode-uri@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/vscode-uri/-/vscode-uri-3.0.2.tgz#ecfd1d066cb8ef4c3a208decdbab9a8c23d055d0"
+  integrity sha512-jkjy6pjU1fxUvI51P+gCsxg1u2n8LSt0W6KrCNQceaziKzff74GoWmjVG46KieVzybO1sttPQmYfrwSHey7GUA==
 
 web-component-analyzer@~1.1.1:
   version "1.1.6"

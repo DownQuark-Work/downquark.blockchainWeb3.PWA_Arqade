@@ -27,12 +27,13 @@ export default {
     }),
     terser(),
     strip({
-      functions: ["console.log"],
+      // functions: ["console.log"],
     }),
     copy({
       targets: [
         { src: "_src/content/assets/**/*", dest: "_build_deploy/assets/" },
         { src: "manifest.json", dest: "_build_deploy/" },
+        { src: "sw.js", dest: "_build_deploy/" },
       ],
     }),
   ],

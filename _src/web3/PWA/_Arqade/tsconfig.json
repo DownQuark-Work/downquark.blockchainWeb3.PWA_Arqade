@@ -50,12 +50,12 @@
       }
     ]
   },
-  "include": [
-    "pwabuilder-sw.ts"
-  ],
+  // "include": [
+  // "pwabuilder-sw.ts"
+  // ],
   "exclude": [
     "node_modules",
     "**/*.spec.ts",
-    "build/pwabuilder-sw.js"
+    // "build/pwabuilder-sw.js"
   ]
 }

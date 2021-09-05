@@ -1,5 +1,12 @@
+// import {
+//   allComponents,
+//   provideFASTDesignSystem
+// } from "@microsoft/fast-components";
+
 import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators';
+
+// provideFASTDesignSystem().register(allComponents);
 
 @customElement('dq-display-app-about')
 export class AppAbout extends LitElement {
