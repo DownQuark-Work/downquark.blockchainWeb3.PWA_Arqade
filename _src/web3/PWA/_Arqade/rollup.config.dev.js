@@ -16,7 +16,7 @@ const designSystemOpts = {
     babel({
       babelHelpers: 'bundled',
       babelrc: false,
-      // forgetting the '**' below will cause no end of sorrow ... rember it in future integrations
+      // forgetting the '**' below will cause no end of sorrow ... remember it in future integrations
       exclude: ['node_modules/**', '../../../utils/DesignSystem/node_modules/**'],
       "presets": [
         [
