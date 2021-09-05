@@ -26,13 +26,13 @@
     "build-storybook": "yarn cln && yarn tkn && build-storybook",
     "bld": "yarn build-storybook"
   },
-  "homepage": "https://github.com/DownQuark-Work/downquark.blockchainWeb3.PWA_FatRedBird#readme",
+  "homepage": "https://github.com/DownQuark-Work/downquark.blockchainWeb3.PWA_Arqade#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DownQuark-Work/downquark.blockchainWeb3.PWA_FatRedBird.git"
+    "url": "git+https://github.com/DownQuark-Work/downquark.blockchainWeb3.PWA_Arqade.git"
   },
   "bugs": {
-    "url": "https://github.com/DownQuark-Work/downquark.blockchainWeb3.PWA_FatRedBird/issues"
+    "url": "https://github.com/DownQuark-Work/downquark.blockchainWeb3.PWA_Arqade/issues"
   },
   "dependencies": {
     "@dan-nz/storybook-documentation-primitives": "file:./utils/token/@dan-nz/storybook-documentation-primitives",
