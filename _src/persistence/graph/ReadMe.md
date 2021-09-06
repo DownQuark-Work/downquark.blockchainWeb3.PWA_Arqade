@@ -190,6 +190,34 @@ ctdEnArr=db._query(char_traits_doc_en,rawResults=true).toArray()
 mergeCtdEnArr=db._query(merge_char_traits_doc_en,rawResults=true).toArray()
 equivalentMergeCtdEnArr=db._query(merge_char_traits_doc_en_equiv,rawResults=true).toArray()
 ```
+#### [GROUPING](https://www.arangodb.com/docs/stable/aql/examples-grouping.html#fetching-group-values)
+> count, aggregation, post-aggregation examples can also be found at the above link
+```
+FOR u IN users
+    FILTER u.active == true
+    COLLECT age = u.age INTO usersByAge
+    SORT age DESC LIMIT 0, 5
+    RETURN {
+        age,
+        users: usersByAge[*].u.name
+    }
+```
+> `usersByAge[*].u.name`
+> The [*] expansion operator is just a handy short-cut. We could also write a subquery:
+> `( FOR temp IN usersByAge RETURN temp.u.name )`
+```
+# MULTIPLE GROUPING
+FOR u IN users
+    FILTER u.active == true
+    COLLECT ageGroup = FLOOR(u.age / 5) * 5,
+            gender = u.gender INTO group
+    SORT ageGroup DESC
+    RETURN {
+        ageGroup,
+        gender
+    }
+```
+#### [DIFF QUERY RESULTS](https://www.arangodb.com/docs/stable/aql/examples-diffing-documents.html)
 
 ### GRAPH
 **REFERENCE**
