@@ -16,7 +16,7 @@ import { property, customElement } from 'lit/decorators';
 import '../../_qomponents/tmplt/default.js'
 
 // For more info on the @pwabuilder/pwainstall component click here https://github.com/pwa-builder/pwa-install
-import '@pwabuilder/pwainstall';
+// import '@pwabuilder/pwainstall';
 
 @customElement('dq-display-app-landing')
 export class AppHome extends LitElement {

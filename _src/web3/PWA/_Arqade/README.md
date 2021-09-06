@@ -28,6 +28,6 @@ LOGGED_IN
 │   │  └── [TBD]
 │   └── Stands
 │      └── [ONE_PER_DAPP]
-├── Stats
-    └── TBD
+└── Qollection
+    └── TBD - but basically the user's winnings and purchases
 ```
