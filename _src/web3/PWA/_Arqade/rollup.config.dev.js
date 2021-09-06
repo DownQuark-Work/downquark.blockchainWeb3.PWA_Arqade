@@ -119,7 +119,7 @@ export default [
     ...designSystemOpts,
   },
   {
-    input: "index.html",
+    input: "_src/arqade.html",
     output: {
       dir: "_build_dev",
       format: "es",

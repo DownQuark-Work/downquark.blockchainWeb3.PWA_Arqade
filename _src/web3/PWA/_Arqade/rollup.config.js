@@ -8,7 +8,7 @@ import copy from "rollup-plugin-copy";
 import typescript from "@rollup/plugin-typescript";
 
 export default {
-  input: "_build_dev/index.html",
+  input: "_build_dev/arqade.html",
   output: {
     dir: "_build_deploy",
     format: "es",

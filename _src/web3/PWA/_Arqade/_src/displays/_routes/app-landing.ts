@@ -37,36 +37,12 @@ export class AppHome extends LitElement {
     // for more info check out the lit docs https://lit.dev/docs/components/lifecycle/
     console.log('This is your home page');
   }
-
-  browserChange() {
-    if ((navigator as any).share) {
-      (navigator as any).share({
-        title: 'Chrome',
-        text: 'Please try a browser that supports forward thinking web applications',
-        url: 'https://google.com',
-      });
-    }
-  }
-  share() {
-    if ((navigator as any).share) {
-      (navigator as any).share({
-        title: 'PWABuilder pwa-starter',
-        text: 'Check out the PWABuilder pwa-starter!',
-        url: 'https://github.com/pwa-builder/pwa-starter',
-      });
-    }
-  }
-
   render() {
     return html`<dq-tmplt-default>
-      <div><section>${'share' in navigator
-              ? html`<fast-button appearance="primary" @click="${this.share}"
-                  >Share this Starter!</fast-button
-                >`
-              : html`Don't miss out on the fun!<br/><fast-anchor href="https://www.fast.design/docs/components/getting-started" appearance="hypertext"
-              >FAST!</fast-anchor
-            >`}</section></div>
+  <div>
+    <section>${this.message}!</section>
+  </div>
 
-    </dq-tmplt-default>`
+</dq-tmplt-default>`
   }
 }
