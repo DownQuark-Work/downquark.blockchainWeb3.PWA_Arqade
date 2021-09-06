@@ -1,6 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { LitElement, css, html } from 'lit';
 import { customElement, property } from 'lit/decorators';
+import { Router } from '@vaadin/router';
+
+import { ARQADE_ROUTES } from '../utils/constants/routes'
 
 import '../../no_modules/_styles/downquark.scss'
 import '../../no_modules/_styles/svg.scss'
@@ -8,7 +11,6 @@ import '../_qomponents/tmplt/app-shell.js'
 
 import './_routes/app-landing';
 
-import { Router } from '@vaadin/router';
 
 @customElement('dq-display-app-main')
 export class AppIndex extends LitElement {
@@ -86,23 +88,7 @@ export class AppIndex extends LitElement {
 
   firstUpdated() {
     const router = new Router(this.shadowRoot?.querySelector('#routerOutlet'));
-    router.setRoutes([
-      // temporarily cast to any because of a Type bug with the router
-      {
-        path: '',
-        animate: true,
-        children: [
-          { path: '/', component: 'dq-display-app-landing' },
-          {
-            path: '/about',
-            component: 'dq-display-app-about',
-            action: async () => {
-              await import('./_routes/app-about');
-            },
-          },
-        ],
-      } as any,
-    ]);
+    router.setRoutes(ARQADE_ROUTES);
   }
 
   render() {

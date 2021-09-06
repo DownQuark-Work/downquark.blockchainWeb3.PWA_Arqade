@@ -1,7 +1,7 @@
 import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators';
 
-@customElement('dq-display-app-about')
+@customElement('dq-display-app-coming-soon')
 export class AppAbout extends LitElement {
   static get styles() {
     return css``;
@@ -13,10 +13,9 @@ export class AppAbout extends LitElement {
 
   render() {
     return html`<div>
-  <h1>About Page</h1>
-  About Children Below
-  <slot></slot>
-  About Children Above
+  <h3>Coming Soon</h3>
+  <p>We&rsquo;re currently working on this page and it will be available shortly</p>
+  <slot>[child page loads here (if applicable)]</slot>
 </div>
     `;
   }
