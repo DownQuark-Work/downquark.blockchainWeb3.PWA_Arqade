@@ -56,6 +56,6 @@
   "exclude": [
     "node_modules",
     "**/*.spec.ts",
-    // "build/pwabuilder-sw.js"
+    "_build_deploy/sw.js"
   ]
 }
