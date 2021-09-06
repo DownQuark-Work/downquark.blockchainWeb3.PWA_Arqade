@@ -1,8 +1,10 @@
 # arangodb
 > [INSTALL](https://www.arangodb.com/docs/stable/installation-mac-osx.html)
 > [DOCS](https://www.arangodb.com/documentation/)
+> - [examples](https://www.arangodb.com/docs/stable/aql/examples.html)
 
 ## DB Access
+> `$ arangod`
 https://www.arangodb.com/docs/stable/programs-arangosh.html
 > `$ arangosh`
 > `Please specify a password:` \<LEAVE_BLANK>
@@ -37,6 +39,9 @@ db._collections()
 db._createEdgeCollection(name="TutorialTestEdge")
 ```
 ### BASIC
+- [OPERATIONS](https://www.arangodb.com/docs/stable/aql/operations.html)
+- [FUNCTIONS](https://www.arangodb.com/docs/stable/aql/functions.html)
+- [GRAPHS](https://www.arangodb.com/docs/stable/graphs.html#example-graphs)
 #### [CRUD](https://www.arangodb.com/docs/stable/aql/tutorial-crud.html)
 > shell version: https://colab.research.google.com/github/arangodb/interactive_tutorials/blob/master/notebooks/AqlCrudTutorial.ipynb#scrollTo=E_d0PLSmXFCl
 ```
@@ -201,6 +206,8 @@ db._createEdgeCollection(name="ChildOf")
 # See "Create Edges Query on above link
 ```
 #### [TRAVERSALS](https://www.arangodb.com/docs/stable/aql/graphs-traversals.html)
+- [docs](https://www.arangodb.com/docs/stable/aql/graphs-traversals.html)
+- [movie dataset tutorial](https://www.arangodb.com/docs/stable/aql/examples-actors-and-movies.html)
 ```
 sansa_parents_qry=`FOR c IN Characters
         // First find the start node, i.e., sansa
