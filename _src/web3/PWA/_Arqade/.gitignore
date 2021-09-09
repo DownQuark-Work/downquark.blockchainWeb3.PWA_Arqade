@@ -5,6 +5,7 @@ _build_deploy
 no_modules
 node_modules
 _src/_qomponents
+_src/content/assets/styles/dq.css
 
 # token generated files
 assets/css/variables/

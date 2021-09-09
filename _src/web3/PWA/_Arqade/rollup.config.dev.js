@@ -8,7 +8,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import scss from 'rollup-plugin-scss';
 import typescript from "@rollup/plugin-typescript";
 
-import fs from 'fs';
+// import fs from 'fs';
 
 const designSystemOpts = {
   preserveSymlinks: true,
@@ -82,10 +82,11 @@ const typeScriptOpts = {
     // - it may take 2 - 3 `yarn dev`s for the stylesheet to be copied correctly
     scss({
       includePaths: ['no_modules/_styles/downquark.scss'],
-      // output: '_src/content/assets/styles/dq.css',
-      output: function (styles, styleNodes) {
-        fs.writeFileSync('_src/content/assets/styles/dq.css', styles)
-      },
+      output: '_src/content/assets/styles/dq.css',
+      // output: function (styles, styleNodes) {
+      // output: function (styles) {
+      //   fs.writeFileSync('_src/content/assets/styles/dq.css', styles)
+      // },
     }),
     html(),
     typescript({
