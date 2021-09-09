@@ -20,6 +20,7 @@ export class AppAbout extends LitElement {
   render() {
     return html`<div>
   <h1>About Page</h1>
+  .${router.location.params.dapp}.
   About Children Below
   <slot></slot>
   About Children Above

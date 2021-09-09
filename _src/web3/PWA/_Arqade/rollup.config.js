@@ -27,7 +27,7 @@ export default {
     }),
     terser(),
     strip({
-      // functions: ["console.log"],
+      functions: ["xconsole.log"],
     }),
     copy({
       targets: [

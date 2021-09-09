@@ -100,6 +100,7 @@ export class AppIndex extends LitElement {
       ${this.rootCSSVars}
       <main>
         <dq-tmplt-app-shell>
+          <p>about dapps frb <a href="/about/dapps/fatredbird">go</a>?</p>
           <slot></slot>
         </dq-tmplt-app-shell>
       </main>
