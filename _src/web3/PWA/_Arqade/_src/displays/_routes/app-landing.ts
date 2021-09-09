@@ -1,22 +1,7 @@
-// import {
-//   // allComponents,
-//   fastAnchor,
-//   fastButton,
-//   provideFASTDesignSystem
-// } from "@microsoft/fast-components";
-
-// provideFASTDesignSystem().register(fastAnchor());
-// provideFASTDesignSystem().register(fastButton());
-
-/* eslint-disable @typescript-eslint/no-explicit-any */
-// There is a bug with routes - need to use `any`until resolved
 import { LitElement, css, html } from 'lit';
 import { property, customElement } from 'lit/decorators';
 
 import '../../_qomponents/tmplt/default.js'
-
-// For more info on the @pwabuilder/pwainstall component click here https://github.com/pwa-builder/pwa-install
-// import '@pwabuilder/pwainstall';
 
 @customElement('dq-display-app-landing')
 export class AppHome extends LitElement {

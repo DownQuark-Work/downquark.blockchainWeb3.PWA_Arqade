@@ -51,7 +51,6 @@
     ]
   },
   // "include": [
-  // "pwabuilder-sw.ts"
   // ],
   "exclude": [
     "node_modules",

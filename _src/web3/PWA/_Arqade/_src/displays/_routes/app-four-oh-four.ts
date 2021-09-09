@@ -14,6 +14,7 @@ export class AppAbout extends LitElement {
   render() {
     return html`<div>
   <h1>Missing Page</h1>
+  <h2>${window.location.href}</h2>
   <p>You&rsquo;re currently looking for a page that does not exist.</p>
   <p>Do you want ot return <a href="/">home</a>?</p>
 </div>

@@ -10,7 +10,7 @@
   },
   "action": {
     "default_title": "DownQuark Arqade",
-    "default_popup": "arqade.html"
+    "default_popup": "index.html"
   },
   "icons": {
     "24": "assets/gfx/icons/icon_24.png",

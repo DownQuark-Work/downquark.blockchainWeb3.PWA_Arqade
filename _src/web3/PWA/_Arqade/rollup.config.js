@@ -21,7 +21,7 @@ export default {
         process.env.NODE_ENV || "production"
       ),
     }),
-    html(),
+    html({ name: 'index.html' }),
     typescript({
       tsconfig: "tsconfig.json"
     }),
