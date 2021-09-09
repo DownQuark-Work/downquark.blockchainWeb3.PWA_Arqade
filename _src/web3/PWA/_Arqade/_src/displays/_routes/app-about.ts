@@ -1,6 +1,8 @@
 import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators';
 
+import { router } from '../app'
+
 @customElement('dq-display-app-about')
 export class AppAbout extends LitElement {
   static get styles() {
@@ -9,6 +11,10 @@ export class AppAbout extends LitElement {
 
   constructor() {
     super();
+  }
+
+  firstUpdated() {
+    console.log('router.location', router.location);
   }
 
   render() {

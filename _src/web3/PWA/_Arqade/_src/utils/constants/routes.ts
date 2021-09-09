@@ -1,10 +1,13 @@
-export const ARQADE_ROUTES = [
-  // temporarily cast to any because of a Type bug with the router
+// eslint-disable-next-line import/named
+import { Route } from '@vaadin/router'
+
+export const ARQADE_ROUTES: Route[] = [
   {
     path: '',
     animate: true,
+    component: 'dq-display-app-main',
     children: [
-      { path: '/', component: 'dq-display-app-landing' },
+      { path: '/', component: 'dq-display-app-landing', action: async () => { await import('../../displays/_routes/app-landing'); } },
       {
         path: '/about',
         component: 'dq-display-app-about',
@@ -127,5 +130,5 @@ export const ARQADE_ROUTES = [
         action: async () => { await import('../../displays/_routes/app-four-oh-four'); },
       },
     ],
-  } as any,
+  },
 ]
