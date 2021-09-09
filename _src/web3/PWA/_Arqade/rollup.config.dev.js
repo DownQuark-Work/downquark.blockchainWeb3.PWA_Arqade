@@ -83,6 +83,7 @@ const typeScriptOpts = {
     scss({
       includePaths: ['no_modules/_styles/downquark.scss'],
       output: '_src/content/assets/styles/dq.css',
+      // failOnError: true,
       // output: function (styles, styleNodes) {
       // output: function (styles) {
       //   fs.writeFileSync('_src/content/assets/styles/dq.css', styles)
@@ -104,7 +105,7 @@ const typeScriptOpts = {
       // _src/web3/PWA/_Qrypto/_build_dev/assets/styles/dq.css
       // if not - rerun `yarn dev`
       targets: [
-        { src: "_src/content/assets/**/*", dest: "_build_dev/assets/" },
+        { src: "_src/content/assets/*", dest: "_build_dev/assets/" },
         { src: "manifest.json", dest: "_build_dev/" },
       ],
     }),
