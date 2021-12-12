@@ -1,0 +1,146 @@
+{
+  "quark": {
+    "fatredbird": {
+      "accent": {
+        "primary": {
+          "value": "{color.accents.Steel-Gray.value}"
+        },
+        "secondary": {
+          "value": "{color.accents.Oxford-Blue.value}"
+        },
+        "tertiary": {
+          "value": "{color.accents.Tahiti-Gold.value}"
+        }
+      },
+      "color": {
+        "primary": {
+          "value": "{color.base.Zest.value}"
+        },
+        "secondary": {
+          "value": "{color.base.Swirl.value}"
+        }
+      },
+      "typography": {
+        "h1": {
+          "font": {
+            "value": "{typography.biorhyme.h1.font.value}"
+          },
+          "margin": {
+            "value": "{typography.biorhyme.h1.margin.value}"
+          }
+        },
+        "h2": {
+          "font": {
+            "value": "{typography.biorhyme.h2.font.value}"
+          },
+          "margin": {
+            "value": "{typography.biorhyme.h2.margin.value}"
+          }
+        },
+        "h3": {
+          "font": {
+            "value": "{typography.creteround.h3.font.value}"
+          },
+          "margin": {
+            "value": "{typography.creteround.h3.margin.value}"
+          }
+        },
+        "h4": {
+          "font": {
+            "value": "{typography.creteround.h4.font.value}"
+          },
+          "margin": {
+            "value": "{typography.creteround.h4.margin.value}"
+          }
+        },
+        "h5": {
+          "font": {
+            "value": "{typography.creteround.h5.font.value}"
+          },
+          "margin": {
+            "value": "{typography.creteround.h5.margin.value}"
+          }
+        },
+        "text": {
+          "font": {
+            "value": "{typography.podkova.text.font.value}"
+          },
+          "margin": {
+            "value": "{typography.podkova.text.margin.value}"
+          }
+        }
+      }
+    },
+    "hub": {
+      "accent": {
+        "primary": {
+          "value": "{color.accents.Manatee.value}"
+        },
+        "secondary": {
+          "value": "{color.accents.Mortar.value}"
+        },
+        "tertiary": {
+          "value": "{color.accents.Rich-Gold.value}"
+        }
+      },
+      "color": {
+        "primary": {
+          "value": "{color.base.Voodoo.value}"
+        },
+        "secondary": {
+          "value": "{color.base.Rich-Red.value}"
+        }
+      },
+      "typography": {
+        "h1": {
+          "font": {
+            "value": "{typography.philosopher.h1.font.value}"
+          },
+          "margin": {
+            "value": "{typography.philosopher.h1.margin.value}"
+          }
+        },
+        "h2": {
+          "font": {
+            "value": "{typography.philosopher.h2.font.value}"
+          },
+          "margin": {
+            "value": "{typography.philosopher.h2.margin.value}"
+          }
+        },
+        "h3": {
+          "font": {
+            "value": "{typography.philosopher.h3.font.value}"
+          },
+          "margin": {
+            "value": "{typography.philosopher.h3.margin.value}"
+          }
+        },
+        "h4": {
+          "font": {
+            "value": "{typography.philosopher.h4.font.value}"
+          },
+          "margin": {
+            "value": "{typography.philosopher.h4.margin.value}"
+          }
+        },
+        "h5": {
+          "font": {
+            "value": "{typography.philosopher.h5.font.value}"
+          },
+          "margin": {
+            "value": "{typography.philosopher.h5.margin.value}"
+          }
+        },
+        "text": {
+          "font": {
+            "value": "{typography.roboto.text.font.value}"
+          },
+          "margin": {
+            "value": "{typography.roboto.text.margin.value}"
+          }
+        }
+      }
+    }
+  }
+}

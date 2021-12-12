@@ -1,0 +1,15 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="docs 📚/1. What/Differences" />
+
+<h1>Design System <span>vs.</span> Style Guide <span>vs.</span> Pattern Libraries</h1>
+      <p><b>Consistency</b><br/>Both a pattern library and style guide ensure consistency through rules, but they do nothing to ensure or assist with the enforcement of these rules. Because they still require developers to copy and paste assets (as with a pattern library) or even recreate from scratch (as is the case with some style guides), they can still lead to inconsistencies.</p>
+      <p>A design system, on the other hand, requires developers to pull - and only pull - assets from the central repository. This way, there can be no room for inconsistency.</p>
+      <p><b>Branding Coverage</b><br/>On a similar note, a pattern library focuses more on visual assets, while a style guide can favor written content and tone. The two are often used side by side as a result.</p>
+      <p><b>A design system often combines the two</b> - at least in terms of visuals such as typography and assets. That said, it’s not the place to define your written values. While you can include these, you’re essentially adding a style guide to your design system, which is not a bad idea by any means.</p>
+      <p><b>Updating & Automation</b><br/>On the same topic, only one option is truly automated. Only design systems recall from a central location, so one update can get rolled out across the entire branding.</p>
+      <p>With a style guide or component library, this will need to be automated. In the examples mentioned previously, such as Lonely Planet’s, the assets were fully coded but had to be implemented manually. If these assets are changed, someone has to go in and spent time personally changing everything. Even then, there’s always the chance that they forget something or make a mistake at any point.</p>
+      <p><b>Prototyping</b></p>
+      <p>Big organizations often want to prototype and test new features, but want to do it as quickly as possible. This is typically done with wireframes - the most bare-bones approach - to save time and resources.</p>
+      <p>For visuals, designers often go into the pattern library and crudely paste together assets where possible. The style guide often rarely comes into play at this stage.</p>
+      <p>With a design system, the automation comes into play. Need a prototype that has buttons, forms, or menus? With a design system, you can quickly recall the most up to date assets. This ensures your prototypes and PoCs have the same look and feel like everything else, which makes it easier to fully evaluate them.</p>

@@ -1,0 +1,33 @@
+{
+  "size": {
+    "breakpoint": {
+      "comment": "anything up to 399 px will be the default. No need to label it as `panel`",
+      "panel-wide": {
+        "value": "( min-width:  400px )"
+      },
+      "small": {
+        "value": "( min-width:  767px )"
+      },
+      "medium": {
+        "value": "( min-width:  992px )"
+      },
+      "large": {
+        "value": "( min-width: 1200px )"
+      }
+    },
+    "root": {
+      "fontsize": {
+        "value": "16px"
+      },
+      "lineheight": {
+        "value": "24px"
+      },
+      "max": {
+        "width": {
+          "value": "1180px"
+        }
+      }
+    },
+    "spacing": {}
+  }
+}
