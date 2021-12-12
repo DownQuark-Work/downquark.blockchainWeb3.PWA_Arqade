@@ -24,4 +24,9 @@ class DownQuarkTemplateAppShell extends LitElement {
 </div>`;
   }
 }
-DownQuarkTemplateAppShell.createProperty('dq')
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'dq-template-app-shell': DownQuarkTemplateAppShell
+  }
+}

@@ -28,4 +28,8 @@ class DownQuarkOrganismHeader extends LitElement {
 </header>`;
   }
 }
-DownQuarkOrganismHeader.createProperty('dq')
+declare global {
+  interface HTMLElementTagNameMap {
+    'dq-organism-header': DownQuarkOrganismHeader
+  }
+}

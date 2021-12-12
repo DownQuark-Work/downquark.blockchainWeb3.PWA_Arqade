@@ -11,4 +11,8 @@ class DownQuarkOrganismFooter extends LitElement {
     return html`<footer>FooterOrganism</footer>`;
   }
 }
-DownQuarkOrganismFooter.createProperty('dq')
+declare global {
+  interface HTMLElementTagNameMap {
+    'dq-organism-footer': DownQuarkOrganismFooter
+  }
+}

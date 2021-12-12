@@ -8,14 +8,14 @@ class DownQuarkAtomAnchorLink extends LitElement {
   @property({ type: String })
   href = '#';
   @property({ type: String })
-  target = '_self';
+  target:EnumAnchorTarget = '_self';
 
   static get styles() {
     return css``
   }
   showTarget = this.target === '_blank' || this.target === '_self'
   render() {
-    return html`<a href="${this.href}" ${this.showTarget ? `target="${this.target}" ` : "" }>
+    return html`<a href="${this.href}" target="${this.target}">
   <slot></slot>
 </a>
 `;
@@ -45,5 +45,9 @@ class DownQuarkAtomAnchorNavHeaderLink extends LitElement {
   }
 }
 
-DownQuarkAtomAnchorLink.createProperty('dq')
-DownQuarkAtomAnchorNavHeaderLink.createProperty('dq')
+declare global {
+  interface HTMLElementTagNameMap {
+    'dq-atom-anchor-link': DownQuarkAtomAnchorLink,
+    'dq-atom-anchor-nav-header-link': DownQuarkAtomAnchorNavHeaderLink
+  }
+}
