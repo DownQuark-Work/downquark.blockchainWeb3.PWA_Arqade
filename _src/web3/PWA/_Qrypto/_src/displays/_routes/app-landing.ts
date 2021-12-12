@@ -48,7 +48,7 @@ export class AppHome extends LitElement {
   }
 
   render() {
-    return html`<dq-tmplt-default>
+    return html`<dq-template-default>
       <div><section>${'share' in navigator
               ? html`<fast-button appearance="primary" @click="${this.share}"
                   >Share this Starter!</fast-button
@@ -56,7 +56,7 @@ export class AppHome extends LitElement {
               : html`Don't miss out on the fun!<br/><fast-button appearance="primary" @click="${this.share}"
               >Upgrade to a high flying<br/> forward thinking browser now!</fast-button
             >`}</section></div>
-    </dq-tmplt-default>`
+    </dq-template-default>`
 
     return html`
       <div>

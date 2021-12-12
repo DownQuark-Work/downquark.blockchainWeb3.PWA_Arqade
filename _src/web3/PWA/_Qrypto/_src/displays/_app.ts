@@ -109,9 +109,9 @@ export class AppIndex extends LitElement {
     return html`
       ${this.rootCSSVars}
       <main>
-        <dq-tmplt-app-shell>
+        <dq-template-app-shell>
           <div id="routerOutlet"></div>
-        </dq-tmplt-app-shell>
+        </dq-template-app-shell>
       </main>
     `;
   }

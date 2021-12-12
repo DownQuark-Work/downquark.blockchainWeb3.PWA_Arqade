@@ -4,8 +4,8 @@ import '../../../../_components/templates/app-shell'
 import '../../../../_components/templates/totem.ts'
 
 
-export const TemplatePageLayoutTotem = () => html`<dq-tmplt-app-shell>
-  <dq-tmplt-totem>
+export const TemplatePageLayoutTotem = () => html`<dq-template-app-shell>
+  <dq-template-totem>
     <section>abc</section>
     <section>
       <h1>123</h1>
@@ -30,5 +30,5 @@ export const TemplatePageLayoutTotem = () => html`<dq-tmplt-app-shell>
     <section class="narrow">098</section>
     <section class="reset"></section>
     <section>should be wide</section>
-  </dq-tmplt-totem>
-</dq-tmplt-app-shell>`
+  </dq-template-totem>
+</dq-template-app-shell>`

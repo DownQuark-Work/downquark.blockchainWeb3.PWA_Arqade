@@ -4,8 +4,8 @@ import { html } from 'lit'
 import '../../../../_components/templates/default.ts'
 
 
-export const TemplatePageLayoutDefault = () => html`<dq-tmplt-app-shell>
-  <dq-tmplt-default>
+export const TemplatePageLayoutDefault = () => html`<dq-template-app-shell>
+  <dq-template-default>
     <section>
       Full (slot)(grid)
     </section>
@@ -52,5 +52,5 @@ export const TemplatePageLayoutDefault = () => html`<dq-tmplt-app-shell>
         half (slot)(flex) 1
       </section>
     </div>
-  </dq-tmplt-default>
-</dq-tmplt-app-shell>`
+  </dq-template-default>
+</dq-template-app-shell>`

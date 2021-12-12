@@ -4,6 +4,7 @@ import { customElement, property } from 'lit/decorators.js'
 import '../organisms/header.ts'
 import '../organisms/footer.ts'
 
+// import '../../_scss/components/_common.scss'
 
 @customElement('dq-template-app-shell')
 class DownQuarkTemplateAppShell extends LitElement {
@@ -15,8 +16,10 @@ class DownQuarkTemplateAppShell extends LitElement {
   }
 
   render() {
-    return html`<div id="app-shell">
+    return html`<div id="app-shell" class="debug">
   <dq-organism-header></dq-organism-header>
+  <!-- <div>asd</div>
+  <p>world</p> -->
   <slot>
     <p style="text-align:center">Loading...</p>
   </slot>
