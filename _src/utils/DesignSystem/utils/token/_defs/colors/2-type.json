@@ -1,0 +1,16 @@
+{
+  "color": {
+    "background": {
+      "primary": {"value":"{color.base.SmokedPearl.value}"},
+      "secondary": {"value":"{color.base.LondonGrey.value}"}
+    },
+    "border":{
+      "primary": {"value":"{color.common.black.value}"},
+      "secondary": {"value":"{color.base.DarkMidnightBlue.value}"}
+    },
+    "text":{
+      "primary": {"value":"{color.common.black.value}"},
+      "secondary": {"value":"{color.base.DarkMidnightBlue.value}"}
+    }
+  }
+}

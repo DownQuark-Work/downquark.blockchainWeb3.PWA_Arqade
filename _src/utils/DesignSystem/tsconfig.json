@@ -32,8 +32,8 @@
       }
     ]
   },
-  "include": ["_components/**/*.ts",".storybook/*.ts"],
-  "exclude": ["utils"],
+  "include": ["_components/**/*.ts",".storybook/*.ts","utils/**/*.ts"],
+  "exclude": [],
   "typeRoots": [
     "../node_modules/@types/"
     ]

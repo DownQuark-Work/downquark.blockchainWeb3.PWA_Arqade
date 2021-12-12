@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@forward 'abstracts/dq';
+@use 'abstracts/dq' as dq;
+
+// // 2. Vendors
+@use 'vendors/reset';
+@use 'vendors/normalize';
+@use 'vendors/app-stack/app';
+
+// // 3. Base Styles
+@use 'base/dq' as dq-base;
+
+// // 4. Layout-related sections
+@use 'layouts/common' as tmplt;
+
+// // 5. Components
+@use 'components/common' as compnt;
+
+// // 6. Page-specific styles
+@use 'pages/common' as scrn;
+
+// // 7. Themes
+@use 'themes/common' as thm;
+
+// // 8. Overwrites
+@use 'overwrites/shame';

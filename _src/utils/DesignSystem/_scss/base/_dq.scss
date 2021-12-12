@@ -1,0 +1,11 @@
+// Below will be generated when creating design tokens
+@use 'tokens/colors';
+@use 'tokens/content';
+@use 'tokens/dimensions';
+@use 'tokens/fonts';
+@use 'tokens/typography';
+
+@use 'utils';
+
+@use 'fonts' as fnts;
+@use 'typography' as typo;

@@ -1,0 +1,69 @@
+@use '../../vendors/app-stack/variables' as appstack;
+
+@mixin bg-variant($parent, $color, $ignore-warning: false) {
+  #{$parent} {
+    background-color: $color !important;
+  }
+  a#{$parent},
+  button#{$parent} {
+    &:hover,
+    &:focus {
+      background-color: darken($color, 10%) !important;
+    }
+  }
+}
+
+@mixin badge-variant($bg) {
+  color: color-yiq($bg);
+  background-color: $bg;
+
+  @at-root a#{&} {
+    &:hover,
+    &:focus {
+      color: color-yiq($bg);
+      background-color: darken($bg, 10%);
+    }
+
+    &:focus,
+    &.focus {
+      outline: 0;
+      box-shadow: 0 0 0 1px rgba($bg, .5);
+    }
+  }
+}
+
+@mixin modal-variant($color) {
+  .modal-content {
+    background: $color;
+    color: color-yiq($color);
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: appstack.$white;
+  }
+}
+
+@mixin switch-variant($color) {
+  input:checked + label::before {
+    background-color: $color;
+  }
+}
+
+@mixin tab-variant($color) {
+  .nav-tabs .nav-link.active {
+    background: $color;
+    border-bottom-color: $color;
+    color: appstack.$white;
+  }
+
+  .tab-content {
+    background: $color;
+    color: appstack.$white;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: appstack.$white;
+  }
+}
