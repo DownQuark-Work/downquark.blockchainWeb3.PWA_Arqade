@@ -87,7 +87,7 @@ module.exports = {
         options: {
           importLoaders: 1,
           modules: {
-            // compileType: 'module',
+            compileType: 'module',
             // mode: "local",
             //// the above gives us something at least
             // compileType: "module",
