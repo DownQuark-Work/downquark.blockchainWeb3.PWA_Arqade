@@ -1,10 +1,20 @@
 {
-  "name": "@lit/lit-starter-ts",
+  "name": "dq-w3-pwa-designsystem",
+  "version": "0.0.1-alpha.0.0.1",
+  "author": "mlnck",
+  "description": "DownQuark Web3 PWA Components and StyleGuide",
+  "license": "ISC",
+  "main": "index.js",
   "private": true,
-  "version": "1.0.0",
-  "description": "A simple web component",
-  "main": "my-element.js",
-  "module": "my-element.js",
+  "keywords": [
+    "downquark",
+    "dq",
+    "pwa",
+    "web3",
+    "nft",
+    "crypto",
+    "blockchain"
+  ],
   "scripts": {
     "build-storybook": "yarn cln && yarn tkn && build-storybook",
     "build:tsc": "tsc",
@@ -21,23 +31,24 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "tkn": "style-dictionary build -c \"./utils/token/token-config.js\""
   },
-  "keywords": [
-    "web-components",
-    "lit-element",
-    "typescript",
-    "lit"
-  ],
-  "author": "Google LLC",
-  "license": "BSD-3-Clause",
+  "homepage": "https://github.com/DownQuark-Work/downquark.blockchainWeb3.PWA_Arqade#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DownQuark-Work/downquark.blockchainWeb3.PWA_Arqade.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DownQuark-Work/downquark.blockchainWeb3.PWA_Arqade/issues"
+  },
   "dependencies": {
-    "@dan-nz/storybook-documentation-primitives": "file:./utils/token/@dan-nz/storybook-documentation-primitives",
     "lit": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
+    "@dan-nz/storybook-documentation-primitives": "file:./utils/token/@dan-nz/storybook-documentation-primitives",
     "@storybook/addon-actions": "^6.4.9",
     "@storybook/addon-essentials": "^6.4.9",
     "@storybook/addon-links": "^6.4.9",
+    "@storybook/preset-scss": "^1.0.3",
     "@storybook/web-components": "^6.4.9",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.11.12",
@@ -45,12 +56,16 @@
     "@typescript-eslint/parser": "^4.30.0",
     "@webcomponents/webcomponentsjs": "^2.6.0",
     "babel-loader": "^8.2.3",
+    "css-loader": "^5",
     "deepmerge": "^4.2.2",
     "eslint": "^7.32.0",
     "lit-analyzer": "^1.1.10",
     "mocha": "^9.1.1",
     "prettier": "^2.3.2",
     "rimraf": "^3.0.2",
+    "sass": "^1.45.0",
+    "sass-loader": "10.1.0",
+    "style-loader": "^2",
     "typescript": "^4.3.5"
   }
 }

@@ -7,7 +7,6 @@
 // // 2. Vendors
 @use 'vendors/reset';
 @use 'vendors/normalize';
-@use 'vendors/app-stack/app';
 
 // // 3. Base Styles
 @use 'base/dq' as dq-base;

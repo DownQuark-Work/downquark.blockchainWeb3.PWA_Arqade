@@ -1,5 +1,3 @@
-@use '../../vendors/app-stack/variables' as appstack;
-
 @mixin bg-variant($parent, $color, $ignore-warning: false) {
   #{$parent} {
     background-color: $color !important;
