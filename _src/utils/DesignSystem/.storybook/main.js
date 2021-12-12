@@ -88,13 +88,14 @@ module.exports = {
           importLoaders: 1,
           modules: {
             // compileType: 'module',
-            mode: "local",
-            //// the above gives us something at least
-            compileType: "module",
             // mode: "local",
-            auto: true,
+            //// the above gives us something at least
+            // compileType: "module",
+            // mode: "local",
+            // auto: true,
             exportGlobals: true,
             // localIdentName: "[path][name]__[local]--[hash:base64:5]",
+            localIdentName: "[name]",
             // localIdentContext: path.resolve(__dirname, "src"),
             // localIdentHashPrefix: "my-custom-hash",
             // namedExport: true,
