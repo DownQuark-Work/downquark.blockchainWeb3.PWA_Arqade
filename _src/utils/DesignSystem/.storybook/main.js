@@ -74,7 +74,8 @@ module.exports = {
           },
         },
   })
-
+// https://github.com/webpack-contrib/css-loader/tree/ae988451a9638662625e515b915a12f6e2c9378a#esmodule
+// https://www.npmjs.com/package/to-string-loader
   config.module.rules.push({
     test: /\.module\.scss$/i,
     use: [
