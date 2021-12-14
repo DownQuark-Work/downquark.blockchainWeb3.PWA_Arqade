@@ -19,7 +19,7 @@
     "build-storybook": "build-storybook",
     "build:tsc": "tsc",
     "build:watch": "tsc --watch",
-    "build": "yarn cln && yarn tkn && yarn build-storybook",
+    "build": "yarn tkn && yarn build-storybook",
     "dev": "yarn storybook",
     "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --write",
     "lint:eslint": "eslint 'src/**/*.ts'",

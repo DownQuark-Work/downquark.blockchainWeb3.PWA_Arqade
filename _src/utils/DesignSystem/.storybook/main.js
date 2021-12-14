@@ -20,7 +20,7 @@ module.exports = {
         },
         sassLoaderOptions: {
           implementation: require("sass"), // prefer Dart-Sass
-          sourceMap: true,
+          sourceMap: false,
         },
       },
     },
@@ -37,7 +37,11 @@ module.exports = {
       use: [
         'style-loader',
         'css-loader?url=false',
-        'sass-loader'],
+        {
+          loader: "sass-loader",
+          options: { sourceMap: true, },
+        },
+      ],
       include: path.resolve(__dirname, '../'),
     });
 
@@ -73,6 +77,7 @@ module.exports = {
       },
       {
         loader: "sass-loader",
+        options: { sourceMap: false, },
       },
     ],
     include: path.resolve(__dirname, '../'),
