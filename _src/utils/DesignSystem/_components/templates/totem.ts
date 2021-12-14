@@ -1,16 +1,7 @@
-import { LitElement, html } from 'lit'
+import { LitElement, css, html, unsafeCSS } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 
-import stylez  from '../../_scss/components/molecules/tester.module.scss'
-// import ztyle from '../../_scss/components/molecules/tester.scss'
-// import ztyle from '../../_scss/components/molecules/tester.scss'
-// const css = require("../../_scss/components/molecules/tester.scss").toString();
-const css = require("../../_scss/components/molecules/tester.module.scss").toString();
-
-console.log(css); // {String}
-
-console.log('stylez', stylez)
-// console.log('ztyle', ztyle)
+import stylez  from '../../_scss/components/molecules/wrapper-grid-totem.module.scss'
 
 @customElement('dq-template-totem')
 class DownQuarkTemplateTotem extends LitElement {
@@ -18,11 +9,11 @@ class DownQuarkTemplateTotem extends LitElement {
   debug = false;
 
   static get styles() {
-    return []
+    return [css`${unsafeCSS(stylez.replace(/\*#.source.*\*/g,''))}`]
   }
 
   render() {
-    return html`<div class="wrapper-grid-totem">
+    return html`<div class="wrapper-grid-totem-module">
   <slot></slot>
 </div>`;
   }
