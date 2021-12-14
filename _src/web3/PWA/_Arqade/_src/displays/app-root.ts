@@ -99,10 +99,9 @@ export class AppIndex extends LitElement {
     return html`
       ${this.rootCSSVars}
       <main>
-        <dq-tmplt-app-shell>
-          <p>about dapps frb <a href="/about/dapps/fatredbird">go</a>?</p>
-          <slot></slot>
-        </dq-tmplt-app-shell>
+        <dq-template-app-shell>
+          <div id="routerOutlet"></div>
+        </dq-template-app-shell>
       </main>
     `;
   }

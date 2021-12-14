@@ -1,4 +1,5 @@
-// https://storybook.js.org/docs/react/configure/typescript
+const path = require('path')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   features: {
@@ -9,64 +10,124 @@ module.exports = {
     "../stories/**/*.stories.@(js|jsx|ts|tsx)"
   ],
   "addons": [
-    '@storybook/addon-a11y',
-    "@storybook/addon-essentials",
     "@storybook/addon-links",
+    "@storybook/addon-essentials",
     {
       name: '@storybook/preset-scss',
       options: {
         cssLoaderOptions: {
+          sourceMap: true,
           modules: { localIdentName: '[name]__[local]--[hash:base64:5]' },
         },
         sassLoaderOptions: {
+          implementation: require("sass"), // prefer Dart-Sass
           sourceMap: true,
         },
       },
     },
   ],
-  // babel: async (config, options) => {
-  //   const removeIncorrectConfigIndex = config.plugins.findIndex(plug => plug.length === 2 && plug[1].legacy)
-  //   console.log('removeIncorrectConfigIndex', removeIncorrectConfigIndex, config.plugins[removeIncorrectConfigIndex])
-  //   config.plugins.splice(removeIncorrectConfigIndex, 1)
-  //   config.plugins.unshift([
-  //     require.resolve('@babel/plugin-proposal-decorators'),
-  //     { decoratorsBeforeExport: true, legacy: false },
-  //     'resolves-duplicate-babel-plugin-proposal-decorators-name'
-  //   ])
-  //   config.plugins.unshift([require.resolve('@babel/plugin-proposal-class-properties'), { loose: true }, 'resolves-duplicate-babel-plugin-proposal-class-properties-name'])
-  //   // return config
-  //   return {
-  //     ...config,
-  //     plugins: [
-  //       // ['@babel/plugin-proposal-decorators', { decoratorsBeforeExport: true }],
-  //       // ['@babel/plugin-proposal-class-properties', { 'loose': true }],
-  //       ...config.plugins,
-  //     ],
-  //   }
-  // },
-  webpackFinal: async (config, { configType }) => {
-    const ruleJsIndex = config.module.rules.findIndex(
-      (rule) => rule.test.toString() === "/\\.js$/"
-    )
-    config.module.rules[ruleJsIndex].use[0].options.plugins
+  "framework": "@storybook/web-components",
+  // webpackFinal: async (config, { configType }) => {
+  webpackFinal: async (config) => {
+    // const miniCSS = new MiniCssExtractPlugin({
+    //   // Options similar to the same options in webpackOptions.output
+    //   // both options are optional
+    //   filename: "[name].css",
+    //   chunkFilename: "[id].css",
+    // })
+    //   config = {
+    //     ...config,
+    //     plugins: [
+    //       ...config.plugins,
+    //       miniCSS,
+    //     ],
+    //   }
+    config.plugins.push(new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css",
+    }))
+    
+    const scssConfigIndex = config.module.rules.findIndex((config) => ".scss".match(config.test))
+    config.module.rules.splice(scssConfigIndex, 1)
+    // console.log('config', config)
 
-    const trial = {
-      test: /\.js$/,
+    config.module.rules.push({
+      test: /\.scss$/,
+      exclude: /\.module\.scss$/i,
       use: [
-        {
-          loader: require.resolve('babel-loader'),
-          options: {
-            plugins: [
-              [require.resolve('@babel/plugin-proposal-class-properties'), { loose: true }],
-              [
-                require.resolve('@babel/plugin-proposal-decorators'),
-                { decoratorsBeforeExport: true, legacy: false }
-              ],
-            ]
-          }
-        }]
-    }
-    config.module.rules.push(trial)
-    return config
-  }
+        // fallback to style-loader in development
+        // process.env.NODE_ENV !== "production"
+        //   ? "style-loader"
+        //   : MiniCssExtractPlugin.loader,
+        'style-loader',
+        'css-loader?url=false',
+        'sass-loader'],
+      include: path.resolve(__dirname, '../'),
+    });
+
+    config.module.rules.push({
+      test: /\.css$/i,
+        loader: "css-loader",
+        options: {
+          modules: {
+            mode: "global",
+          },
+        },
+  })
+// https://github.com/webpack-contrib/css-loader/tree/ae988451a9638662625e515b915a12f6e2c9378a#esmodule
+// https://www.npmjs.com/package/to-string-loader
+  config.module.rules.push({
+    test: /\.module\.scss$/i,
+    use: [
+      {
+        // loader: "style-loader",
+          loader: "to-string-loader",
+      },
+      {
+        loader: "css-loader",
+        options: {
+          importLoaders: 1,
+          modules: {
+            compileType: 'module',
+            // mode: "local",
+            //// the above gives us something at least
+            // compileType: "module",
+            // mode: "local",
+            // auto: true,
+            exportGlobals: true,
+            // localIdentName: "[path][name]__[local]--[hash:base64:5]",
+            localIdentName: "[name]",
+            // localIdentContext: path.resolve(__dirname, "src"),
+            // localIdentHashPrefix: "my-custom-hash",
+            // namedExport: true,
+            exportLocalsConvention: "camelCaseOnly",
+            exportOnlyLocals: false,
+          },
+        },
+      },
+      {
+        loader: "sass-loader",
+      },
+    ],
+    include: path.resolve(__dirname, '../'),
+  },)
+
+    return config;
+  },
 }
+
+/*
+{
+      name: '@storybook/preset-scss',
+      options: {
+        cssLoaderOptions: {
+          sourceMap: true,
+          modules: { localIdentName },
+        },
+        sassLoaderOptions: {
+          implementation: require("sass"), // prefer Dart-Sass
+          sourceMap: true
+        },
+      },
+    },
+*/

@@ -1,0 +1,12 @@
+.wrapper-grid-totem {
+  text-decoration: green wavy underline;
+}
+.wrapper-grid-totem div {
+  color: coral;
+}
+:export {
+  colorLink: $color-link;
+  colorIcon: $color-icon;
+}
+
+/*# sourceMappingURL=tester.css.map */
