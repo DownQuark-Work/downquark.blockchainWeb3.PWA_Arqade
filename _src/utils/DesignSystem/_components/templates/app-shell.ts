@@ -1,12 +1,10 @@
 import { LitElement, css, html, unsafeCSS } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 
+import { scss } from '../../utils/scss'
+
 import '../organisms/header.ts'
 import '../organisms/footer.ts'
-
-import scssModule from '../../_scss/components/molecules/app-shell.module.scss'
-console.log('scssModule', scssModule)
-// https://github.com/webpack-contrib/css-loader
 
 @customElement('dq-template-app-shell')
 class DownQuarkTemplateAppShell extends LitElement {
@@ -14,7 +12,8 @@ class DownQuarkTemplateAppShell extends LitElement {
   debug = false;
 
   static get styles() {
-    return [css`${unsafeCSS(scssModule.replace(/\*#.source.*\*/g,''))}`]
+    return [css`${scss('template','app-shell-module')}`]
+    
   }
 
   render() {

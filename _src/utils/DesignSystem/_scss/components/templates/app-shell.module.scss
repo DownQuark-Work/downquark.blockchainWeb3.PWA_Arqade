@@ -1,0 +1,8 @@
+$color-link: #ae00ff;
+$color-icon: rgb(13, 46, 61);
+
+
+.app-shell { text-decoration: underline; 
+  div{ color:$color-link }
+p {color:$color-icon}
+}
