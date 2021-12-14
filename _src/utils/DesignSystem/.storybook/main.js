@@ -69,7 +69,7 @@ module.exports = {
           modules: {
             compileType: 'module',
             exportGlobals: true,
-            localIdentName: "[name]",
+            localIdentName: "[local]",
             exportLocalsConvention: "camelCaseOnly",
             exportOnlyLocals: false,
           },

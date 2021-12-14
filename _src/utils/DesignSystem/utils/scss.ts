@@ -6,7 +6,7 @@ export const scss = (componentType:string, className:string) => {
     scssModule = classNameArr.pop(), // sanity  check
     fileName = classNameArr.join('-')
   let styles = require(`../_scss/components/${componentType}s/${fileName}.${scssModule}.scss`);
-  styles = styles.replace(/\*#.source.*\*/g,'') // remove sourceMap text
-  
+  styles = styles.replace(/\*#.source.*\*/g,'').replace(/\/\//g,'') // remove sourceMap text
+  console.log('styles', styles)
   return unsafeCSS(styles)
 }

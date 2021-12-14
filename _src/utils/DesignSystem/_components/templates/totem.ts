@@ -9,11 +9,11 @@ class DownQuarkTemplateTotem extends LitElement {
   debug = false;
 
   static get styles() {
-    return [css`${scss('molecule','wrapper-grid-totem-module')}`]
+    return [css`${scss('template','wrapper-grid-totem-module')}`]
   }
 
   render() {
-    return html`<div class="wrapper-grid-totem-module">
+    return html`<div class="wrapper-grid-totem">
       <section>outside of slot</section>
       <slot></slot>
       <section>outside of slot</section>
