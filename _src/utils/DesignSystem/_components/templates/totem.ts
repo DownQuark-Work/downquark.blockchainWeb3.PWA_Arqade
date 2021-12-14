@@ -9,7 +9,7 @@ class DownQuarkTemplateTotem extends LitElement {
   debug = false;
 
   static get styles() {
-    return [css`${scss('template','wrapper-grid-totem-module')}`]
+    return [css`${scss('template','wrapper-grid-totem')}`]
   }
 
   render() {

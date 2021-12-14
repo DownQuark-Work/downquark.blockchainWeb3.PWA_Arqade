@@ -12,12 +12,12 @@ class DownQuarkTemplateAppShell extends LitElement {
   debug = false;
 
   static get styles() {
-    return [css`${scss('template','app-shell-module')}`]
+    return [css`${scss('template','app-shell')}`]
     
   }
 
   render() {
-    return html`<div id="app-shell" class="app-shell-module">
+    return html`<div id="app-shell" class="app-shell">
   <dq-organism-header></dq-organism-header>
   <div>asd</div>
   <p>world</p>
