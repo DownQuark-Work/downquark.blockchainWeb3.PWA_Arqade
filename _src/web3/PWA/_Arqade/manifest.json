@@ -1,0 +1,30 @@
+{
+  "name": "DownQuark Arqade",
+  "homepage_url": "https://www.downquark.work",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "short_name": "dq-arqade",
+  "description": "DownQuark Arqade App Shell",
+  "background": {
+    "service_worker": "sw.js"
+  },
+  "action": {
+    "default_title": "DownQuark Arqade",
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "24": "assets/gfx/icons/icon_24.png",
+    "48": "assets/gfx/icons/icon_48.png",
+    "192": "assets/gfx/icons/icon_192.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:"
+  },
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "identity",
+    "notifications",
+    "storage"
+  ]
+}

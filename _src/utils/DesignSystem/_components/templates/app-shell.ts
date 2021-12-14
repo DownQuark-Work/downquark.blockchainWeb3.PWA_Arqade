@@ -1,11 +1,10 @@
-import { LitElement, html } from 'lit'
+import { LitElement, css, html } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
+
+import { scss } from '../../utils/scss'
 
 import '../organisms/header.ts'
 import '../organisms/footer.ts'
-
-import '../../_scss/components/molecules/test.scss'
-// https://github.com/webpack-contrib/css-loader
 
 @customElement('dq-template-app-shell')
 class DownQuarkTemplateAppShell extends LitElement {
@@ -13,11 +12,12 @@ class DownQuarkTemplateAppShell extends LitElement {
   debug = false;
 
   static get styles() {
-    return []
+    return [css`${scss('template','app-shell')}`]
+    
   }
 
   render() {
-    return html`<div id="app-shell" class="debug">
+    return html`<div id="app-shell" class="app-shell">
   <dq-organism-header></dq-organism-header>
   <div>asd</div>
   <p>world</p>
