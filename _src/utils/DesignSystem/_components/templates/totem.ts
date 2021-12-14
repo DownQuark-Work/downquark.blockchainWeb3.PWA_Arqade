@@ -14,7 +14,9 @@ class DownQuarkTemplateTotem extends LitElement {
 
   render() {
     return html`<div class="wrapper-grid-totem-module">
-  <slot></slot>
+      <section>outside of slot</section>
+      <slot></slot>
+      <section>outside of slot</section>
 </div>`;
   }
 }
