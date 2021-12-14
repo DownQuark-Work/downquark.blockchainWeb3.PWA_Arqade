@@ -1,0 +1,37 @@
+{
+  "color": {
+    "background": {
+      "button":{
+        "default":{"value":"{color.base.MizuCyan.value}"}
+      },
+      "page":{
+        "value":"{color.background.primary.value}"
+      },
+      "table":{
+        "default":{"value":"{color.base.SmokedPearl.value}"}
+      }
+    },
+    "border":{
+      "button":{
+        "default":{"value":"{color.base.RedBaron.value}"}
+      },
+      "page":{
+        "value":"{color.base.SmokedPearl.value}"
+      },
+      "table":{
+        "default":{"value":"{color.base.LondonGrey.value}"}
+      }
+    },
+    "text":{
+      "button":{
+        "default":{"value":"{color.base.DrakenhofNightshade.value}"}
+      },
+      "page":{
+        "value":"{color.common.black.value}"
+      },
+      "table":{
+        "default":{"value":"{color.base.MizuCyan.value}"}
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "color": {
+    "background": {
+      "button":{
+        "error":{"base":{"value":"{color.background.button.error.active.value}"}},
+        "success":{"base":{"value":"{color.background.button.success.active.value}"}},
+        "warn":{"base":{"value":"{color.background.button.warn.active.value}"}}
+      },
+      "table":{
+        "odd":{"value":"{color.base.LondonGrey.value}"}
+      }
+    },
+    "border":{
+      "button":{
+        "error":{"base":{"value":"{color.border.button.error.active.value}"}},
+        "success":{"base":{"value":"{color.border.button.success.active.value}"}},
+        "warn":{"base":{"value":"{color.border.button.warn.active.value}"}}
+      },
+      "table":{
+        "odd":{"value":"{color.base.DarkMidnightBlue.value}"}
+      }
+    },
+    "text":{
+      "button":{
+        "error":{"base":{"value":"{color.text.button.error.active.value}"}},
+        "success":{"base":{"value":"{color.text.button.success.active.value}"}},
+        "warn":{"base":{"value":"{color.text.button.error.active.value}"}}
+      },
+      "table":{
+        "odd":{"value":"{color.common.black.value}"}
+      }
+    }
+  }
+}

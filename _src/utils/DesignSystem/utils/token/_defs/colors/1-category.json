@@ -1,0 +1,30 @@
+{
+  "color": {
+    "base": {
+      "comment": "All base value names should be description of color",
+      "Bright":{"value":"#FFFFFFdd"},
+      "Dark":{"value":"#000000dd"},
+      "Cornflower": {"value": "rgb(84, 114, 210)"},
+      "DarkLemonLime": {"value": "rgb(139, 192, 39)"},
+      "DarkMidnightBlue": {"value": "rgb(0, 53, 124)"},
+      "DrakenhofNightshade": {"value": "rgb(30, 88, 159)"},
+      "LondonGrey": {"value": "rgb(102, 102, 119)"},
+      "LynxWhite2": {"value": "rgb(185, 74, 72)"},
+      "MagicalMerlin": {"value": "rgb(64, 139, 209)"},
+      "MizuCyan": {"value": "rgb(168, 216, 238)"},
+      "RedBaron": {"value": "rgb(184, 2, 14)"},
+      "RedHanded": {"value": "rgb(219, 37, 49)"},
+      "SmokedPearl": {"value": "rgba(100, 100, 100, 0.1)"},
+      "SuperSilver": {"value": "rgb(238, 238, 238)"},
+      "Windjammer": {"value": "rgb(90, 161, 227)"}
+    },
+    "common": {
+      "black": {
+        "value": "{color.base.Dark.value}"
+      },
+      "white": {
+        "value": "{color.base.Bright.value}"
+      }
+    }
+  }
+}

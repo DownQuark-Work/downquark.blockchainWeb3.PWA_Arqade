@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "es2020",
+    "lib": ["es2020", "DOM", "DOM.Iterable"],
+    "declaration": true,
+    "declarationDir": "/Users/mlnck/Documents/_dev/_dq/DownQuark/downquark.blockchainWeb3.PWA_Arqade/_src/utils/DesignSystem/typings",
+    "declarationMap": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "outDir": "./_build",
+    "rootDir": "./",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitOverride": false,
+    "plugins": [
+      {
+        "name": "ts-lit-plugin",
+        "strict": true,
+        "rules": {
+          "no-missing-import": "off",
+          "no-missing-element-type-definition": "error"
+        }
+      }
+    ]
+  },
+  "include": ["_components/**/*.ts",".storybook/*.ts","utils/**/*.ts"],
+  "exclude": [],
+  "typeRoots": [
+    "../node_modules/@types/"
+    ]
+}
