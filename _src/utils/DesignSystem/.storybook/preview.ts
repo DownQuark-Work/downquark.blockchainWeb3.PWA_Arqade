@@ -1,4 +1,4 @@
-import '../_scss/dq.scss'
+import '../_components/_scss/dq.scss'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

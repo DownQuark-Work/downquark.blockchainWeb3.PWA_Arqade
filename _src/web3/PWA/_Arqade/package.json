@@ -4,11 +4,11 @@
   "description": "DownQuark Web3 PWA Hub",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf _build_deploy && rimraf _build_dev && rimraf _src/_qomponents && rimraf _src/content/assets/styles/dq.css",
+    "clean": "rimraf _build_deploy && rimraf _build_dev && rimraf _src/content/assets/styles/dq.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup --config rollup.config.dev.js && rimraf _build_deploy/ && rollup --config rollup.config.js",
     "start": "concurrently \"rollup --config rollup.config.dev.js --watch\" \"es-dev-server --app-index _build_dev/arqade.html --root-dir _build_dev/ --compatibility none --node-resolve --watch --open /\"",
-    "dev": "concurrently \"rollup --config rollup.config.dev.js --watch\" \"web-dev-server --debug --preserve-symlinks --app-index _build_dev/arqade.html --root-dir _build_dev/ --compatibility none --node-resolve --watch --open /\""
+    "dev": "concurrently \"rollup --config rollup.config.dev.js --watch\" \"web-dev-server --debug --preserve-symlinks --app-index _build_dev_html/dq-arqade.html --root-dir _build_dev_html/ --compatibility none --node-resolve --watch --open /\""
   },
   "author": "mlnck",
   "license": "ISC",
@@ -64,6 +64,7 @@
     "rollup-plugin-scss": "3",
     "rollup-plugin-terser": "^7.0.2",
     "sass": "^1.37.5",
-    "typescript": "^4.1.3"
+    "typescript": "^4.1.3",
+    "typescript-plugin-css-modules": "^3.4.0"
   }
 }

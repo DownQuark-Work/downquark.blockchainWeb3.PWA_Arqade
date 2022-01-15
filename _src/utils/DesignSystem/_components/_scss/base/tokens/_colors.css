@@ -1,0 +1,69 @@
+/**
+ * Do not edit directly
+ * Generated on Sat, 15 Jan 2022 03:10:09 GMT
+ */
+
+:root {
+  --pmd-color-base-windjammer: #5aa1e3;
+  --pmd-color-base-super-silver: #eeeeee;
+  --pmd-color-base-smoked-pearl: rgba(100, 100, 100, 0.1);
+  --pmd-color-base-red-handed: #db2531;
+  --pmd-color-base-red-baron: #b8020e;
+  --pmd-color-base-mizu-cyan: #a8d8ee;
+  --pmd-color-base-magical-merlin: #408bd1;
+  --pmd-color-base-lynx-white2: #b94a48;
+  --pmd-color-base-london-grey: #666677;
+  --pmd-color-base-drakenhof-nightshade: #1e589f;
+  --pmd-color-base-dark-midnight-blue: #00357c;
+  --pmd-color-base-dark-lemon-lime: #8bc027;
+  --pmd-color-base-cornflower: #5472d2;
+  --pmd-color-base-dark: rgba(0, 0, 0, 0.87);
+  --pmd-color-base-bright: rgba(255, 255, 255, 0.87);
+  --pmd-color-text-table-default: var(--pmd-color-base-mizu-cyan);
+  --pmd-color-text-button-warn-disabled: var(--pmd-color-base-drakenhof-nightshade);
+  --pmd-color-text-button-success-active: var(--pmd-color-base-london-grey);
+  --pmd-color-text-button-error-active: var(--pmd-color-base-super-silver);
+  --pmd-color-text-button-default: var(--pmd-color-base-drakenhof-nightshade);
+  --pmd-color-text-secondary: var(--pmd-color-base-dark-midnight-blue);
+  --pmd-color-border-table-odd: var(--pmd-color-base-dark-midnight-blue);
+  --pmd-color-border-table-default: var(--pmd-color-base-london-grey);
+  --pmd-color-border-page: var(--pmd-color-base-smoked-pearl);
+  --pmd-color-border-button-warn-disabled: var(--pmd-color-base-drakenhof-nightshade);
+  --pmd-color-border-button-warn-active: var(--pmd-color-base-london-grey);
+  --pmd-color-border-button-success-disabled: var(--pmd-color-base-london-grey);
+  --pmd-color-border-button-success-active: var(--pmd-color-base-london-grey);
+  --pmd-color-border-button-error-disabled: var(--pmd-color-base-red-baron);
+  --pmd-color-border-button-error-active: var(--pmd-color-base-london-grey);
+  --pmd-color-border-button-default: var(--pmd-color-base-red-baron);
+  --pmd-color-border-secondary: var(--pmd-color-base-dark-midnight-blue);
+  --pmd-color-background-table-odd: var(--pmd-color-base-london-grey);
+  --pmd-color-background-table-default: var(--pmd-color-base-smoked-pearl);
+  --pmd-color-background-button-warn-disabled: var(--pmd-color-base-super-silver);
+  --pmd-color-background-button-warn-active: var(--pmd-color-base-mizu-cyan);
+  --pmd-color-background-button-success-disabled: var(--pmd-color-base-london-grey);
+  --pmd-color-background-button-success-active: var(--pmd-color-base-dark-lemon-lime);
+  --pmd-color-background-button-error-disabled: var(--pmd-color-base-lynx-white2);
+  --pmd-color-background-button-error-active: var(--pmd-color-base-red-baron);
+  --pmd-color-background-button-default: var(--pmd-color-base-mizu-cyan);
+  --pmd-color-background-secondary: var(--pmd-color-base-london-grey);
+  --pmd-color-background-primary: var(--pmd-color-base-smoked-pearl);
+  --pmd-color-common-white: var(--pmd-color-base-bright);
+  --pmd-color-common-black: var(--pmd-color-base-dark);
+  --pmd-color-text-table-odd: var(--pmd-color-common-black);
+  --pmd-color-text-page: var(--pmd-color-common-black);
+  --pmd-color-text-button-warn-active: var(--pmd-color-common-black);
+  --pmd-color-text-button-warn-base: var(--pmd-color-text-button-error-active);
+  --pmd-color-text-button-success-disabled: var(--pmd-color-common-black);
+  --pmd-color-text-button-success-base: var(--pmd-color-text-button-success-active);
+  --pmd-color-text-button-error-disabled: var(--pmd-color-common-white);
+  --pmd-color-text-button-error-base: var(--pmd-color-text-button-error-active);
+  --pmd-color-text-primary: var(--pmd-color-common-black);
+  --pmd-color-border-button-warn-base: var(--pmd-color-border-button-warn-active);
+  --pmd-color-border-button-success-base: var(--pmd-color-border-button-success-active);
+  --pmd-color-border-button-error-base: var(--pmd-color-border-button-error-active);
+  --pmd-color-border-primary: var(--pmd-color-common-black);
+  --pmd-color-background-page: var(--pmd-color-background-primary);
+  --pmd-color-background-button-warn-base: var(--pmd-color-background-button-warn-active);
+  --pmd-color-background-button-success-base: var(--pmd-color-background-button-success-active);
+  --pmd-color-background-button-error-base: var(--pmd-color-background-button-error-active);
+}

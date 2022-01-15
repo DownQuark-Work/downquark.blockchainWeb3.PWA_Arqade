@@ -2,9 +2,7 @@
 import { LitElement, css, html } from 'lit';
 import { customElement, property } from 'lit/decorators';
 
-import '../../no_modules/_styles/downquark.scss'
-import '../../no_modules/_styles/svg.scss'
-import '../_qomponents/tmplt/app-shell.js'
+import '../_qomponents/templates/app-shell'
 
 
 @customElement('dq-display-app-main')

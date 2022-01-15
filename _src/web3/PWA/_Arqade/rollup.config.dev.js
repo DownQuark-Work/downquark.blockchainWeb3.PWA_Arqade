@@ -15,6 +15,10 @@ const designSystemOpts = {
   plugins: [
     resolve(),
     resolve({ 'moduleDirectories': ["./node_modules"] }),
+    typescript({
+      tsconfig: "tsconfig.dev.json",
+      exclude: ["*.js"]
+    }),    
     babel({
       babelHelpers: 'bundled',
       babelrc: false,
@@ -81,23 +85,23 @@ const typeScriptOpts = {
     // depending on amount of content/cached/etc
     // - it may take 2 - 3 `yarn dev`s for the stylesheet to be copied correctly
     scss({
-      includePaths: ['no_modules/_styles/downquark.scss'],
+      includePaths: ['_src/_qomponents/_scss'],
       output: '_src/content/assets/styles/dq.css',
-      // failOnError: true,
+      failOnError: true,
       // output: function (styles, styleNodes) {
       // output: function (styles) {
       //   fs.writeFileSync('_src/content/assets/styles/dq.css', styles)
       // },
     }),
-    html(),
-    typescript({
-      tsconfig: "tsconfig.dev.json",
-      exclude: ["*.js"]
-    }),
+    html({ name: 'dq-arqade.html' }),
+    // typescript({
+    //   tsconfig: "tsconfig.dev.json",
+    //   exclude: ["*.js"]
+    // }),
     replace({
       preventAssignment: true,
       "process.env.NODE_ENV": JSON.stringify(
-        process.env.NODE_ENV || "production"
+        process.env.NODE_ENV || "develop"
       )
     }),
     copy({
@@ -105,8 +109,8 @@ const typeScriptOpts = {
       // _src/web3/PWA/_Qrypto/_build_dev/assets/styles/dq.css
       // if not - rerun `yarn dev`
       targets: [
-        { src: "_src/content/assets/*", dest: "_build_dev/assets/" },
-        { src: "manifest.json", dest: "_build_dev/" },
+        { src: "_src/content/assets/*", dest: "_build_dev_html/assets/" },
+        { src: "manifest.json", dest: "_build_dev_html/" },
       ],
     }),
   ],
@@ -114,22 +118,24 @@ const typeScriptOpts = {
 
 export default [
   {
-    input: {
-      'tmplt/app-shell': './no_modules/_components/templates/app-shell.js',
-      'tmplt/default': './no_modules/_components/templates/default.js',
-      'tmplt/totem': './no_modules/_components/templates/totem.js',
-    },
+    // input: {
+    //   'tmplt/app-shell': './no_modules/_components/templates/app-shell.ts',
+    //   'tmplt/default': './no_modules/_components/templates/default.ts',
+    //   'tmplt/totem': './no_modules/_components/templates/totem.ts',
+    // },
+    input: '_src/displays/app.ts',
     output: {
-      dir: '_src/_qomponents/',
+      dir: '_build_dev/',
       sourcemap: true,
     },
     ...designSystemOpts,
   },
-  {
-    input: "_src/arqade.html",
-    output: {
-      dir: "_build_dev",
-      format: "es",
-    },
-    ...typeScriptOpts
-  },]
+  // {
+  //   input: "_src/arqade.html",
+  //   output: {
+  //     dir: "_build_dev_html",
+  //     format: "es",
+  //   },
+  //   ...typeScriptOpts
+  // },
+]

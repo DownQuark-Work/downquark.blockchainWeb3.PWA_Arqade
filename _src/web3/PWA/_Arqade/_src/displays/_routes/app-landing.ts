@@ -1,7 +1,7 @@
 import { LitElement, css, html } from 'lit';
 import { property, customElement } from 'lit/decorators';
 
-import '../../_qomponents/tmplt/default.js'
+import '../../_qomponents/templates/default'
 
 @customElement('dq-display-app-landing')
 export class AppHome extends LitElement {
@@ -23,11 +23,11 @@ export class AppHome extends LitElement {
     console.log('This is your home page');
   }
   render() {
-    return html`<dq-tmplt-default>
+    return html`<dq-template-default>
   <div>
     <section>${this.message}!</section>
   </div>
 
-</dq-tmplt-default>`
+</dq-template-default>`
   }
 }

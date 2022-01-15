@@ -1,7 +1,7 @@
 import { Router } from '@vaadin/router'
 import { ARQADE_ROUTES } from '../utils/constants/routes'
 
-import './app-root'
+import './app-root.ts'
 
 const outlet = document.getElementById('dq-arqade-app');
 export const router = new Router(outlet);

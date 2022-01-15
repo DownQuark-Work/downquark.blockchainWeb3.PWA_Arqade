@@ -3,9 +3,6 @@
     "target": "es2019",
     "module": "es2020",
     "lib": ["es2020", "DOM", "DOM.Iterable"],
-    "declaration": true,
-    "declarationDir": "/Users/mlnck/Documents/_dev/_dq/DownQuark/downquark.blockchainWeb3.PWA_Arqade/_src/utils/DesignSystem/typings",
-    "declarationMap": true,
     "sourceMap": true,
     "inlineSources": true,
     "outDir": "./_build",
@@ -23,6 +20,7 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitOverride": false,
     "plugins": [
+      {"name": "typescript-plugin-css-modules"},
       {
         "name": "ts-lit-plugin",
         "strict": true,

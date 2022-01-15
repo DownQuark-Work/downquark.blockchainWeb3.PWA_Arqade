@@ -1,7 +1,8 @@
-import { LitElement, css, html } from 'lit'
+import { LitElement, html } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 
-import { scss } from '../../utils/scss'
+import { scss } from '../_utils/scss'
+import styles from '../_scss/components/templates/app-shell.module.scss'
 
 import '../organisms/header.ts'
 import '../organisms/footer.ts'
@@ -12,7 +13,7 @@ class DownQuarkTemplateAppShell extends LitElement {
   debug = false;
 
   static get styles() {
-    return [css`${scss('template','app-shell')}`]
+    return [scss(styles)]
     
   }
 
@@ -25,6 +26,7 @@ class DownQuarkTemplateAppShell extends LitElement {
     <p style="text-align:center">Loading...</p>
   </slot>
   <dq-organism-footer></dq-organism-footer>
+  <section>SECTION</section>
 </div>`;
   }
 }

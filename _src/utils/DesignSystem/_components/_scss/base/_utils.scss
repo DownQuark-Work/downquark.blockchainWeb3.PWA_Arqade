@@ -10,7 +10,7 @@
   &-pointer { cursor: pointer; }
 }}
 
-@for $i from 1 through 50 {
+@for $i from 1 through 45 {
   .z-#{$i}{
     z-index: $i;
   }

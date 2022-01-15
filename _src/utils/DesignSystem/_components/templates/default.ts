@@ -16,4 +16,9 @@ class DownQuarkTemplateDefault extends LitElement {
 </div>`;
   }
 }
-DownQuarkTemplateDefault.createProperty('dq')
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'dq-template-default': DownQuarkTemplateDefault
+  }
+}

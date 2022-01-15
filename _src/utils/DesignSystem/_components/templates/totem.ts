@@ -1,7 +1,8 @@
-import { LitElement, css, html } from 'lit'
+import { LitElement, html } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 
-import { scss } from '../../utils/scss'
+import { scss } from '../_utils/scss'
+import styles from '../_scss/components/templates/wrapper-grid-totem.module.scss'
 
 @customElement('dq-template-totem')
 class DownQuarkTemplateTotem extends LitElement {
@@ -9,7 +10,7 @@ class DownQuarkTemplateTotem extends LitElement {
   debug = false;
 
   static get styles() {
-    return [css`${scss('template','wrapper-grid-totem')}`]
+    return [scss(styles)]
   }
 
   render() {
@@ -20,4 +21,9 @@ class DownQuarkTemplateTotem extends LitElement {
 </div>`;
   }
 }
-DownQuarkTemplateTotem.createProperty('dq')
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'dq-template-totem': DownQuarkTemplateTotem
+  }
+}
