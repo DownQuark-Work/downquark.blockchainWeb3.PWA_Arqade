@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit'
+import { LitElement, css, html } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 
 import { scss } from '../_utils/scss'
@@ -10,7 +10,7 @@ class DownQuarkTemplateTotem extends LitElement {
   debug = false;
 
   static get styles() {
-    return [scss(styles)]
+    return [css`${scss(styles)}`]
   }
 
   render() {

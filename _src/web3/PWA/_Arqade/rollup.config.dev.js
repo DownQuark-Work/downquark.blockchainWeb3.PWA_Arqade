@@ -85,6 +85,7 @@ const typeScriptOpts = {
     // depending on amount of content/cached/etc
     // - it may take 2 - 3 `yarn dev`s for the stylesheet to be copied correctly
     scss({
+      exclude: ['*module*'],
       includePaths: ['_src/_qomponents/_scss'],
       output: '_src/content/assets/styles/dq.css',
       failOnError: true,
@@ -130,12 +131,12 @@ export default [
     },
     ...designSystemOpts,
   },
-  // {
-  //   input: "_src/arqade.html",
-  //   output: {
-  //     dir: "_build_dev_html",
-  //     format: "es",
-  //   },
-  //   ...typeScriptOpts
-  // },
+  {
+    input: "_src/arqade.html",
+    output: {
+      dir: "_build_dev_html",
+      format: "es",
+    },
+    ...typeScriptOpts
+  },
 ]
