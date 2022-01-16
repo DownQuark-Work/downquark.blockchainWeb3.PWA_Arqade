@@ -2,7 +2,8 @@
 
 import { css, unsafeCSS } from 'lit'
 
-export const scss = (stylemod:unknown) => {
+export const scss = (stylemod:object|string) => {
+  console.log('typeof stylemod', typeof stylemod)
   console.log('stylemod', stylemod)
   let styles
   if(typeof stylemod === 'string'){

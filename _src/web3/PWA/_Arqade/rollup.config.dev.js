@@ -15,6 +15,7 @@ const designSystemOpts = {
   plugins: [
     resolve(),
     resolve({ 'moduleDirectories': ["./node_modules"] }),
+    scss(),
     typescript({
       tsconfig: "tsconfig.dev.json",
       exclude: ["*.js"]
@@ -85,7 +86,7 @@ const typeScriptOpts = {
     // depending on amount of content/cached/etc
     // - it may take 2 - 3 `yarn dev`s for the stylesheet to be copied correctly
     scss({
-      exclude: ['*module*'],
+      // exclude: ['*module*'],
       includePaths: ['_src/_qomponents/_scss'],
       output: '_src/content/assets/styles/dq.css',
       failOnError: true,
@@ -119,11 +120,14 @@ const typeScriptOpts = {
 
 export default [
   {
-    // input: {
-    //   'tmplt/app-shell': './no_modules/_components/templates/app-shell.ts',
-    //   'tmplt/default': './no_modules/_components/templates/default.ts',
-    //   'tmplt/totem': './no_modules/_components/templates/totem.ts',
-    // },
+    /*
+    TODO:
+    (attempt to resolve the scss loading issue)
+      [worst case scenario we export ts files from the component scss dir]
+    - Make below a single compile
+    - add rimraf to the _build* files whenever you run `yd`/`ys`
+    - chmod `_qomponents` to be read only (should help cut back on editing conflicts)
+    */
     input: '_src/displays/app.ts',
     output: {
       dir: '_build_dev/',

@@ -1,8 +1,8 @@
-import { LitElement, html } from 'lit'
+import { LitElement, css, html } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 
-// import { scss } from '../_utils/scss'
-// import styles from '../_scss/components/templates/app-shell.module.scss'
+import { scss } from '../_utils/scss'
+import * as styles from '../_scss/components/templates/app-shell.module.scss'
 
 import '../organisms/header.ts'
 import '../organisms/footer.ts'
@@ -12,12 +12,12 @@ class DownQuarkTemplateAppShell extends LitElement {
   @property({ type: Boolean })
   debug = false;
 
-  // static get styles() {
-  //   // return [css`${scss(styles)}`]
-  // }
+  static get styles() {
+    return [css `${scss(styles)}`]
+  }
 
   render() {
-    console.log('PUT THE STYLES BACK!!!!')
+    console.log('PUT THE STYLES BACK!!!!', styles)
     return html`<div id="app-shell" class="app-shell">
   <dq-organism-header></dq-organism-header>
   <div>asd</div>
